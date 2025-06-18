@@ -1,0 +1,120 @@
+.docname {gwater}
+.doctype {slides}
+.doclang {English}
+.theme {paperwhite}
+.slides transition:{zoom}
+.docauthors
+  - Sia Ghelichkhan
+
+.include {definitions.qmd}
+
+
+#!
+.fullspan
+  .center
+    ![Logo](/Users/sghelichkhani/Workplace/teaching/gwater/image/logo.png)
+
+    ---
+    #! Remote Sensing of Water Resources
+    ###! EMSC3025/6025
+    ---
+
+    ###! _Dr. Sia Ghelichkhan, Prof. Paul Tregoning_
+
+#!
+.tableofcontents
+
+# What is the course about?
+.var {boxtext}
+    - To know something about components of the water cycle
+    - To understand **something** about how we can quantify changes in water resources
+    - To know where and how to find scientific information from the original source
+    - To be able to make an informed opinion based on scientific information
+
+.box {Learning outcomes} type:{Note}
+    .boxtext
+
+
+# Horizontal
+.row alignment:{spacebetween}
+
+  .container
+    ##! This ia  formal tes
+
+  .container
+    .float {end}
+      !(50%)[Logo](/Users/sghelichkhani/Workplace/teaching/gwater/image/logo.png)
+
+# Assessments
+##! How is the course going to be assessed?
+
+|Assessment| |
+|------ | ---- |
+|Assignments |	40%|
+|Oral presentation|	10%|
+|Written critique | 10%|
+|Exam | 40%|
+
+##
+.row alignment:{spacearound}
+	.row
+		Left
+
+		##! Title
+
+		Right
+
+	---
+
+	.column cross:{start}
+		Top
+
+		##! Title
+
+		Bottom
+
+
+#
+
+.row alignment:{spacebetween} gap:{1cm}
+	.container
+		##! Container 1
+
+		.loremipsum
+
+	.container
+		##! Container 2
+
+		.loremipsum
+
+
+
+# Content
+What is this course all about?
+- The water cycle
+  - Groundwater, surface water, soil moisture, vegetation
+- Physics of groundwater
+- Quantifying changes in water resources through remote Sensing
+- Water futures and water policy
+
+# Schedule
+
+  - Lectures Mon 9-10am, Wed 11am-12pm
+  - Tutorial Tue 12-1pm
+  - Computing Lab Thu 5pm – pm
+
+  - Additional contact
+    - Email me to arrange a time
+    - Paul.Tregoning@anu.edu.au
+    - Building J3 room 150
+
+# Course Organisation
+Tutorials:
+- Python examples
+- Explanation/revision of maths techniques
+- Sample exam-type questions
+- ==Tutorials explain how to do the assignments==
+
+Computing labs:
+- Students work on their computing assignments
+- Lecturer/demonstrator available to provide assistance
