@@ -1,3 +1,6 @@
 .function {emph}
     input:
     .text{.input} size:{larger} decoration:{underline} color:{red}
+
+.var {lightblue}
+    rgb(rgb(173, 216, 230))

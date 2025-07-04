@@ -3,34 +3,52 @@
 
 # Define the output directory
 OUTPUT_DIR = ./dir/
+HTML_DIR = ./html/
+PDF_DIR = ./pdf/
 
 # List of numbered .qmd files to compile
-QMD_FILES = 00_introduction.qmd 01_IntroductionToWaterResources.qmd 02_precipitation.qmd 03_evapotranspiration.qmd 04_run_off.qmd 05_groundwater.qmd
+QMD_FILES = 00_introduction.qmd 01_IntroductionToWaterResources.qmd 02_precipitation.qmd 03_evapotranspiration.qmd 04_runoff.qmd
 
 # Define the quarkdown command with your preferred options
 QUARKDOWN_CMD = quarkdown c
 
 # Default target
-all: $(QMD_FILES:.qmd=.html)
+all: html
+
+# Explicit targets for html and pdf
+html: $(QMD_FILES:.qmd=.html)
+pdf: $(QMD_FILES:.qmd=.pdf)
 
 # Pattern rule to compile each .qmd file
 %.html: %.qmd
-	@echo "Compiling $< to $(OUTPUT_DIR)"
-	$(QUARKDOWN_CMD) $< -o $(OUTPUT_DIR)
+	@echo "Compiling $< to $(HTML_DIR)"
+	mkdir -p $(HTML_DIR)
+	$(QUARKDOWN_CMD) $< -o $(HTML_DIR)
+
+# Pattern rule to compile each .qmd file
+%.pdf: %.qmd
+	@echo "Compiling $< to $(PDF_DIR)"
+	mkdir -p $(PDF_DIR)
+	$(QUARKDOWN_CMD) $< -o $(PDF_DIR) --pdf
+
 # Clean target to remove output files
 clean:
-	@echo "Cleaning output directory..."
+	@echo "Cleaning output directories..."
 	rm -rf $(OUTPUT_DIR)/*
+	rm -rf $(HTML_DIR)/*
+	rm -rf $(PDF_DIR)/*
 
 # Help target
 help:
 	@echo "Available targets:"
-	@echo "  all     - Compile all .qmd files (default)"
-	@echo "  clean   - Remove all compiled files from output directory"
+	@echo "  all     - Compile all .qmd files to HTML (default)"
+	@echo "  html    - Compile all .qmd files to HTML"
+	@echo "  pdf     - Compile all .qmd files to PDF"
+	@echo "  clean   - Remove all compiled files from output directories"
 	@echo "  help    - Show this help message"
 	@echo ""
-	@echo "Individual files can be compiled with: make filename.html"
+	@echo "Individual files can be compiled with: make filename.html or make filename.pdf"
 	@echo "Example: make 02_precipitation.html"
 
 # Phony targets
-.PHONY: all clean help
+.PHONY: all html pdf clean help

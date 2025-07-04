@@ -1,0 +1,136 @@
+.docname {Evapotranspiration}
+.doctype {slides}
+.doclang {English}
+.theme {paperwhite} layout:{beamer}
+.slides transition:{fade}
+.docauthors
+  - Sia Ghelichkhan
+
+.include {definitions.qmd}
+
+#!
+.fullspan
+  .center
+    ![Logo](image/logo.png)
+
+    ---
+    #! Lecture IV - Evapotranspiration
+    ###! EMSC3025/6025
+    ---
+
+    ###! _Dr. Sia Ghelichkhan_
+
+
+---
+
+# Objectives
+
+Leave objective for last
+
+---
+
+# Evaporation
+
+.row gap:{1cm}
+    .container width:{50%}
+
+        .box{Definition} background:{rgb(200, 200, 205)}
+            Transfer of liquid water into gasious state into the atmosphere
+
+        Evaportation's importance is mainly affected by two factors:
+        - The amount of available energy
+        - Available water
+
+        Both of these are modulated by .emph{climate}.
+        Think of cases where evaporation might not be as important:
+        - Humid climate in winter: much water but **limited energy**
+        - Arid climate in dry season: much energy but **limited water**
+
+    .container width:{50%}
+        !(70%)[Evaporation](image/internet_evaporation.jpg)\
+        _Available water and energy control  the main controling factors_
+
+---
+
+# Different Definitions of Evaportaion
+.row gap:{1cm}
+    .container width:{50%}
+        .box title:{Evaportaion} background:{.lightblue}
+            - **Open water Evaporation**, $ E_O $: Evaportation above a
+            body of water such as lakes, streams, oceans. As can be see in
+            global water cycle figure, largest source of evaporation.
+            - **Potential Evaporation**, $ E_{pt} $ : Amount of evaportation above land if there was unlimited water.
+            - **Total Evaportation**, $ B_t $:  This is the actual evaportation. Wet seasons: $ E_t \approx E_{pt} $
+
+        .align{center}
+            We are mostly interested in $ E_O $ and $ E_t $, but $ E_{pt} $ gives us a good indicator of what $ E_t $ might be.
+
+
+    .container width:{50%}
+        .align{center}
+            !(100%)[Global Water Cycle](./image/davie_fig_1-6.png)
+            _Global Water Cycle, $ E_0 $ dominates the global component of evaporation_
+
+---
+#
+.mermaid
+    flowchart TD
+        TOP([Evaporation]) --> BOTTOMRIGHT([Transpiration Related to Plants])
+        TOP([Evaporation]) --> BOTTOMLEFT([From Soil Matrix itself])
+
+.row gap:{1cm}
+    .container width:{50%}
+        Transpiration is the result of photosynthesis and respiration in the plants.
+        - It is controled by the ability of the leafs in openning or closing of the leafs stomata in response to vapour pressure difference.
+        - It is further control by amount of water, the soild, the ability of plants to tranfer water to the leaves.
+
+    .container width:{50%}
+        .box type:{warning} background:{.lightblue}
+            We are considering evaporation as a negative source. But water lost, is just transferred to the atmosphere. A meteorologist would consider evaporation as
+            a positive source and dewafll as a negative one.
+
+---
+# Evaporation as a process
+
+.row gap:{1cm}
+    .container width:{70%}
+        _Dalton_ (1766-1844): The English physicist was the first to recognise the relationship between wind, air dryness, and evaporation
+
+        **Formula:** $ E = C (e_x - e_a) $
+
+        **Where:**
+        - $ E $ — Evaporation rate.
+        - $ e_x $ — Vapor pressure at the water surface.
+        - $ eₐ $ — Vapor pressure of the surrounding air.
+        - $ C $ — Empirical constant (depends on wind, temperature, etc.).
+
+        **Key Idea**: Evaporation increases with the difference in vapor pressure between the water surface and the air.
+    .container width:{30%}
+        !(100%)[John Dalton](image/interner_JohnDalton.jpg)
+
+.mermaid
+    flowchart TD
+        a(available energy)
+        b(available water)
+        c(capacity of air for water)
+
+# Available Energy
+
+.row gap:{1cm}
+    .container width:{50%}
+        Main source of energy is from the sun. Sun's radiation is filtered by the clouds, water vapour and absorbed by trees and tall buildings.
+
+        $ Q^{\ast} = Q_S \pm Q_L \pm Q_G $
+
+        - $ Q^{\ast} $: net radiation
+        - $ Q_S $: Sun's direct radiation (Short wave), heat we feel as warmth
+        - $ Q_L $: Latent heat due to change in phase. $ Q_L < 0 $ when Water --> Gas, $ Q_L > 0 $ when Gas --> Water.
+        - $ Q_G $: Energy absorbed and released from the soil.
+
+        Two other sources of energy that _might_ become important:
+        - In urban settings, energy released from buildings  in cold winters. From organic sources of energy.
+        - Advective heat: As introduced in [introduction](./00_introduction/text.html)
+
+    .container width:{50%}
+        !(100%)[Radiation](./image/internet_radiation.jpg)\
+        _Radiation_

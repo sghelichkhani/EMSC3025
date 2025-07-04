@@ -1,0 +1,634 @@
+.docname {Precipitation}
+.doctype {slides}
+.doclang {English}
+.theme {paperwhite} layout:{beamer}
+.slides transition:{fade}
+.docauthors
+  - Sia Ghelichkhan
+
+.include {definitions.qmd}
+
+#!
+.fullspan
+  .center
+    ![Logo](image/logo.png)
+
+    ---
+    #! Lecture III - Precipitation
+    ###! EMSC3025/6025
+    ---
+
+    ###! _Dr. Sia Ghelichkhan_
+
+
+---
+
+# Objectives
+
+.row gap:{1cm}
+    .container width:{60%}
+        - Introduce the role of .emph{precipitation} in the hydrological cycle.
+        - Understand how precipitation .emph{forms} in the atmosphere.
+        - Explore .emph{factors controlling the amount and distribution} of precipitation.
+        - Examine how vegetation interacts with and modifies precipitation.
+        - Review .emph{methods for measuring} and estimating precipitation.
+    .container width:{30%}
+        .align{center}
+            !(100%)[precipitation](/Users/sghelichkhani/Workplace/teaching/groundwater/image/internet_NOA_precipitation.jpg)
+            [scijinks.gov](https://scijinks.gov/precipitation/)
+
+---
+
+<!--
+If a body of warm, moist air is cooled then it will become saturated with water
+vapour and eventually the water vapour will condense into liquid or solid water (i.e. water or ice
+droplets). The water will not condense spontaneously however; there need to be minute particles
+present in the atmosphere, called condensation nuclei, upon which the water or ice droplets form.
+The water or ice droplets that form on condensation nuclei are normally too small to fall to the
+surface as precipitation; they need to grow in order to have enough mass to overcome uplifting
+forces within a cloud.
+-->
+
+# Conditions for Precipitation
+
+###! .emph{Precipitation:} The release of water from the atmosphere to reach the surface of the Earth.
+.align{center}
+    Covers all forms of water: **snow**, **hail**, **sleet**, and **rainfall**.\
+    The ability of air to hold water vapour is .emph{temperature} dependent.
+
+.row gap:{1cm}
+    .container width:{50%}
+        Three physical conditions must be met for precipitation to occur:
+        - **Cooling** of the atmosphere
+        - **Condensation** onto atmospheric nuclei
+        - **Growth** of water/ice droplets large enough to overcome updrafts
+    .container width:{50%}
+        .align{center}
+            !(100%)[Rain Sleet Hail Snow](image/internet_hail_rain_sleet.jpg)
+
+---
+
+# Atmospheric Cooling Mechanisms
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        .align{center}
+            - Rising air expands and cools (Adiabatic lapse rate)
+            - For dry air: negative of the rate of temperature change with altitude:
+
+             $ \Gamma = - \frac{dT}{dz} = \frac{g}{c_p} \text{for dry air } \frac{9.81}{1005}=9.8 \degree C/km $
+            .align{center}
+                !(60%)[Boyle’s Law](image/internet_Adiabatic_lapse_rate.png)\
+                _Simplified graph of atmospheric lapse rate near sea level_
+
+
+
+    .container width:{40%} height:{100%}
+        .align{center}
+            !(100%)[Boyle’s Law](image/internet_Boyles_Law_animated.gif)
+            [Boyle’s Law - NASA](https://www.grc.nasa.gov/WWW/K-12/airplane/aboyle.html)
+
+---
+
+# Atmospheric Cooling Mechanisms
+
+.row gap:{1cm}
+    .container width:{40%} height:{100%}
+        Cooling is essential for condensation and precipitation:
+        - Rising air expands and cools (Boyle’s Law)
+        - Main causes of uplift:
+            - .emph{Convective}: surface heating
+            - .emph{Orographic}: air rising over mountains
+            - .emph{Cyclonic}: air lifted in low-pressure systems
+        - Also caused by contact with cooler surfaces or air masses
+
+    .container width:{60%} height:{100%}
+        .align{center}
+            !(100%)[Boyle’s Law](image/internet_atamospheric_uplift.webp)
+            [Britanica](https://kids.britannica.com/students/assembly/view/53902)
+
+---
+
+# Condensation Nuclei
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        - Minute particles (1 $ \mu m $ ), initiating droplet formation.
+        - surface for vapour to condense into liquid.
+        - Include dust, smoke, sea salt
+        - Without them, supersaturation can occur without precipitation
+        - Forms a basis for **cloud seeding** (silver iodide, more recently *potassium cloride*)
+        - Various forms of cloud seeding: References (Mather et al. 1997)
+        - Case of a paper mill in South Africa.
+
+    .container width:{40%} height:{100%}
+        .align{center}
+            !(100%)[Cloud Seeding](image/internet_cloud_seeding.png)
+            _Much controversy over the value of cloud seeding; Some studies support its effectiveness e.g. Gagin and Neumann, 1981; other authors query the results e.g. Rangno and Hobbs, 1995_
+
+---
+
+# Droplet Growth Processes
+
+
+.align{center}
+    .container width:{70%}
+        .box
+            Water/ice droplets need to be large enough for them weight to overcome upward draught (from a cloud).
+            They need to grow from $ \approx $ 1 $ \mu m $ to  $ \approx $ 3000 $ \mu m $.
+
+.row gap:{1cm}
+    .container width:{50%}
+        - **Condensation**, difference in vapour pressure and water: slow, vapour adds to droplets
+        - **Sublimation on ice**, difference in pressur is bigger: faster, due to greater vapour gradient
+        - Main process that raindrops grow: **Collision and coalescence**, two waterdrops collide and join together and they repeat.
+            - Dominant in warm clouds.
+            - Droplets collide, merge, and grow large enough to fall.
+
+    .container width:{50%}
+        .emph{Bergeon Process}
+
+        - Explains how ices crystals are formed in mixed-phase clouds.
+        - Important is the saturation vapour prssure.
+        - $ P_{\text{sat. water over ice}} < P_{\text{ambient}} < P_{\text{sth}} $
+        - The mechanism of drolet formation within clouds are not completely understood.
+
+---
+
+# Dewfall
+
+.row gap:{1cm}
+    .container width:{30%}
+        .emph{Condensation} of vapour onto cool surfaces:
+
+        - Occurs at night when surfaces cool below dew point
+        - Common in humid-temperate zones (e.g., autumn)
+        - Forms on grass, leaves, metal, etc.
+        - Minor in hydrological budget, but relevant to ecology and surface moisture processes
+
+    .container width:{70%}
+        !(100%)[Dewfall](image/internet_dewfall.jpg)
+
+---
+
+# Precipitation Distribution
+
+.row gap:{1cm}
+    .container width:{40%}
+        Precipitation varies across both **space** and **time**:
+        - Spatial variation: different locations receive different amounts.
+        - Temporal variation: amount of rainfall changes over time at the same location.
+
+        Influences on precipitation fall into two categories:
+        - **Static** influences: do not change from storm to storm (e.g. altitude, aspect, slope)
+        - **Dynamic** influences: change with weather conditions (e.g. air masses, storm tracks)
+
+        _Higher rainfall in the north-west states (Oregon and Washington) due to
+        linked to wetter cyclonic weather systems from the
+        northern Pacific. Higher rainfall in Florida and other
+        southern states is linked to the warm waters of the
+        Caribbean sea_
+
+    .container width:{60%}
+        !(100%)[USA 1996 Precipitation](./image/davie_fig_2-1.png)
+        _National Atmospheric Deposition Program - annual precipitation USA in 1996.
+        Although mountainous areas have a higher rainfall, and block rainfall reaching the centre,
+        they do not provide the only explanation_
+
+
+
+---
+
+# Static Influences on Precipitation
+
+.row gap:{1cm}
+    .container width:{50%}
+        .mermaid
+            flowchart LR
+                A([Precipiation]) --> B([Dynamic Controls])
+                A --> C([Static Controls])
+                C --> D([Altitude])
+                C --> E([Aspect])
+                C --> F([Slope])
+
+    .container width:{50%}
+
+        Static influences are fixed features of the landscape:
+
+        - **Altitude**: Modulating temperature. Higher elevations receive more rainfall due to cooling of rising air (orographic effect)
+        - **Aspect**: Less important than altitude. Slopes facing prevailing winds often receive more precipitation.
+            - Humid mid-latitudes (35-65 $ \degree $): cyclonic weather systems coming from W. So slopes facing east will be more sheltered.
+        - **Slope**: Only important at very small scale - i.e., the difference between a level gauge and one on a slope.
+
+---
+
+# Case Study: The rain shadow effect
+
+.row gap:{1cm}
+    .container width:{40%}
+        !(100%)[New Zealand](image/davie_fig_2-2.png)
+
+    .container width:{60%}
+        - Predominent weather pattern for the South Island of New Zealand is a series of rain-bearing depressions sweeping up from the Souther Ocean, interrupted by drier blocking anticyclones.
+
+        - Weather pattern: westerly airflow, bringing moist air from the Tasman Sea.
+        - One the west side, mostly rain. On the eastern side: föhn (locally as nor-wester).
+
+
+        .align{center}
+           !(70%)[Rainfall chart](image/davie_fig_2-2-b.png)\
+           _Rainfall distribution across the Southern Alps of New Zealand (South Island). Shaded areas on the map are greater than 1,500 m in elevation. A clear rain shadow effect can be seen between the much wetter west coast and the drier east_
+
+
+---
+
+# Dynamic Influences on Precipitation
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        Dynamic influences result from .emph{atmospheric processes} (climatic controls) that vary with time:
+        - **Storm tracks**: paths of cyclones and weather systems
+        - **Frontal systems**: interactions between warm and cold air masses
+        - **Moisture availability**: seasonal shifts in humidity sources (e.g. monsoons)
+        - **Convective activity**: varies by temperature and surface conditions
+        - At the **global scale**, dynamic factors dominate:
+            - Climate zones
+            - Atmospheric circulation (e.g. ITCZ, subtropical highs)
+
+        - At the **continental scale**, both static and dynamic factors matter:
+            - Mountain ranges cause **rain shadow effects**
+            - Seasonal wind and temperature patterns affect rainfall distribution
+
+    .container width:{40%} height:{100%}
+        !(100%)[Storm Tracks](image/internet_storm_tracks.webp)
+        _Tropical oceans spawn approximately 80 tropical storms annually, and about two-thirds are severe (category 1 or higher on the Saffir-Simpson scale of intensity). Almost 90 percent of these storms form within $ 20 \degree $ north or south of the Equator_\
+        _[Britanica](https://www.britannica.com/science/tropical-cyclone/Location-and-patterns-of-tropical-cyclones)_
+
+
+---
+# Measurement of Precipitation
+
+## Objectives
+
+- Understand how precipitation is measured and reported.
+- Recognize the limitations and sources of error in measurement.
+- Learn about rainfall gauge design and performance.
+- Appreciate the challenges in achieving accurate measurements in different environments.
+
+---
+
+# How Precipitation is Measured
+
+- Measured as a **vertical depth** of water (e.g. mm or inches).
+- Represents the depth that would accumulate if all water remained on the surface.
+- Used for **both rain and snow**:
+    - Snow is often reported as **water equivalent**.
+    - Recognizes that snow can occupy up to **90% more volume** than liquid water.
+
+---
+
+# Estimation vs Measurement
+
+- Due to **spatial variability**, there's a strong argument that catchment-scale precipitation cannot be "measured."
+- Thus, all precipitation "measurement" techniques are effectively **estimation** techniques.
+- For clarity in this course:
+    - **Measurement**: quantifies actual water collected.
+    - **Estimation**: uses surrogate variables (e.g., radar, satellite).
+
+---
+
+# Rainfall Measurement with Gauges
+
+- **Rain gauge**: collects rainfall over a defined area, measures volume.
+- Volume is divided by the area to get **depth**.
+- Simple in concept — but prone to **multiple sources of error**.
+
+---
+
+# Errors in Rainfall Measurement
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        Four major sources of error:
+        1. **Evaporation**: water lost before being measured.
+        2. **Wetting**: water adheres to funnel walls.
+        3. **Rain splash**: water splashes into or out of the gauge.
+        4. **Turbulence**: wind distorts drop paths, reduces catch.
+
+    .container width:{40%} height:{100%}
+        ![placeholder]
+        <!-- Diagram showing a typical rain gauge and zones of error (splash in/out, evaporation, turbulence). -->
+
+---
+
+# Evaporation Loss
+
+- Funnel-shaped design channels water to a **narrow opening**.
+- Reduces air mixing and exposure to sunlight.
+- Minimizes **evaporative losses** by:
+    - Preventing warm air exchange
+    - Shading the collected water
+- Evaporation is limited if turbulence is reduced (more in Chapter 3).
+
+---
+
+# Wetting Loss
+
+- Water clings to **funnel walls** and may not reach the collector.
+- Losses are usually **small**, but significant during:
+    - Light showers
+    - Warm days
+- Solutions:
+    - **Steep funnel sides**
+    - **Non-stick surfaces** (e.g., copper or non-adhesive plastics)
+
+---
+
+# Rain Splash
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        - Ideal gauge would sit flush with the ground — but this increases **splash-in**.
+        - Funnel design prevents **splash-out**, creating a net **over-measurement**.
+        - Surface-level gauges may flood or be covered by snow.
+        - Raised gauges or **non-splash surrounds** are preferred.
+
+    .container width:{40%} height:{100%}
+        ![placeholder]
+        <!-- Illustration of non-splash grid around rain gauge, showing splash paths and protection effect. -->
+
+---
+
+# Wind Turbulence and Gauge Height
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        - Raised gauges reduce splash, but **disrupt airflow**.
+        - Wind creates **turbulent eddies**, leading to **under-catch**.
+        - Loss increases with:
+            - Wind speed
+            - Drop size
+        - At 20 km/h: up to **20% loss**
+        - At 90 km/h: up to **40% loss**
+
+    .container width:{40%} height:{100%}
+        ![placeholder]
+        <!-- Schematic of turbulent flow over a raised gauge, with arrows showing eddies and drop deflection. -->
+
+---
+
+# Wind Shields
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        - Solution: fit gauge with a **wind shield** (e.g. baffles or slats).
+        - Shields reduce wind speed around the orifice.
+        - Can **significantly improve** measurement accuracy.
+
+    .container width:{40%} height:{100%}
+        ![placeholder]
+        <!-- Illustration of a rain gauge surrounded by baffle slats (wind shield), arrows showing slowed airflow. -->
+
+---
+
+# Optimising Rain Gauge Design
+
+- No universal "perfect" design.
+- The **best gauge** depends on:
+    - Local conditions (e.g. snow, wind exposure)
+    - Practical installation needs
+- The **non-splash grid + surface-level** gauge is closest to ideal:
+    - Reduces splash and turbulence
+    - Unsuitable for snow-prone areas (risk of burial)
+
+---
+
+# Standard Rain Gauge Designs
+
+- The **UK Meteorological Office gauge** is a global standard:
+    - Brass-rimmed
+    - 127 mm diameter
+    - Stands 305 mm above ground
+- Chosen for UK climate (low snow), but not optimal for all sites.
+- In snowy regions (e.g. Russia, Canada), gauges raised up to **2 m**.
+
+
+# Snow Measurement
+
+## Objectives
+
+- Understand the methods used to measure snowfall.
+- Recognize the challenges unique to snow measurement.
+- Learn how standard rain gauges are adapted for snow.
+- Appreciate the significance of snow depth and water equivalent.
+
+---
+
+# Challenges of Measuring Snowfall
+
+- Snow measurement faces **greater errors** than rainfall:
+    - Snowflakes are **easily transported by wind** before and after settling.
+    - Leads to **drifting** and **uneven surface distribution**.
+- Raindrops, by contrast, rarely redistribute after hitting the ground.
+- Measurement errors resemble **rain splash** but more extreme.
+
+---
+
+# Snow Measurement Methods
+
+Two main approaches:
+
+1. **Snow gauges** (modified rain gauges)
+2. **Ground snow depth measurements**
+
+Both suffer from:
+- Wind transport and drift
+- Uneven accumulation
+- Sampling errors (point measurements ≠ area representation)
+
+---
+
+# Rain Gauge Modification for Snow
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        Modifications needed to measure snow with a rain gauge:
+        - **Heated rim** melts falling snow into water
+            - Prevents snow buildup and overflow
+            - Requires power supply — impractical in remote areas
+        - **Drainage system** must move water away from heat source
+            - Prevents **evaporation losses**
+        - **Raised gauge** keeps instrument above snow surface
+            - Increases **turbulence error**
+            - Typically paired with **wind shields or deflectors**
+
+    .container width:{40%} height:{100%}
+        ![placeholder]
+        <!-- Illustration of snow-capable rain gauge: heated rim, elevated base, wind deflectors. Arrows showing airflow and melt pathway. -->
+
+---
+
+# Measuring Snow Depth: Core Sampling
+
+- **Core sampler**:
+    - Extracts a vertical snow column
+    - Measures **depth** and **density**
+    - Snow is then melted to determine **water equivalent depth**
+
+- Limitations:
+    - Point-based, **non-continuous** measurement
+    - Location-dependent: snow drift and exposure affect accuracy
+    - Similar in limitation to daily manual rain measurements
+
+---
+
+# Measuring Snow Accumulation: Snow Pillows
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        - **Snow pillows** measure **accumulated snow mass**
+        - Capture snowpack **water storage**, not just depth
+        - Used in hydrology for estimating **delayed runoff**
+        - Covered in detail in **Chapter 4 (p. 75)** under storage
+
+    .container width:{40%} height:{100%}
+        ![placeholder]
+        <!-- Diagram of snow pillow: surface-mounted device with weight-sensitive sensors beneath accumulated snowpack. -->
+
+
+
+# From Point Measurement to Spatial Estimation
+
+## Objectives
+
+- Understand why spatial estimation is necessary in hydrology.
+- Learn three spatial averaging methods:
+    - Thiessen Polygons
+    - Hypsometric Method
+    - Isohyetal Method
+- Identify assumptions and limitations of each method.
+
+---
+
+# Why Move Beyond Point Measurement?
+
+- Rain gauges measure rainfall at a **single, small location**.
+- Hydrologists need **catchment-scale** precipitation estimates.
+- A single gauge cannot represent spatial variability due to:
+    - Gauge placement
+    - Topography (altitude, slope, aspect)
+    - Weather variation
+
+---
+
+# Simple Averaging? Not Enough
+
+- A simple **arithmetic mean** of rain gauges:
+    - Only valid for **uniformly spaced gauges** in **flat terrain**
+    - Rarely applicable in real catchments
+- Instead, use **spatially weighted techniques** that incorporate topography or station distribution.
+
+---
+
+# Thiessen Polygons
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        - Assigns **representative area** (polygon) to each rain gauge.
+        - Polygon borders are **equidistant lines** between adjacent gauges.
+        - Each polygon defines the area a gauge represents.
+        - Spatial average rainfall:
+
+        $$
+        R = \frac{\sum_{i=1}^{n} r_i a_i}{A}
+        $$
+
+        Where:
+        - $r_i$ = rainfall at gauge $i$
+        - $a_i$ = area of polygon around gauge $i$
+        - $A$ = total catchment area
+
+        - Assumes uniform rainfall **within** each polygon.
+
+    .container width:{40%} height:{100%}
+        ![placeholder]
+        <!-- Figure 2.12: Map with Thiessen polygons around rain gauges. Show how areas are assigned. -->
+
+---
+
+# Hypsometric Method
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        - Based on observed link between **altitude** and **rainfall**.
+        - Uses a **hypsometric curve**: % of catchment above/below certain elevations.
+        - Average rainfall is calculated as:
+
+        $$
+        R = \sum_{j=1}^{m} r_j p_j
+        $$
+
+        Where:
+        - $r_j$ = average rainfall between elevation intervals
+        - $p_j$ = proportion of total area in that elevation band
+
+        - Requires contour maps or DEM data.
+
+    .container width:{40%} height:{100%}
+        ![placeholder]
+        <!-- Figure 2.13: Hypsometric zones with multiple gauges in contour bands. Include elevation intervals and area labels. -->
+
+---
+
+# Assumptions of the Hypsometric Method
+
+- Assumes **elevation is the sole control** on rainfall (ignores slope/aspect).
+- Assumes **linear** relationship between rainfall and altitude.
+- Use only when:
+    - Elevation is a dominant factor
+    - Relationship is verified from data
+
+---
+
+# Isohyetal Method
+
+.row gap:{1cm}
+    .container width:{60%} height:{100%}
+        - Creates a **smoothed rainfall surface** by drawing **isohyets** (lines of equal rainfall).
+        - Estimate rainfall in zones between isohyets:
+
+        $$
+        R = \frac{\sum_{i=1}^{n} r_i a_i}{A}
+        $$
+
+        Where:
+        - $r_i$ = average rainfall between two isohyets
+        - $a_i$ = area between those isohyets
+        - $A$ = total catchment area
+
+        - Most realistic method when **gauge density is high**.
+
+    .container width:{40%} height:{100%}
+        ![placeholder]
+        <!-- Rainfall map with isohyets labeled and zones shaded. Show estimation bands between contours. -->
+
+---
+
+# Interpolated Rainfall Surfaces
+
+- With GIS, isohyets are generated by **interpolation**:
+    - **Nearest neighbour**: assigns rainfall from closest gauge
+    - **Kriging**: uses **spatial covariance** between gauges
+- Creates **grid of rainfall values** over entire catchment.
+
+---
+
+# Application and Scale Challenges
+
+- Interpolation enables:
+    - Point-specific rainfall estimates
+    - Use in **numerical models** and **distributed hydrology**
+- But:
+    - Rain gauge area ≪ catchment area
+    - Scaling up point data introduces **uncertainty**
+    - No simple solution — a major challenge in 21st-century hydrology
