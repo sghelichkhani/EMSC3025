@@ -1,0 +1,152 @@
+.docname {Runoff}
+.doctype {slides}
+.doclang {English}
+.theme {paperwhite} layout:{beamer}
+.slides transition:{fade}
+.docauthors
+  - Sia Ghelichkhan
+
+.include {definitions.qmd}
+
+#!
+.fullspan
+  .center
+    ![Logo](image/new_logo.png)
+
+    ---
+    #! Runoff
+    ###! EMSC3025/6025
+    ---
+
+    ###! _Dr. Sia Ghelichkhan_
+
+
+# Objectives
+
+Learning objectives:
+---
+G
+- An understanding of the process of runoff leading to channel flow.
+- Grasping the main techniques for measuring streamnflow and runoff directlly.
+- Techniques for estimating streamflow.
+
+
+# Runoff
+
+.row gap:{1cm}
+    .container width:{60%}
+        .box title:{Definitions} background:{.lightblue}
+            - Any process leading to movemement of water to channelised flow, after **reaching the surface as precipitation**.
+
+        - The mechanisms that lead to water entering the stream.
+        - **River/streamflow**: Moving of channelised flow towards ocean.
+        - Riverflow is often expressed as **discharge**: _volume of water over time_ $ \frac{m^3}{s} $.
+
+    .container width:{40%}
+        !(100%)[Runoff](image/internet_runoff.jpg)
+        [biologyreader.com](https://biologyreader.com/wp-content/uploads/2021/10/water-runoff.jpg): _different elements of runoff_.
+
+
+# Hydrographs and runoff
+
+.row gap:{1cm}
+    .container width:{40%}
+        .cite {davie2019fundamentals} _River Whe: Average values for 100 days during autumn of 1995_
+        !(100%)[River Wye, Wales](image/davie_fig_5-1.png)
+
+    .container width:{50%}
+        - **Peak/storm flow**: Water in the stream during and immediately after a significant rainfall event.
+        - Globally determined by rainfall intensity and duration+upstream charactristics; On catchment scale determined by
+        catchment **size**, but other factors include **slope angles**, **shape** of catchment, soil type, vegetation type and percentage cover,
+         degree of urbanisation and the **antecedent soil moisture**.
+        - Steady periods between peaks is **baseflow** (Different from lowflow).
+
+# Storm hydrograph in detail
+
+.row gap:{1cm}
+    .container width:{60%}
+        - Rising limb: Steep part leading to the highest flow.
+        - Coming from: **Channel precipitation**: Rain coming directly to channel, and rapid runoff mechanism
+        - Recession limb: After the limb and characterised by long, slow decrease in streamflow.
+        - Influenced by storm water arriving at the mouth of a catchment, and through/groundwater flow.
+
+        .whitespace height:{1cm}
+        Exactly how much water moves to channelised flow from precipitation is one that cannot be easily answered.
+
+    .container width:{40%}
+        .align{center}
+            !(100%)[Storm Hydrograph](image/davie_fig_5-2.png)
+            .cite {davie2019fundamentals} _Fig 5.12 - A typical storm hydrograph_
+
+# Runoff Mechanism
+
+.row gap:{1cm}
+    .container width:{50%}
+        !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png)
+        .cite {davie2019fundamentals} _Fig. 5.3 Hillshope runoff processes_
+
+        Very rare to find a thin sheet of rain above the surface.
+
+    .container width:{50%}
+        - **Overland flow**: Flow of water at surface after precipitation reaches the ground.
+        - Horton 1933 .cite {horton1933role}: overland flow occurred when the rainfall rate was higher than the infiltration rate of a soil.\
+            Excess water travels as a thin sheet of water.\
+            Infiltration capacity works as a **barrier**.
+        - .emph{But} infiltration rates are higher than most rainfall rates.
+        | **Soil and vegetation** | **Infiltration rate (mm/hr)** | **Rainfall type**    | **Rainfall intensity (mm/hr)** |
+        |-------------------------|-------------------------------|----------------------|-------------------------------|
+        | Forested loam           | 100–200                       | Thunderstorm         | 50–100                        |
+        | Loam pasture            | 10–70                         | Heavy rain           | 5–20                          |
+        | Sand                    | 3–15                          | Moderate rain        | 0.5–5                         |
+        | Bare clay               | 0–4                           | Light rain           | 0.5                           |
+
+
+# Runoff Mechanism
+
+.row gap:{1cm}
+    .container width:{50%}
+        !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png)
+        .cite {davie2019fundamentals} _Fig. 5.3 Hillshope runoff processes_
+
+    .container width:{50%}
+        - Betson 1964 .cite {betson1964watershed}: Partial areas concept, within a catchment only certain areas contribute to overland flow.\
+            The role of infiltraion remains intact, but thin wate layer idea is being challenged.
+        - Hewlett Hibbert 1967 .cite {mcdonnel2009hewlett}: Through a mixture of infiltration and throughfall the watertable would rise until in some places it reached the surface.\
+            Overland flow is a mixture of return flow and rainfall fallin on saturated areas.
+            Adjacent to stream channels and base of slopes: table is closest to the surface and likelies to overflow.
+
+
+.align{center}
+
+    | **Soil and vegetation** | **Infiltration rate (mm/hr)** | **Rainfall type** | **Rainfall intensity (mm/hr)** |
+    |:------------------------|-------------------------------|:------------------|-------------------------------|
+    | Forested loam           | 100–200                       | Thunderstorm      | 50–100                        |
+    | Loam pasture            | 10–70                         | Heavy rain        | 5–20                          |
+    | Sand                    | 3–15                          | Moderate rain     | 0.5–5                         |
+    | Bare clay               | 0–4                           | Light rain        | 0.5                           |
+
+    Typical infiltration rates compared to rainfall intensities *Source: From Burt (1987)*
+
+
+
+# Who was right?
+
+.box title:{Ideas on stormflow} background:{.lightblue}
+    - All were partially right!
+    - Saturated overland flow is the dominant in humid, mid-latitude areas.
+    - Variable source areas concept is the most valid description of stormflow processes.
+    - In arid and semi-arid zones, extremely high rainfall rates + low infiltration rates (fed by convective storms, leading to **flash flooding**)
+    - Instances of **hydrophobic soils** -> Nonlinear infiltration rates, extremely low first and then normal
+
+
+.align{center}
+    |                         | **Horton**                                      | **Betson**                                           | **Hewlett and Hibbert**                              |
+    |:------------------------|:------------------------------------------------|:-----------------------------------------------------|:-----------------------------------------------------|
+    | **Infiltration**        | Controls overland flow                          | Controls overland flow                               | All rainfall infiltrates                             |
+    | **Overland flow mechanism** | Infiltration excess                        | Infiltration excess                                  | Saturated overland flow                              |
+    | **Contributing area**   | Uniform throughout the catchment                | Restricted to certain areas of the catchment         | Contributing area is variable in time and space      |
+
+    _Summary of the ideas on how stormflow is generated in a catchment_
+
+#
+.bibliography {bibliography.bib} style:{ieeetr} decorativetitle:{yes}
