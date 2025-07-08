@@ -28,6 +28,7 @@ jobs:
       - name: Build Quarkdown distribution
         run: |
           ls -la
+          readlink -f ./
           cd quarkdown
           ./gradlew build distZip
 
