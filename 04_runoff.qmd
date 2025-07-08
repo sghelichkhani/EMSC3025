@@ -23,13 +23,13 @@
 
 # Objectives
 
-Learning objectives:
----
-G
-- Understand the processes by which water becomes channelized flow.
-- Learn key techniques for directly measuring streamflow and runoff.
-- Explore methods for estimating streamflow in hydrological studies.
-
+- Understand the processes that generate runoff and lead to channelized flow.
+- Identify and explain the main mechanisms responsible for delivering water to streams and rivers.
+- Distinguish between overland flow, subsurface flow, and groundwater contributions to streamflow.
+- Describe and compare key theories of stormflow generation (Horton, Betson, Hewlett & Hibbert).
+- Explain the role of macropores and piston flow in rapid water movement.
+- Apply and evaluate methods for measuring streamflow, including the velocity–area method, stage–discharge relationships, and the use of flumes and weirs.
+- Recognise the limitations and considerations of different streamflow measurement techniques.
 
 # Runoff
 
@@ -202,20 +202,137 @@ G
 
     .container width:{40%}
         !(100%)[Maimai River](image/davie_fig_5-5.png)
-        _.cite {davie2019fundamentals} McGlynn et al. (2002) confirmed significant groundwater contributions to streamflow at Maimai, including piston flow and macropore evidence._
+        _.cite {davie2019fundamentals} McGlynn et al. (2002) confirmed significant groundwater contributions to streamflow at Maimai, including piston flow and macropore evidence_.
 
 # Measuring streamflow
-## Velocity-area metho.
+## Velocity-area method
 .row gap:{1cm}
-    .container width:{40%}
+    .container width:{50%}
         - The velocity–area method multiplies stream velocity by cross-sectional area to estimate discharge.
         - Black dots: locations of velocity readings.
         - Dashed lines: triangular/trapezoidal cross sections.
+
+    .container width:{40%}
         !(100%)[Measurement](image/davie_fig_5-6.png)
 
-    .container width:{60%}
-        !(100%)[Modern ways](image/internet_flowgauging.jpg)
 
+
+# Velocity–area method: considerations
+
+.row gap:{1cm}
+    .container width:{60%}
+        - The **velocity–area method** requires the assumption that the velocity measured is representative of the entire cross-sectional flow.
+        - Since multiple measurements across the depth are rarely feasible, adjustments are needed to account for velocity variations.
+        - Water flows faster near the surface than near the bed due to **bed friction**.
+        - A general guideline: measure velocity at **60% of depth** from the surface (or 40% above the bed).
+        - For deeper rivers, average readings at **20% and 80% of depth** for better accuracy.
+
+        - If no velocity meter is available, a **float method** can provide rough estimates by timing surface travel over a measured distance.
+        - Surface floats **overestimate** true velocity since they ride faster-flowing surface water.
+
+
+    .container width:{40%}
+        !(100%)[Modern ways](image/internet_flowgauging.jpg)
+        - The velocity–area method works well for **small rivers**, but its **accuracy depends on sampling strategy**.
+        - It becomes less reliable in **turbid, shallow, or rough-bedded streams** (e.g., mountain creeks).
+        - In such cases, consider alternative methods like **dilution gauging**.
+        _.cite {davie2019fundamentals} Illustration of float-based surface velocity measurement_
+
+
+# Stage–Discharge Relationship
+
+.row gap:{1cm}
+    .container width:{60%}
+        - **Stage** = water level or height at a specific point in a river.
+        - **Discharge** = volumetric flow rate (e.g. $ \frac{m^3}{s} $).
+        - Repeated discharge measurements (via velocity–area method) enable creation of a **rating curve**.
+        - A rating curve relates stage to discharge and allows **continuous discharge estimation** from simple stage measurements.
+        - Developed by pairing stage readings (e.g. using a **stilling well**) with discharge data.
+        - Rating curves are typically **non-linear**, reflecting the geometry of riverbanks:\
+            As rivers fill between banks, **more water is required to raise stage** than at low flows.
+
+        - Assumes a **stable riverbed**. Changes (e.g. due to flood scouring or deposition) will invalidate the curve.
+        - This is why **flumes or weirs** are often installed to stabilize the control section.
+
+
+    .container width:{40%}
+        Limitations:
+        - Few high-flow measurements → less reliable for peak floods.
+        - High-flow events are dangerous and infrequent.
+        - Thus, **errors increase at the upper end** of the curve.
+
+        Remember: discharge is **inferred** from measured stage — not directly observed.
+        !(100%)[Rating curve](image/davie_fig_5-8.png)
+        .cite {davie2019fundamentals} _Fig 5.8 - A stage-discharge (rating) curve_
+
+
+# Flumes and weirs
+
+.row gap:{1cm}
+    .container width:{60%}
+        - **Flumes and weirs** are stream gauging structures that extend the **stage–discharge** method by imposing control over stream velocity and cross-sectional area.
+        - By doing so, they provide a **continuous record** of stream discharge.
+        - The key is to **standardize flow** through a known cross-sectional area so that velocity becomes predictable or known.
+        - This is especially useful because stream velocity varies with depth, but gauging structures enforce a **consistent flow regime**.
+        - These structures are designed so that discharge becomes a function of **stage** alone.
+
+    .container width:{40%}
+        !(100%)[Gauging structure](image/internet_v-notch-weir.jpg)
+
+
+# Discharge equations for weirs
+
+.row gap:{1cm}
+    .container width:{50%}
+        - **Discharge** through weirs is determined by known formulas based on weir shape.
+        - For a **V-notch weir** (Very accurate for low-flow rates):\
+          $ Q = 0.53 \sqrt{2g} \, C \, \tan\left(\frac{\theta}{2}\right) b^{2.5} $
+        - Where:
+            - $ Q $ = discharge ($ \text{m}^3/\text{s} $)
+            - $ g $ = gravity (9.81 $ \text{m}/\text{s}^2 $)
+            - $ C $ = discharge coefficient (depends on $ \theta $)
+            - $ \theta $ = notch angle
+            - $ b $ = stage height (m)
+        - For a 90° V-notch, $ C = 0.578 $, and:
+          $ Q = 1.366\ b^{2.5} $
+        - These equations follow **ISO 1438** standards for gauging structures.
+
+    .container width:{50%}
+        !(100%)[Discharge coefficient](image/davie_fig_5-10.png)
+        .cite {davie2019fundamentals} _Fig 5.10 – Discharge coefficient for different V-notch angles_
+
+
+# Flumes and weirs: design considerations
+
+.row gap:{1cm}
+    .container width:{60%}
+        - The **shape** of the gauging structure affects sensitivity to changes in flow:
+            - V-notches are excellent for **low flows** due to higher sensitivity.
+            - As discharge increases, cross-sectional area expands nonlinearly.
+        - Under **high flows**, it's crucial that water doesn't bypass the structure.
+        - V-notches are commonly used with **90° or 120° angles** based on application needs.
+        - **Stilling ponds** slow down water before measurement but can trap sediment.
+
+    .container width:{40%}
+        !(100%)[Trapezoidal flume](image/internet_flumes-trapezoidal.jpg)
+        _A trapezoidal flume helps flush sediment_
+
+# Flumes vs. weirs
+
+.row gap:{1cm}
+    .container width:{50%}
+        - **Flumes and weirs** both allow continuous measurement of stream discharge but have **key differences**:
+            - **Weir**: Water flows **over** a structure (like a small waterfall).
+            - **Flume**: Water flows **through** a structure without dropping.
+        - Flumes tend to produce **less sedimentation**, making them suitable for **high-energy environments**.
+        !(100%)[V-notch vs flume](image/davie_fig_5-11.png)
+        .cite {davie2019fundamentals} V notch weir.
+
+    .container width:{30%}
+        - Trapezoidal flumes can **flush out sediment** efficiently, avoiding stilling pond buildup.
+        - Both are suitable for small streams but not large rivers, due to structural stress.
+        !(100%)[Trapezoidal flume](image/davie_fig_5-12.png)
+        .cite {davie2019fundamentals} Trapezoidal Flume
 
 
 #
