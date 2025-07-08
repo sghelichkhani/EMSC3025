@@ -9,15 +9,12 @@ jobs:
   build-quarkdown-slides:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout this repository
-        uses: actions/checkout@v4
 
       - name: Checkout Quarkdown
         uses: actions/checkout@v4
         with:
           repository: sghelichkhani/quarkdown         # Replace with the correct owner/repo
           ref: main
-          token: ${{ secrets.GITHUB_TOKEN }}     # Or a PAT if the repo is private
           path: quarkdown
 
       - name: Set up Quarkdown environment
@@ -32,6 +29,10 @@ jobs:
           cd quarkdown
           ./gradlew build distZip
 
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+        with:
+          path: EMSC3025
       # - name: Build slides with Quarkdown
       #   run: |
       #     ./quarkdown/dist/quarkdown c slides/ -o output/ --pretty --clean
