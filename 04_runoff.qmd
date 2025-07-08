@@ -26,9 +26,9 @@
 Learning objectives:
 ---
 G
-- An understanding of the process of runoff leading to channel flow.
-- Grasping the main techniques for measuring streamnflow and runoff directlly.
-- Techniques for estimating streamflow.
+- Understand the processes by which water becomes channelized flow.
+- Learn key techniques for directly measuring streamflow and runoff.
+- Explore methods for estimating streamflow in hydrological studies.
 
 
 # Runoff
@@ -36,15 +36,15 @@ G
 .row gap:{1cm}
     .container width:{60%}
         .box title:{Definitions} background:{.lightblue}
-            - Any process leading to movemement of water to channelised flow, after **reaching the surface as precipitation**.
+            - Any process that results in water moving toward channelized flow, following **precipitation reaching the surface**.
 
-        - The mechanisms that lead to water entering the stream.
-        - **River/streamflow**: Moving of channelised flow towards ocean.
-        - Riverflow is often expressed as **discharge**: _volume of water over time_ $ \frac{m^3}{s} $.
+        - Mechanisms responsible for delivering water to streams and rivers.
+        - **River/streamflow**: The movement of water in channels toward the ocean.
+        - Riverflow is typically quantified as **discharge**: _volume of water per unit time_ $ \frac{m^3}{s} $.
 
     .container width:{40%}
         !(100%)[Runoff](image/internet_runoff.jpg)
-        [biologyreader.com](https://biologyreader.com/wp-content/uploads/2021/10/water-runoff.jpg): _different elements of runoff_.
+        [biologyreader.com](https://biologyreader.com/wp-content/uploads/2021/10/water-runoff.jpg): _Components involved in runoff_.
 
 
 # Hydrographs and runoff
@@ -55,23 +55,23 @@ G
         !(100%)[River Wye, Wales](image/davie_fig_5-1.png)
 
     .container width:{50%}
-        - **Peak/storm flow**: Water in the stream during and immediately after a significant rainfall event.
-        - Globally determined by rainfall intensity and duration+upstream charactristics; On catchment scale determined by
-        catchment **size**, but other factors include **slope angles**, **shape** of catchment, soil type, vegetation type and percentage cover,
-         degree of urbanisation and the **antecedent soil moisture**.
-        - Steady periods between peaks is **baseflow** (Different from lowflow). With a consensus that this is coming from groundwater.
+        - **Peak/storm flow**: Water present in a stream during and immediately after a significant rainfall event.
+        - Globally controlled by rainfall intensity and duration; at catchment scale, affected by
+        catchment **size**, **slope**, **shape**, soil characteristics, vegetation type and cover,
+        degree of urbanisation, and **antecedent soil moisture**.
+        - Periods between peaks are referred to as **baseflow** (distinct from low flow), typically understood to be supplied by groundwater.
 
 # Storm hydrograph in detail
 
 .row gap:{1cm}
     .container width:{60%}
-        - Rising limb: Steep part leading to the highest flow.
-        - Coming from: **Channel precipitation**: Rain coming directly to channel, and rapid runoff mechanism
-        - Recession limb: After the limb and characterised by long, slow decrease in streamflow.
-        - Influenced by storm water arriving at the mouth of a catchment, and through/groundwater flow.
+        - Rising limb: Steep section leading up to peak flow.
+        - Contributed by: **Channel precipitation** (rain falling directly into the stream) and rapid runoff.
+        - Recession limb: Follows the peak and shows a gradual decline in streamflow.
+        - Influenced by stormwater arriving from upstream and contributions from subsurface flow.
 
         .whitespace height:{1cm}
-        Exactly how much water moves to channelised flow from precipitation is one that cannot be easily answered.
+        The exact proportion of precipitation that becomes channelized flow is difficult to determine.
 
     .container width:{40%}
         .align{center}
@@ -83,16 +83,17 @@ G
 .row gap:{1cm}
     .container width:{50%}
         !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png)
-        .cite {davie2019fundamentals} _Fig. 5.3 Hillshope runoff processes_
+        .cite {davie2019fundamentals} _Fig. 5.3 Hillslope runoff processes_
 
-        Very rare to find a thin sheet of rain above the surface.
+        Continuous sheets of overland water flow are rarely observed in nature.
 
     .container width:{50%}
-        - **Overland flow**: Flow of water at surface after precipitation reaches the ground.
-        - Horton 1933 .cite {horton1933role}: overland flow occurred when the rainfall rate was higher than the infiltration rate of a soil.\
-            Excess water travels as a thin sheet of water.\
-            Infiltration capacity works as a **barrier**.
-        - .emph{But} infiltration rates are higher than most rainfall rates.
+        - **Overland flow**: Water flowing over the land surface after precipitation.
+        - Horton (1933) .cite {horton1933role}: Overland flow occurs when rainfall intensity exceeds the infiltration capacity of the soil.\
+            Excess water then flows as a shallow surface layer.\
+            Infiltration capacity acts as a **threshold**.
+        - .emph{However}, in most cases, infiltration rates exceed typical rainfall intensities.
+
         | **Soil and vegetation** | **Infiltration rate (mm/hr)** | **Rainfall type**    | **Rainfall intensity (mm/hr)** |
         |-------------------------|-------------------------------|----------------------|-------------------------------|
         | Forested loam           | 100–200                       | Thunderstorm         | 50–100                        |
@@ -106,15 +107,13 @@ G
 .row gap:{1cm}
     .container width:{50%}
         !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png)
-        .cite {davie2019fundamentals} _Fig. 5.3 Hillshope runoff processes_
+        .cite {davie2019fundamentals} _Fig. 5.3 Hillslope runoff processes_
 
     .container width:{50%}
-        - Betson 1964 .cite {betson1964watershed}: Partial areas concept, within a catchment only certain areas contribute to overland flow.\
-            The role of infiltraion remains intact, but thin wate layer idea is being challenged.
-        - Hewlett Hibbert 1967 .cite {mcdonnel2009hewlett}: Through a mixture of infiltration and throughfall the watertable would rise until in some places it reached the surface.\
-            Overland flow is a mixture of return flow and rainfall fallin on saturated areas.
-            Adjacent to stream channels and base of slopes: table is closest to the surface and likelies to overflow.
-
+        - Betson (1964) .cite {betson1964watershed}: Introduced the concept of partial contributing areas — only specific parts of a catchment produce overland flow.\
+            The importance of infiltration is retained, but the idea of uniform thin flow is questioned.
+        - Hewlett & Hibbert (1967) .cite {mcdonnel2009hewlett}: Overland flow occurs when the water table rises to the surface due to infiltration and throughflow.\
+            This results in saturated areas near channels and lower slopes where **return flow** and **direct precipitation** dominate.
 
 .align{center}
 
@@ -125,37 +124,36 @@ G
     | Sand                    | 3–15                          | Moderate rain     | 0.5–5                         |
     | Bare clay               | 0–4                           | Light rain        | 0.5                           |
 
-    Typical infiltration rates compared to rainfall intensities *Source: From Burt (1987)*
+    Typical infiltration rates versus rainfall intensities *Source: From Burt (1987)*
 
 
 
 # Who was right?
 
 .box title:{Ideas on stormflow} background:{.lightblue}
-    - All were partially right!
-    - Saturated overland flow is dominant in humid, mid-latitude areas.
-    - Variable source areas concept is the most valid description of stormflow processes.
-    - In arid and semi-arid zones, extremely high rainfall rates + low infiltration rates (fed by convective storms, leading to **flash flooding**)
-    - Instances of **hydrophobic soils** -> Nonlinear infiltration rates, extremely low first and then normal
-
+    - All theories capture aspects of the truth.
+    - Saturated overland flow dominates in humid, mid-latitude regions.
+    - The **variable source area** concept best represents stormflow processes.
+    - In arid/semi-arid zones, intense rainfall and low infiltration lead to **flash flooding**.
+    - Hydrophobic soils may exhibit **nonlinear infiltration**: initially very low, then increasing.
 
 .align{center}
     |                         | **Horton**                                      | **Betson**                                           | **Hewlett and Hibbert**                              |
     |:------------------------|:------------------------------------------------|:-----------------------------------------------------|:-----------------------------------------------------|
-    | **Infiltration**        | Controls overland flow                          | Controls overland flow                               | All rainfall infiltrates                             |
-    | **Overland flow mechanism** | Infiltration excess                        | Infiltration excess                                  | Saturated overland flow                              |
-    | **Contributing area**   | Uniform throughout the catchment                | Restricted to certain areas of the catchment         | Contributing area is variable in time and space      |
+    | **Infiltration**        | Governs overland flow                           | Governs overland flow                                | All rainfall infiltrates initially                   |
+    | **Overland flow mechanism** | Infiltration-excess                        | Infiltration-excess                                  | Saturated overland flow                              |
+    | **Contributing area**   | Uniform across the catchment                    | Confined to specific zones                           | Varies in time and space                             |
 
-    _Summary of the ideas on how stormflow is generated in a catchment_
+    _Comparison of key theories explaining stormflow generation_
 
 # Subsurface flow
 .row gap:{1cm}
     .container width:{50%}
-        - Variable source areas concept: only certain areas contribute to the hydrograph.
-        - Hard to reconcile total water shown in a hydrograph if only overland flow contributes.
-        - The slow attenuation of the recession limb of the hydrograph => **subsurface flow**
-        - Tracer studies suggests large amount of _old water_ present in storm hydrograph.
-        - **Througflow** and **groundwater** can only explain this.
+        - The variable source area model proposes that only parts of the catchment contribute to the hydrograph.
+        - Overland flow alone can't explain total discharge observed in hydrographs.
+        - The gradual decline in the hydrograph’s recession limb suggests a **subsurface flow** component.
+        - Tracer studies show significant presence of _older water_ during stormflow.
+        - This points to **throughflow** and **groundwater contributions**.
     .container width:{50%}
         !(100%)[Throughflow](image/internet_throughflow.jpeg)
 
@@ -163,19 +161,19 @@ G
     .container width:{81%}
         .box title:{Throughflow}
             - **Throughflow**: Movement of water through the unsaturated zone (soil matrix).
-            - The movement is describe through the Darcy/Richards equations
-            - The movement of water is not only vertical. With a sloping water table on a hillsope water moves down a slope.
-            - **Fine sandy loam** => 13 mm/hour.
+            - Described by the Darcy or Richards equations.
+            - Flow is not only vertical; on slopes, water moves laterally downslope.
+            - Example: **Fine sandy loam** → ~13 mm/hour flow rate.
 
 # Piston Flow
 .row gap:{1cm}
     .container width:{60%}
-        - Proposed by Horton & Hawkins (195): Water entering at the top, displaces water at the bottom of the soil column => water enters the stream.
-        - The same way that pressure from top the piston chamber leads to release of pressure a the bottom.
-        - Release to the stream can be looked at as a wave.
-        - While it may feel far-fetched, the addition of rainwater from top, and bed rock from bottom resembles the setting of a piston.
-        - Therefore, the hydraulic gradient created by an addition of water to the bottom of the soik column, already close to satureated, that forces water along the base, with higher conductivity.
-        - Analogy of thatched roof: straws are very efficient in transporting water to the gutter. Soil in the downslop direction => higher conductivity.
+        - Proposed by Horton & Hawkins (195): Water entering at the top of the soil column displaces older water at the bottom, which then enters the stream.
+        - Similar to a piston where top pressure pushes fluid at the bottom.
+        - The discharge can be viewed as a pressure wave.
+        - Though unconventional, the combination of rainfall above and impermeable bedrock below creates this **piston effect**.
+        - The added water generates a hydraulic gradient that drives water movement along the base of the soil layer, which typically has higher conductivity.
+        - Analogy: A thatched roof—water moves quickly along aligned channels (macropores), especially in the downslope direction.
     .container width:{40%}
         !(100%)[Piston Flow](image/internet_piston_flow.png)
 
@@ -185,35 +183,34 @@ G
         !(100%)[Macropores](image/internet_macropores.jpg)
     .container width:{60%}
         .box title:{Macropores}
-            Large pores within a soil matrix, typically with a diameter greater than 3 mm.
+            Large, interconnected pores in soil, generally >3 mm in diameter.
 
-        - **Proposed mechanism** for enhanced throughflow rates in soils.
-        - **Hydrological significance**: Provide rapid conduits for subsurface water movement.
-        - **Key debate**: Whether macropores form continuous pathways for water flow, or if flow is ultimately limited by the discontinuous nature of macropore networks.
-
+        - **Key pathway** for rapid subsurface flow.
+        - **Hydrological role**: Enable fast water movement bypassing much of the soil matrix.
+        - Ongoing debate: Whether these pores form continuous flow networks or are limited by disconnected segments.
 
 # Groundwater contribution
 .row gap:{1cm}
     .container width:{60%}
-        - Traditionally, hydrology considered groundwater as contributing only to baseflow.
+        - Historically, groundwater was thought to only contribute to baseflow.
         - Farvolden (1979) introduced the **capillary fringe hypothesis**.
-        - A "groundwater ridge" is a rise in the water table adjacent to a stream.
-        - When infiltration adds water to the unsaturated zone, it can become saturated, creating a positive hydraulic head that expels water toward the stream.
-        - Note the non-linear relationship between soil water content and saturation.
-        - This process not only enables water discharge, but can also increase the total amount of discharge.
-        - The Maimai experiment confirmed that groundwater can be a primary contributor to rapid streamflow.
+        - Concept: A “groundwater ridge” forms near the stream during recharge.
+        - Added infiltration saturates the unsaturated zone, generating hydraulic gradients that drive discharge to the stream.
+        - The water-saturation relationship in soils is **nonlinear**.
+        - This mechanism increases both the rate and volume of discharge.
+        - The Maimai experiments confirmed groundwater as a **rapid** source of streamflow.
 
     .container width:{40%}
         !(100%)[Maimai River](image/davie_fig_5-5.png)
-        _.cite {davie2019fundamentals} Many of the features described here were observed in the study by McGlynn et al. (2002) on the Maimai hillslopes. While tracer experiments confirmed the existence of macropores, the observed high flow velocities can only be explained by significant groundwater contributions; i.e., Piston Flow_.
+        _.cite {davie2019fundamentals} McGlynn et al. (2002) confirmed significant groundwater contributions to streamflow at Maimai, including piston flow and macropore evidence._
 
 # Measuring streamflow
 ## Velocity-area metho.
 .row gap:{1cm}
     .container width:{40%}
-        - The velocity–area method measures the stream velocity, the stream cross-sectional area and multi- plies the two together.
-        - Black circles indicate the position of velocity readings.
-        - Dashed shows triangular or trapezoidal cross-sectional area.
+        - The velocity–area method multiplies stream velocity by cross-sectional area to estimate discharge.
+        - Black dots: locations of velocity readings.
+        - Dashed lines: triangular/trapezoidal cross sections.
         !(100%)[Measurement](image/davie_fig_5-6.png)
 
     .container width:{60%}
