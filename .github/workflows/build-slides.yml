@@ -2,7 +2,7 @@ name: Build Slides with Quarkdown
 
 on:
   push:
-    branches: master
+    branches: [ master ]
   pull_request:
 
 jobs:
@@ -27,15 +27,16 @@ jobs:
 
       - name: Build Quarkdown distribution
         run: |
+          ls -la
           cd quarkdown
           ./gradlew build distZip
 
-      - name: Build slides with Quarkdown
-        run: |
-          ./quarkdown/dist/quarkdown c slides/ -o output/ --pretty --clean
+      # - name: Build slides with Quarkdown
+      #   run: |
+      #     ./quarkdown/dist/quarkdown c slides/ -o output/ --pretty --clean
 
-      - name: Upload built slides
-        uses: actions/upload-artifact@v4
-        with:
-          name: slides-output
-          path: output/
+      # - name: Upload built slides
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: slides-output
+      #     path: output/
