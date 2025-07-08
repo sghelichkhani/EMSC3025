@@ -51,7 +51,7 @@ G
 
 .row gap:{1cm}
     .container width:{40%}
-        .cite {davie2019fundamentals} _River Whe: Average values for 100 days during autumn of 1995_
+        .cite {davie2019fundamentals} _River Wye: Average values for 100 days during autumn of 1995_
         !(100%)[River Wye, Wales](image/davie_fig_5-1.png)
 
     .container width:{50%}
@@ -59,7 +59,7 @@ G
         - Globally determined by rainfall intensity and duration+upstream charactristics; On catchment scale determined by
         catchment **size**, but other factors include **slope angles**, **shape** of catchment, soil type, vegetation type and percentage cover,
          degree of urbanisation and the **antecedent soil moisture**.
-        - Steady periods between peaks is **baseflow** (Different from lowflow).
+        - Steady periods between peaks is **baseflow** (Different from lowflow). With a consensus that this is coming from groundwater.
 
 # Storm hydrograph in detail
 
@@ -133,7 +133,7 @@ G
 
 .box title:{Ideas on stormflow} background:{.lightblue}
     - All were partially right!
-    - Saturated overland flow is the dominant in humid, mid-latitude areas.
+    - Saturated overland flow is dominant in humid, mid-latitude areas.
     - Variable source areas concept is the most valid description of stormflow processes.
     - In arid and semi-arid zones, extremely high rainfall rates + low infiltration rates (fed by convective storms, leading to **flash flooding**)
     - Instances of **hydrophobic soils** -> Nonlinear infiltration rates, extremely low first and then normal
@@ -148,5 +148,78 @@ G
 
     _Summary of the ideas on how stormflow is generated in a catchment_
 
+# Subsurface flow
+.row gap:{1cm}
+    .container width:{50%}
+        - Variable source areas concept: only certain areas contribute to the hydrograph.
+        - Hard to reconcile total water shown in a hydrograph if only overland flow contributes.
+        - The slow attenuation of the recession limb of the hydrograph => **subsurface flow**
+        - Tracer studies suggests large amount of _old water_ present in storm hydrograph.
+        - **Througflow** and **groundwater** can only explain this.
+    .container width:{50%}
+        !(100%)[Throughflow](image/internet_throughflow.jpeg)
+
+.align{center}
+    .container width:{81%}
+        .box title:{Throughflow}
+            - **Throughflow**: Movement of water through the unsaturated zone (soil matrix).
+            - The movement is describe through the Darcy/Richards equations
+            - The movement of water is not only vertical. With a sloping water table on a hillsope water moves down a slope.
+            - **Fine sandy loam** => 13 mm/hour.
+
+# Piston Flow
+.row gap:{1cm}
+    .container width:{60%}
+        - Proposed by Horton & Hawkins (195): Water entering at the top, displaces water at the bottom of the soil column => water enters the stream.
+        - The same way that pressure from top the piston chamber leads to release of pressure a the bottom.
+        - Release to the stream can be looked at as a wave.
+        - While it may feel far-fetched, the addition of rainwater from top, and bed rock from bottom resembles the setting of a piston.
+        - Therefore, the hydraulic gradient created by an addition of water to the bottom of the soik column, already close to satureated, that forces water along the base, with higher conductivity.
+        - Analogy of thatched roof: straws are very efficient in transporting water to the gutter. Soil in the downslop direction => higher conductivity.
+    .container width:{40%}
+        !(100%)[Piston Flow](image/internet_piston_flow.png)
+
+# Macropores
+.row gap:{1cm}
+    .container width:{40%}
+        !(100%)[Macropores](image/internet_macropores.jpg)
+    .container width:{60%}
+        .box title:{Macropores}
+            Large pores within a soil matrix, typically with a diameter greater than 3 mm.
+
+        - **Proposed mechanism** for enhanced throughflow rates in soils.
+        - **Hydrological significance**: Provide rapid conduits for subsurface water movement.
+        - **Key debate**: Whether macropores form continuous pathways for water flow, or if flow is ultimately limited by the discontinuous nature of macropore networks.
+
+
+# Groundwater contribution
+.row gap:{1cm}
+    .container width:{60%}
+        - Traditionally, hydrology considered groundwater as contributing only to baseflow.
+        - Farvolden (1979) introduced the **capillary fringe hypothesis**.
+        - A "groundwater ridge" is a rise in the water table adjacent to a stream.
+        - When infiltration adds water to the unsaturated zone, it can become saturated, creating a positive hydraulic head that expels water toward the stream.
+        - Note the non-linear relationship between soil water content and saturation.
+        - This process not only enables water discharge, but can also increase the total amount of discharge.
+        - The Maimai experiment confirmed that groundwater can be a primary contributor to rapid streamflow.
+
+    .container width:{40%}
+        !(100%)[Maimai River](image/davie_fig_5-5.png)
+        _.cite {davie2019fundamentals} Many of the features described here were observed in the study by McGlynn et al. (2002) on the Maimai hillslopes. While tracer experiments confirmed the existence of macropores, the observed high flow velocities can only be explained by significant groundwater contributions; i.e., Piston Flow_.
+
+# Measuring streamflow
+## Velocity-area metho.
+.row gap:{1cm}
+    .container width:{40%}
+        - The velocity–area method measures the stream velocity, the stream cross-sectional area and multi- plies the two together.
+        - Black circles indicate the position of velocity readings.
+        - Dashed shows triangular or trapezoidal cross-sectional area.
+        !(100%)[Measurement](image/davie_fig_5-6.png)
+
+    .container width:{60%}
+        !(100%)[Modern ways](image/internet_flowgauging.jpg)
+
+
+
 #
-.bibliography {bibliography.bib} style:{ieeetr} decorativetitle:{yes}
+.bibliography {bibliography.bib} style:{acm} decorativetitle:{yes}
