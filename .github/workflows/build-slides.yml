@@ -1,0 +1,41 @@
+name: Build Slides with Quarkdown
+
+on:
+  push:
+    branches: master
+  pull_request:
+
+jobs:
+  build-quarkdown-slides:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+
+      - name: Checkout Quarkdown
+        uses: actions/checkout@v4
+        with:
+          repository: sghelichkhani/quarkdown         # Replace with the correct owner/repo
+          ref: my-feature-branch                 # Replace with the branch or tag you want
+          token: ${{ secrets.GITHUB_TOKEN }}     # Or a PAT if the repo is private
+          path: quarkdown
+
+      - name: Set up Quarkdown environment
+        uses: ./quarkdown/.github/actions/setup-environment
+        with:
+          full-checkout: true
+
+      - name: Build Quarkdown distribution
+        run: |
+          cd quarkdown
+          ./gradlew build distZip
+
+      - name: Build slides with Quarkdown
+        run: |
+          ./quarkdown/dist/quarkdown c slides/ -o output/ --pretty --clean
+
+      - name: Upload built slides
+        uses: actions/upload-artifact@v4
+        with:
+          name: slides-output
+          path: output/
