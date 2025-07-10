@@ -1,0 +1,10 @@
+site_name: OMEGA
+site_url: https://omega.gadopt.org
+nav:
+  - Home: index.md
+  - Course: course.md
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: light blue

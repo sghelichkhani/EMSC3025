@@ -2,40 +2,48 @@ name: Build Slides with Quarkdown
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - '**'
   pull_request:
 
 jobs:
   build-quarkdown-slides:
     runs-on: ubuntu-latest
     steps:
-
-      - name: Checkout Quarkdown
+      - name: Checkout this repository
         uses: actions/checkout@v4
-        with:
-          repository: sghelichkhani/quarkdown         # Replace with the correct owner/repo
-          ref: main
-          path: quarkdown
 
-      - name: Set up Quarkdown environment
-        uses: ./quarkdown/.github/actions/setup-environment
+      - name: Prepare uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Clone quarkdown
+        uses: GuillaumeFalourd/clone-github-repo-action@main
         with:
-          full-checkout: true
+          owner: 'sghelichkhani'
+          repository: 'quarkdown'
 
       - name: Build Quarkdown distribution
         run: |
-          ls -la
-          readlink -f ./
           cd quarkdown
-          ./gradlew build distZip
+          ./gradlew build installDist
 
-      - name: Checkout this repository
-        uses: actions/checkout@v4
+      - name: Add quarkdown to PATH
+        run: echo "PATH=$PATH:/home/runner/work/EMSC3025/EMSC3025/quarkdown/build/install/quarkdown/bin/" >> $GITHUB_ENV
+
+      - name: Set up Python
+        run: uv python install
+      - name: Building mkdocs
+        run: |
+          uv run mkdocs build --clean --site-dir site
+
+      - name: Build slides with Quarkdown
+        run: |
+          cd slides
+          make
+
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: EMSC3025
-      # - name: Build slides with Quarkdown
-      #   run: |
-      #     ./quarkdown/dist/quarkdown c slides/ -o output/ --pretty --clean
+          path: site
 
       # - name: Upload built slides
       #   uses: actions/upload-artifact@v4

@@ -1,4 +1,4 @@
-.docname {introduction}
+.docname {Introdcution}
 .doctype {slides}
 .doclang {English}
 .theme {paperwhite} layout:{beamer}
@@ -19,13 +19,13 @@
     ###! EMSC3025/6025
     ---
 
-    ###! _Dr. Sia Ghelichkhan, Prof. Paul Tregoning_
+    ###! _Dr. Sia Ghelichkhan_
 
 # Course Objectives
 .align{center}
   .container width:{80%}
     .box title:{What is this course about} background:{.lightblue}
-        - Demonstrate an understanding of the different components of water in the landscape and how they interact.
+        - Demonstrate an understanding of the **different components of water** in the landscape and how they interact.
         - Undertake quantitative analysis and interpretation of actual data related to water in Australia.
         - Understand a variety of remote sensing satellite missions and how the observations inform water research.
         - Critically evaluate technical reports and journal articles.
@@ -71,6 +71,61 @@ _Note: The actual content might change depending on our pace_
       |Written critique | 20%|
       |Exam | 30%|
 
+# Assignments
+.row gap:{1cm}
+  .container width:{33%}
+    .box title:{Assignment I}
+      - Continental Scale Water Cycle.
+      - Post Week 2
+      - _Analysing precipitation record_.
+
+  .container width:{33%}
+    .box title:{Assignment II}
+      - Satellite Geodesy.
+      - Post week 5
+      - _Changes in water storage estimated from space gravity missions_.
+
+  .container width:{33%}
+    .box title:{Assignment III}
+      - Groundwater component
+      _ Post Week 7
+      - _Running a simulation+parameter analysis_.
+.fullspan
+  .align{center}
+    .container width:{50%}
+      .box type:{note} background:{.lightred}
+        Assignments will be posted on canvas and online.
+
+
+# Paper Critique
+
+.row gap:{1cm}
+  .container width:{50%}
+    ## 1. Presentations & Reports
+    - Each student presents a selected paper (10-minute talk). (Chosen from a list of papers, first come first serve)
+    - Submit a written report ( $ \approx $ 5 pages).
+
+    ---
+
+    ## 2. Engagement
+    - Attend all presentations.
+    - Ask questions and take notes — these will inform your peer review.
+
+
+  .container width:{50%}
+    ## 3. Peer Review Assignment
+    - After all presentations, each student will be assigned a peer to review.
+    - Assignments are announced only *after* all talks are completed.
+
+    ---
+
+    ## 4. Peer Review Criteria
+    - Use notes and discussion points to guide your evaluation.
+    - 50% of grade from instructor's evaluation of your peer review.
+    - 50% from your review of the peer's work.
+
+
+
 # Schedule
 
 .align{center}
@@ -80,31 +135,68 @@ _Note: The actual content might change depending on our pace_
   | 09–10 | Lec A, R1.02, J8   |                     |                    |                   |
   | 11–12 |                    | Lec B, R1.02, J8    |                    |                   |
   | 12–13 |                    |                     | TutA, R1.02, J8    |                   |
-  | 16–17 |                    |                     |                    | ComB, R1.02, J8   |
+  | 16–17 |                    |                     |                    | ComB, R1.02, J8*  |
   | 17–18 |                    |                     | ComA, R1.02, J8    |                   |
 
-.row gap:{1cm}
-  .container width:{50%} alignment:{center}
-    Dr. Sia Ghelichkhan\
-    siavash.ghelichkhan@anu.edu.au\
-    Building J4 room L18\
-    _Anything except for the remote sensing module_
+.box type:{Note} background:{.lightred}
+  [*] - At this point, we think _ComB_ will be a drop-in session in my office.
 
-  .container width:{50%} alignment:{center}
-    Prof. Paul Tregoning\
-    paul.tregoning@anu.edu.au\
-    Building J3 room 150
+# Lecturers
+
+.row gap:{1cm}
+  .container width:{35%} alignment:{center}
+    .box background:{.lightblue}
+      Dr. Sia Ghelichkhan\
+      siavash.ghelichkhan@anu.edu.au\
+      Building J4 room L18\
+      _Anything except for the remote sensing module_
+
+    .clip {circle}
+      !(80%)[Sky](image/internet_SiaG.webp)
+
+
+
+  .container width:{30%} alignment:{center}
+    .box background:{.lightblue}
+      Prof. Paul Tregoning\
+      paul.tregoning@anu.edu.au\
+      Building J3 room 150\
+      _Satellite Geodesy_
+
+    .clip {circle}
+      !(80%)[Sky](image/internet_PaulT.webp)
+
+  .container width:{25%} alignment:{center}
+    .box background:{.lightblue}
+      River Shaddock\
+      River.Shaddock@anu.edu.au\
+      Computer Labs
+
+    .clip {circle}
+      !(80%)[River](image/internet_ukperson.jpg)
+
+
 
 # Course Organisation
 .row gap:{1cm} alignment:{center}
   .container width:{80%}
-    .box title:{Tutorials}
+    .box title:{Tutorials} background:{.lightblue}
       - Explanation/revision of maths techniques
       - Sample exam-type questions
       - Python examples
       - Tutorials might explain how to do the assignments
-.row gap:{1cm} alignment:{center}
-  .container width:{80%}
+
+  .container width:{80%} background:{rgb(200, 225, 200)}
     .box title:{Comp Labs}
       - Drop-in sessions to work on assignments.
       - Demonstrator available to provide assistance
+
+.row gap:{1cm} alignment:{center}
+  .container width:{80%}
+    .box title:{Class Representative} background:{rgb(200, 200, 220)}
+      - The "voice" of the class
+      - Meets with Associate Director Education mid-semester and near the end of semester
+      - Provide feedback on arrangements and performance of lecturer/tutors
+      - AD Education passes feedback to us so that we can improve the course
+
+      **Need a volunteer. Email me if interested.**

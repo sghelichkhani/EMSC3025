@@ -2,12 +2,11 @@
 # Uses quarkdown c command with -o ./dir/ --pretty --clean options
 
 # Define the output directory
-OUTPUT_DIR = ./dir/
-HTML_DIR = ./html/
-PDF_DIR = ./pdf/
+HTML_DIR = ../site/course/
+PDF_DIR = ../pdf/
 
 # List of numbered .qmd files to compile
-QMD_FILES = 00_introduction.qmd 01_IntroductionToWaterResources.qmd 02_precipitation.qmd 03_evapotranspiration.qmd 04_runoff.qmd
+QMD_FILES = 00_introduction.qmd 01_watercycle.qmd 02_precipitation.qmd 03_evaporation.qmd 04_runoff.qmd
 
 # Define the quarkdown command with your preferred options
 QUARKDOWN_CMD = quarkdown c
@@ -34,7 +33,6 @@ pdf: $(QMD_FILES:.qmd=.pdf)
 # Clean target to remove output files
 clean:
 	@echo "Cleaning output directories..."
-	rm -rf $(OUTPUT_DIR)/*
 	rm -rf $(HTML_DIR)/*
 	rm -rf $(PDF_DIR)/*
 

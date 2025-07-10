@@ -3,4 +3,7 @@
     .text{.input} size:{larger} decoration:{underline} color:{red}
 
 .var {lightblue}
-    rgb(rgb(173, 216, 230))
+    rgb(173, 216, 230)
+
+.var {lightred}
+    rgb(220, 150, 150)

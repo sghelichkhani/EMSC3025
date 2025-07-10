@@ -1,4 +1,4 @@
-.docname {Evapotranspiration}
+.docname {Evaporation}
 .doctype {slides}
 .doclang {English}
 .theme {paperwhite} layout:{beamer}
@@ -14,7 +14,7 @@
     ![Logo](image/logo.png)
 
     ---
-    #! Lecture IV - Evapotranspiration
+    #! Evapotranspiration
     ###! EMSC3025/6025
     ---
 
