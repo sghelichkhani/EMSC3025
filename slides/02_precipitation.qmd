@@ -459,7 +459,9 @@ forces within a cloud.
             - Capture snowpack **water storage**, not just depth
             - Used in hydrology for estimating **delayed runoff**
 .fullspan
-     !(60%)[Text](image/davie_fig_4-12.png "Snow pillow technique.")
+    .align{center}
+        .container borderwidth:{1} width:{60%}
+            !(100%)[Text](image/davie_fig_4-12.png "Snow pillow technique.")
 
 
 # From point measurements to spatial rainfall estimation
