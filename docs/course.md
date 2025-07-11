@@ -16,7 +16,7 @@ The course is organised in a series of lecture-based modules that follow the nat
 
   - [**Introduction To The Hydrologic Cycle**](Watercycle/index.html)
   - [**Precipitation**](Precipitation/index.html)
-  - [**Evapotranspiration**](Evapotranspiration/index.html)
+  - [**Evapotranspiration**](Evaporation/index.html)
   - [**Run-off**](Runoff/index.html)
 
 
