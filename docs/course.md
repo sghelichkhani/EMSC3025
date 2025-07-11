@@ -14,10 +14,14 @@ The course is organised in a series of lecture-based modules that follow the nat
 
 ### Lecture Sequence
 
-  - [**Introduction To The Hydrologic Cycle**](Watercycle/index.html)
+  - [**Introduction To The Course**](Introduction/index.html)
+  - [**The Hydrologic Cycle**](Watercycle/index.html)
   - [**Precipitation**](Precipitation/index.html)
   - [**Evapotranspiration**](Evaporation/index.html)
   - [**Run-off**](Runoff/index.html)
+  - **Groundwater - Principles**
+  - **Groundwater - Theory of Flow**
+  - **Groundwater - Aquifers**
 
 
 ---
