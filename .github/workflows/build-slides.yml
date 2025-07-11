@@ -28,10 +28,14 @@ jobs:
           ./gradlew build installDist
 
       - name: Add quarkdown to PATH
-        run: echo "PATH=$PATH:/home/runner/work/EMSC3025/EMSC3025/quarkdown/build/install/quarkdown/bin/" >> $GITHUB_ENV
+        run: echo "PATH=$PATH:$GITHUB_WORKSPACE/quarkdown/build/install/quarkdown/bin/" >> $GITHUB_ENV
 
       - name: Set up Python
         run: uv python install
+
+      - name: Install Python dependencies
+        run: uv pip install mkdocs-material
+
       - name: Building mkdocs
         run: |
           uv run mkdocs build --clean --site-dir site
@@ -41,12 +45,18 @@ jobs:
           cd slides
           make
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload built slides
+        uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
-      # - name: Upload built slides
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: slides-output
-      #     path: output/
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-quarkdown-slides
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+      - uses: actions/deploy-pages@v4
