@@ -11,23 +11,29 @@
 #!
 .fullspan
   .center
-    ![Logo](image/logo.png)
+    ![Logo](image/new_logo.png)
 
     ---
-    #! Evapotranspiration
+    #! Evaporation
     ###! EMSC3025/6025
     ---
 
     ###! _Dr. Sia Ghelichkhan_
 
 
----
 
 # Objectives
 
-Leave objective for last
+.align{center}
+    .container width:{60%} background:{.lightblue}
+        .box title:{By the end of this lecture, you should be able to:}
+            - Define evaporation and its role in the water cycle.
+            - Differentiate between open water, potential, and actual evaporation.
+            - Understand transpiration and evapotranspiration.
+            - Identify key controls: energy, water availability, and vapour pressure deficit.
+            - Recognise methods to measure and estimate evaporation.
+            - Be ready for the tutorial dealing with evaporation.
 
----
 
 # Evaporation
 
@@ -50,7 +56,6 @@ Leave objective for last
         !(70%)[Evaporation](image/internet_evaporation.jpg)\
         _Available water and energy control  the main controling factors_
 
----
 
 # Different Definitions of Evaportaion
 .row gap:{1cm}
@@ -71,7 +76,6 @@ Leave objective for last
             !(100%)[Global Water Cycle](./image/davie_fig_1-6.png)
             _Global Water Cycle, $ E_0 $ dominates the global component of evaporation_
 
----
 #
 .mermaid
     flowchart TD
@@ -89,7 +93,7 @@ Leave objective for last
             We are considering evaporation as a negative source. But water lost, is just transferred to the atmosphere. A meteorologist would consider evaporation as
             a positive source and dewafll as a negative one.
 
----
+
 # Evaporation as a process
 
 .row gap:{1cm}
@@ -105,8 +109,9 @@ Leave objective for last
         - $ C $ — Empirical constant (depends on wind, temperature, etc.).
 
         **Key Idea**: Evaporation increases with the difference in vapor pressure between the water surface and the air.
+
     .container width:{30%}
-        !(100%)[John Dalton](image/interner_JohnDalton.jpg)
+        !(100%)[John Dalton](image/internet_JohnDalton.jpg)
 
 .mermaid
     flowchart TD
@@ -134,3 +139,178 @@ Leave objective for last
     .container width:{50%}
         !(100%)[Radiation](./image/internet_radiation.jpg)\
         _Radiation_
+
+
+# Water supply and evaporation
+
+.row
+    .container width:{50%} alignment:{center}
+        - Over the **oceans**, water supply is effectively unlimited, making evaporation a major component of the hydrological cycle.
+        - On **land**, water availability varies:
+            - **Open water evaporation** ($ E_o $) occurs from lakes, rivers, ponds
+            - **Soil evaporation** is more complex and limite
+    .container width:{50%}
+        - In soils:
+            - Water evaporates from the **near surface**
+            - A **moisture gradient** forms, pulling water upward
+            - This upward movement must overcome **gravity** and **soil capillarity**
+        - Plants also draw water to the surface via **osmosis** in their roots.
+        - The relationship between **soil moisture** and evaporation is dynamic and will be revisited later.
+
+.row
+    .align{center}
+        .container width:{70%} alignment:{center}
+          ![Water supply](image/internet_soilevaporation.png)
+          _Water supply_
+
+
+# Vapour pressure deficit
+
+.row
+    .container width:{50%} alignment:{center}
+        - Evaporation depends on the difference between:
+          - $ e_s $: saturated vapour pressure
+          - $ e_a $: actual vapour pressure
+        - The difference $ (e_s - e_a) $ is the **vapour pressure deficit (vpd)**.
+        - Higher VPD → higher potential for evaporation
+        - Relative humidity is the ratio $ e_a / e_s $
+
+  .container width:{40%}
+        !(100%)[vpdgraph](image/davie_fig_3-2.png "Vapour pressure deficit at 20°C")
+
+
+# Open-water versus soil evaporation
+
+.row
+  .container width:{50%}
+    ##! Open water evaporation
+    - The simplest case: evaporation from **lakes, rivers, reservoirs**
+    - Controlled by:
+      - Water body properties (temp, salinity, depth)
+      - Atmosphere above (vpd and mixing)
+    - Often **overestimates** evaporation in catchments due to unlimited water supply
+
+  .container width:{50%}
+    ##! Soil evaporation
+    - Same process as open water, but:
+      - **Water supply is limited**
+      - Water must move up through the soil
+    - Influenced by:
+      - Soil saturation and capillarity
+      - Surface conditions (e.g. bare vs vegetated)
+
+
+
+# Transpiration and total evaporation
+
+.row
+  .container width:{40%}
+    - Transpiration = water loss via **stomata in leaves**
+    - Plants respond to:
+      - Water availability
+      - VPD (they close stomata under stress)
+    - **Evapotranspiration (ET)** combines:
+      - Soil evaporation
+      - Transpiration
+      - Canopy interception loss
+
+  .container width:{60%}
+    ![Soil evaporation](image/internet_transpiration.webp)
+
+
+# Transpiration and total evaporation
+.fullspan
+    .align{center}
+       .container width:{60%}
+         | Component                        | Puruki (Central North Island, NZ)<br>(% of annual rainfall) | Balmoral (Central South Island, NZ)<br>(% of annual rainfall) |
+         |----------------------------------|-------------------------------------------------------------|----------------------------------------------------------------|
+         | **Annual rainfall**             | 1,405 mm                                                   | 870 mm                                                        |
+         | **Annual interception loss**    | 370 mm (26%)                                               | 220 mm (25%)                                                  |
+         | **Annual transpiration**        | 705 mm (50%)                                               | 255 mm (29%)                                                  |
+         | **Annual soil evaporation**     | 95 mm (7%)                                                 | 210 mm (24%)                                                  |
+         | **Remainder (runoff + percolation)** | 235 mm (17%)                                          | 185 mm (21%)                                                  |
+         *Source: Data adapted from Kelliher and Jackson (2001)*
+
+# Measuring evaporation is hard
+
+.row
+  .container width:{60%}
+    ##!
+    - No gauge can directly capture **evaporated vapour**
+    - Many methods estimate evaporation **indirectly** via:
+      - Energy balance
+      - Water balance
+      - Micrometeorological measurements
+    - All methods make assumptions about **fluxes and gradients**
+
+  .container width:{60%}
+    ##! Direct micro-meteorological methods
+    - Require **high-frequency measurements**, since wind speed, humidity, and temperature are highly variable
+    - Three techniques:
+      - Eddy covariance
+      - Aerodynamic profile
+      - Bowen ratio
+
+
+# Indirect: water balance methods
+
+.row
+  .container width:{60%}
+    - Evaporation can be inferred from the **water balance**:
+
+      $ E = \Delta S - P $
+
+    - Use a pan or lysimeter where:
+      - $ \Delta S $ = change in water volume
+      - $ P $ = precipitation
+
+    - Good for **controlled setups**, less reliable in field conditions
+
+  .container width:{40%}
+    ![Water balance](image/davie_fig_3-3.png "")
+
+# Evaporation pans
+
+.row
+  .container width:{60%}
+    - Large containers filled with water, exposed to the atmosphere
+    - Record water loss over time
+    - Limitations:
+      - Overestimate actual $ E $
+      - Suffer from **edge effect** and radiation bias
+      - Used mostly for **open water** or **reservoirs**
+
+  .container width:{40%}
+    !(100%)[evappan](image/davie_fig_3-3.png "An evaporation pan. This sits above the surface (to lessen rain splash) and has either an instrument to record water depth or a continuous weighing device, to measure changes in volume.")
+
+# Lysimeters
+
+.row
+  .container width:{50%}
+    - Measure $ E $ over **vegetated surfaces**
+    - Mimic soil and vegetation — allow **percolation**
+    - Use:
+
+      $ E = \Delta S - P - Q $
+
+      where $ Q $ = drainage
+
+    - Can be weighed or monitored using load cells
+    - Most accurate field method, but:
+      - Small scale
+      - Expensive and complex
+
+  .container width:{50%}
+    !(100%)[lysimeter](image/davie_fig_3-4.png "A weighing lysimeter sitting flush with the surface. The cylinder is filled with soil and vegetation similar to the surroundings.")
+
+
+
+# Summary
+.align{center}
+    .container width:{60%} alignment:{center}
+        .box title:{So here we covered that:} background:{.lightblue}
+            - Evaporation transfers water to the atmosphere, driven by energy and water availability.
+            - Types include open water ($ E_o $), potential ($ E_{pt} $), and actual ($ E_t $).
+            - Transpiration from plants adds to total evapotranspiration.
+            - **VPD** (vapour pressure deficit) is a key driver of evaporation.
+            - Measured via _direct_(lysimeters) and indirect (pans, water balance) methods.

@@ -22,14 +22,16 @@
 
 
 # Objectives
-
-- Understand the processes that generate runoff and lead to channelized flow.
-- Identify and explain the main mechanisms responsible for delivering water to streams and rivers.
-- Distinguish between overland flow, subsurface flow, and groundwater contributions to streamflow.
-- Describe and compare key theories of stormflow generation (Horton, Betson, Hewlett & Hibbert).
-- Explain the role of macropores and piston flow in rapid water movement.
-- Apply and evaluate methods for measuring streamflow, including the velocity–area method, stage–discharge relationships, and the use of flumes and weirs.
-- Recognise the limitations and considerations of different streamflow measurement techniques.
+.align{center}
+    .container width:{60%}
+        .box title:{By the end of this lecture, you should be able to:} background:{.lightblue}
+            - Understand the processes that generate runoff and lead to channelized flow.
+            - Identify and explain the main mechanisms responsible for delivering water to streams and rivers.
+            - Distinguish between overland flow, subsurface flow, and groundwater contributions to streamflow.
+            - Describe and compare key theories of stormflow generation (Horton, Betson, Hewlett & Hibbert).
+            - Explain the role of macropores and piston flow in rapid water movement.
+            - Apply and evaluate methods for measuring streamflow, including the velocity–area method, stage–discharge relationships, and the use of flumes and weirs.
+            - Recognise the limitations and considerations of different streamflow measurement techniques.
 
 # Runoff
 
@@ -64,7 +66,7 @@
 # Storm hydrograph in detail
 
 .row gap:{1cm}
-    .container width:{60%}
+    .container width:{40%}
         - Rising limb: Steep section leading up to peak flow.
         - Contributed by: **Channel precipitation** (rain falling directly into the stream) and rapid runoff.
         - Recession limb: Follows the peak and shows a gradual decline in streamflow.
@@ -73,17 +75,17 @@
         .whitespace height:{1cm}
         The exact proportion of precipitation that becomes channelized flow is difficult to determine.
 
-    .container width:{40%}
+    .container width:{60%}
         .align{center}
             !(100%)[Storm Hydrograph](image/davie_fig_5-2.png)
-            .cite {davie2019fundamentals} _Fig 5.12 - A typical storm hydrograph_
+            .cite {davie2019fundamentals} _A typical storm hydrograph_
 
 # Runoff Mechanism
 
 .row gap:{1cm}
     .container width:{50%}
         !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png)
-        .cite {davie2019fundamentals} _Fig. 5.3 Hillslope runoff processes_
+        .cite {davie2019fundamentals} _Hillslope runoff processes_
 
         Continuous sheets of overland water flow are rarely observed in nature.
 
@@ -204,6 +206,11 @@
         !(100%)[Maimai River](image/davie_fig_5-5.png)
         _.cite {davie2019fundamentals} McGlynn et al. (2002) confirmed significant groundwater contributions to streamflow at Maimai, including piston flow and macropore evidence_.
 
+# A summary of different processes
+.fullspan
+    !(100%)[Summary of different processes](image/davie_3d_fig_7-8.png)
+
+
 # Measuring streamflow
 ## Velocity-area method
 .row gap:{1cm}
@@ -214,6 +221,7 @@
 
     .container width:{40%}
         !(100%)[Measurement](image/davie_fig_5-6.png)
+        _The velocity–area method of streamflow measurement. The black circles indicate the position of current meter velocity readings. Dashed lines represent the triangular or trapezoidal cross-sectional area through which the velocity is measured_.
 
 
 
@@ -333,6 +341,19 @@
         - Both are suitable for small streams but not large rivers, due to structural stress.
         !(100%)[Trapezoidal flume](image/davie_fig_5-12.png)
         .cite {davie2019fundamentals} Trapezoidal Flume
+
+# Summary
+
+.align{center}
+    .container width:{60%}
+        .box title:{So here we covered that:} background:{.lightblue}
+            - Runoff is the movement of water toward channels, influenced by rainfall, soil, vegetation, and terrain.
+            - Stormflow is shaped by infiltration capacity, contributing areas, and subsurface dynamics.
+            - Horton, Betson, and Hewlett & Hibbert offer complementary theories explaining overland and saturated flow.
+            - Key mechanisms include variable source areas, piston flow, and macropore-driven throughflow.
+            - Groundwater contributes rapidly via capillary rise during storms.
+            - Streamflow is measured using methods like velocity–area, stage–discharge curves, and gauging structures (weirs/flumes).
+
 
 
 #

@@ -481,7 +481,7 @@ forces within a cloud.
   	!(100%)[spatialestimation](image/davie_fig_2-13.png "Estimating areal rainfall from point measurements using Thiessen polygons")
 
 # Summary:
-.box title:{Precipitation: Formation, Measurement, and Spatial Estimation}
+.box title:{Precipitation: Formation, Measurement, and Spatial Estimation} background:{.lightred}
     We covered therole of **precipitation** in the hydrological cycle, its **formation mechanisms**, and **factors affecting its distribution**.
 
     - **Conditions for precipitation**: atmospheric cooling, condensation nuclei, and droplet growth.
