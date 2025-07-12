@@ -1,0 +1,140 @@
+.docname {Tutorial_1}
+.theme {paperwhite} layout:{latex}
+<!-- Change here to paged/slides/plain to test a different document type -->
+.doctype {paged}
+.doclang {English}
+
+##! Tut I: Water Cycle (Introductory)
+
+#### Question 1:
+
+Define the hydrological cycle and explain how it operates at both the global and catchment scales.
+In your answer, describe three key processes and how they interact across these scales.
+
+---
+
+#### Model Answer
+
+The **hydrological cycle** refers to the continuous movement of water between the atmosphere, land surface, and subsurface environments. It operates through various physical processes that transfer water in different phases (solid, liquid, gas) and between various reservoirs (e.g., ocean, land, air, vegetation, soil, groundwater).
+
+At the **global scale**, the hydrological cycle is primarily driven by:
+- **Evaporation** from oceans and land surfaces
+- **Condensation** and **precipitation** of atmospheric moisture
+- **Runoff** and **infiltration** returning water to surface and subsurface systems
+
+At the **catchment scale**, the same processes are present but modified by local topography, vegetation, and human activity. For example, precipitation may be intercepted by vegetation, infiltrate into soils, recharge groundwater, or run off into rivers. The **water balance equation** is used to quantify water inputs (precipitation), outputs (evaporation and runoff), and changes in storage.
+
+Key processes:
+1. **Evaporation/Transpiration** – return water to the atmosphere.
+2. **Precipitation** – delivers water to land and sea surfaces.
+3. **Runoff and Infiltration** – control how water moves through the landscape.
+
+These processes connect global atmospheric dynamics to local water availability, influencing ecosystems, agriculture, and water resource management.
+
+---
+
+#### Question 2:
+
+Consider a large basin in a semi-arid climate.  Using the water balance equation
+
+.align{center}
+    $ P = Q + E + \Delta S $,
+
+discuss how each term is likely to behave in this setting.
+Explain what challenges this poses for hydrologists in measuring or estimating water availability.
+
+---
+
+#### Model Answer
+
+In a **semi-arid basin**, the water balance is typically characterised by:
+
+- **Low precipitation** $ P $: Rainfall is infrequent and often seasonal, leading to dry conditions most of the year.
+- **High evaporation** $ E $: Hot temperatures and sparse vegetation lead to significant moisture loss from soil and surface water.
+- **Minimal runoff** $ Q $: Surface runoff may be rare and occur only during intense rainfall events (flash floods).
+- **Storage changes** $ \Delta S $: Soil moisture and groundwater can vary substantially, often declining during dry seasons.
+
+Challenges in this setting:
+- **Spatial variability**: Rainfall can be highly uneven across the basin.
+- **Temporal mismatch**: Rainfall may occur in short, intense events, but monitoring is typically done at daily or monthly scales.
+- **Estimating $ \Delta S $**: Soil moisture and groundwater data are often sparse or missing.
+- **Evapotranspiration estimation**: Requires reliable climate and vegetation data, which may not be available.
+
+Hydrologists in these regions must rely on sparse observations, remote sensing, and models to estimate each term in the water balance.
+
+---
+
+#### Question 3:
+
+Let's go back to a quote from the lecture:
+
+> “The total quantity of fresh water on Earth could satisfy all human needs if it were evenly distributed and accessible.”
+> — *Stumm (1986)*
+
+Critically evaluate this statement using information from the lecture and Chapter 1.  Include examples of spatial inequality in water resources and discuss how hydrology as a science and applied field contributes to addressing such challenges.
+
+---
+
+#### Model Answer
+
+Stumm’s statement is theoretically true — there is enough **total freshwater** globally to meet human needs. However, the key issue is that this water is **not evenly distributed** nor equally accessible.
+
+From the data:
+- **~97%** of Earth’s water is saline (oceans).
+- Most freshwater is locked in **ice caps** and **groundwater**.
+- Only **~0.27%** is accessible surface freshwater (Davie Fig. 1.6, Table 1.2).
+
+This limited supply is unevenly distributed:
+- **Iceland** has >500,000 m³/person/year, while **Kuwait** has virtually none (Table 1.3).
+- Climate patterns (e.g., arid zones), topography, and land use create disparities in availability.
+- **Australia** has relatively high per-capita water resources but with extreme variability over space and time.
+
+**Hydrology** addresses this challenge by:
+- Quantifying water inputs and outputs using models and data.
+- Understanding flow and storage dynamics (e.g., runoff generation, infiltration).
+- Supporting water resource planning and sustainable abstraction.
+
+The applied side of hydrology — including engineering, remote sensing, and policy support — helps ensure **equitable distribution**, even in regions of scarcity.
+
+---
+
+#### Question 4:
+
+Refer to the **topographic map provided** below. The contour lines represent elevation. A stream is visible in the valley. Your task is to manually delineate the **watershed boundary** for a given outlet point along the stream using standard hydrological reasoning.
+
+!(40%)[topomap](image/tutorial_usgs_catchment.png "A hypothetical topographic map of a catchment")
+
+1. Briefly list the **five manual delineation steps** for defining a watershed boundary.
+2. On the map, **describe** (in words) how you would apply each step. You may refer to locations by compass direction (e.g., "north ridge") or elevation.
+3. Explain why understanding **topographic divides** and **contour orientation** is critical in watershed boundary definition.
+4. (Optional extension) What is a limitation of this method compared to digital (GIS-based) watershed delineation?
+
+---
+<<<
+
+#### Model Answer
+Manual Delineation Steps:
+1. Identify the outlet point on the stream.
+2. Draw/visualise surface flow lines perpendicular to contours.
+3. Identify high points (ridges) around the stream.
+4. Trace contour segments that divide flow toward or away from the stream.
+5. Connect these divide points to form a continuous watershed boundary.
+
+Application to the Map:
+- The outlet point is located near the centre-bottom of the figure, where the stream exits the valley.
+- Flow lines run downhill perpendicular to contours; valleys are V-shaped pointing upstream.
+- The northern and western ridgelines show closely spaced contours curving outward — this is the high ground.
+- The watershed boundary follows these ridgelines, tracing the outermost contours that direct flow inward.
+- I would connect the ridge to the east, sweep around the top of the catchment (north), and close the loop along the western slope down to the outlet.
+
+Importance of Topographic Divides:
+- Contours that form convex curves at high elevation mark the watershed edge.
+- Flow cannot cross these divides; they are the "roof ridges" of the landscape.
+- Knowing the perpendicular relationship between flow direction and contours is essential to tracing accurate boundaries.
+
+Limitation:
+- Manual delineation is slow, subjective, and less precise in flat or complex terrain.
+- Digital methods allow for scalable, reproducible watershed mapping using DEMs and flow algorithms.
+
+
+!(40%)[topomap](image/tutorial_usgs_catchment_answer.png "Catchment boundary delineation")
