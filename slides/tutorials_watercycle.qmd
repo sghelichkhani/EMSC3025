@@ -1,4 +1,4 @@
-.docname {Tutorial_1}
+.docname {TutorialWatercycle}
 .theme {paperwhite} layout:{latex}
 <!-- Change here to paged/slides/plain to test a different document type -->
 .doctype {paged}

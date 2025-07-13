@@ -7,3 +7,12 @@
 
 .var {lightred}
     rgb(220, 150, 150)
+
+.function {answer}
+    input:
+    .text{.input} size:{larger} decoration:{underline} color:{red}
+
+.numbering
+  - headings:
+  - tables: 1
+  - figures: 1
