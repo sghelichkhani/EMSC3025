@@ -19,7 +19,7 @@ The course is organised in a series of lecture-based modules that follow the nat
   - [**Precipitation**](Precipitation/index.html)
   - [**Evapotranspiration**](Evaporation/index.html)
   - [**Run-off**](Runoff/index.html)
-  - **Groundwater - Principles**
+  - [**Groundwater - Principles**](Groundwater/index.html)
   - **Groundwater - Theory of Flow**
   - **Groundwater - Aquifers**
 
