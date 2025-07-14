@@ -13,6 +13,9 @@
     .text{.input} size:{larger} decoration:{underline} color:{red}
 
 .numbering
-  - headings:
+  - headings: 1.A
   - tables: 1
   - figures: 1
+
+.pagemargin {bottomcenter}
+  .currentpage / .totalpages

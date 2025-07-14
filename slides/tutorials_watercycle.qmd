@@ -1,6 +1,5 @@
-.docname {TutorialWatercycle}
-.theme {paperwhite} layout:{latex}
-<!-- Change here to paged/slides/plain to test a different document type -->
+.docname {Tutorial-Watercycle}
+.theme {beaver} layout:{minimal}
 .doctype {paged}
 .doclang {English}
 

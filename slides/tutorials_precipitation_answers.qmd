@@ -1,4 +1,4 @@
-.docname      {Tut II Answers: Precipitation}
+.docname      {Tutorial-Precipitation-Answers}
 .doctype      {paged}
 .doclang      {English}
 .theme        {paperwhite} layout:{latex}

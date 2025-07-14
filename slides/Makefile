@@ -6,7 +6,7 @@ HTML_DIR = ../site/course/
 PDF_DIR = ../pdf/
 
 # List of numbered .qmd files to compile
-QMD_FILES = 00_introduction.qmd 01_watercycle.qmd 02_precipitation.qmd 03_evaporation.qmd 04_runoff.qmd 05_groundwater.qmd tutorials_watercycle.qmd tutorials_precipitation.qmd
+QMD_FILES = $(wildcard *.qmd)
 
 # Define the quarkdown command with your preferred options
 QUARKDOWN_CMD = quarkdown c

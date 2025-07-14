@@ -1,12 +1,9 @@
-.docname      {Tut II: Precipitation}
+.docname      {Tutorial-Precipitation}
 .theme        {paperwhite} layout:{latex}
 .doctype      {paged}
 .doclang      {English}
 
 .include {definitions.qmd}
-
-.footer
-    Tutorial 2: Precipitation
 
 #! Tutorial 2: Precipitation
 

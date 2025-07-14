@@ -23,6 +23,10 @@ The course is organised in a series of lecture-based modules that follow the nat
   - **Groundwater - Theory of Flow**
   - **Groundwater - Aquifers**
 
+### Tutorials
+  - [**The Hydrologic Cycle**](Tutorial-Watercycle/index.html)
+  - [**Precipitation**](Tutorial-Precipitation/index.html)
+  - [**Evapotranspiration**](Tutorial-Evaporation/index.html)
 
 ---
 
