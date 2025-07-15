@@ -2,7 +2,7 @@
 # Uses quarkdown c command with -o ./dir/ --pretty --clean options
 
 # Define the output directory
-HTML_DIR = ../site/course/
+HTML_DIR = ../site/content/
 PDF_DIR = ../pdf/
 
 # List of numbered .qmd files to compile
