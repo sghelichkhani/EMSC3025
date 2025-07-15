@@ -7,11 +7,12 @@
   - Sia Ghelichkhan
 
 .include {definitions.qmd}
+.include {definitions_slides.qmd}
 
 #!
 .fullspan
   .center
-    ![Logo](image/logo.png)
+    ![Logo](image/new_logo.png)
 
     ---
     #! Precipitation

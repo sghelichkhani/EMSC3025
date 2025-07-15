@@ -6,8 +6,8 @@
 .docauthors
   - Sia Ghelichkhan
 
-
 .include {definitions.qmd}
+.include {definitions_slides.qmd}
 
 #!
 .fullspan
