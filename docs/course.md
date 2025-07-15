@@ -24,9 +24,14 @@ The course is organised in a series of lecture-based modules that follow the nat
   - **Groundwater - Aquifers**
 
 ### Tutorials
-  - [**The Hydrologic Cycle**](Tutorial-Watercycle/index.html)
-  - [**Precipitation**](Tutorial-Precipitation/index.html)
-  - [**Evapotranspiration**](Tutorial-Evaporation/index.html)
+  - [**The Hydrologic Cycle**](Tutorial-Watercycle/index.html) - [*Model Answer*](Tutorials-Watercycle-Answers/index.html)
+  - [**Precipitation**](Tutorial-Precipitation/index.html) - [*Model Answer*](Tutorials-Precipitaion-Answers/index.html)
+  - [**Evapotranspiration**](Tutorial-Evaporation/index.html) - [*Model Answer*](Tutorials-Evaporation-Answers/index.html)
+  - **Run-off**
+  - **Groundwater - Principles**
+  - **Groundwater - Theory of Flow**
+  - **Groundwater - Aquifers**
+
 
 ---
 
