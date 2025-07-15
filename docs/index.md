@@ -1,63 +1,56 @@
-# Water Course
+# 🌊 Water Course
 
-Welcome to the water course project 
-
-## About the Project
-
-This is an effort to bring together material related to water modelling and studies that are related to the course EMSC3025/6025 delievered at the Earth Science School of Earth Sciecnes at the ANU. The contents are focused:
-
-- Delivering an in depth understanding of the water cycle. 
-- A primary understanding of precipitation, evaporation, run off and groundwater
-- Advance understsanding of groundwater processes.
-- Excerices
-
-For the content of teh course please go to [Content Page](content.md)
-
-## Get Involved
-
-Whether you're a hydrologist, modeller or student, or whether you are in industry or public service through, please get invovled if you think this material can be improved. 
-
-- Participating in training and courses
-- Providing feedback
-
-# About the Course
-
-## 🌍 Welcome to our *Water Course*
-
-This website hosts the lecture materials for the *EMSC3025/6025 Water Course*, taught at the _Australian National University_ (ANU) under course codes **EMSC3025 / EMSC6025**. The course explores the science of water in the environment, with a focus on subsurface processes and groundwater systems.
-
-This course aims to provide a comprehensive foundation in the understanding, measurement, and modeling of water across the entire hydrologic cycle—from atmospheric inputs to deep aquifer systems—with particular emphasis on **subsurface water hydrology**.
+Welcome to the **Water Course** — a companion site for the course **EMSC3025 / EMSC6025** offered at the *Research School of Earth Sciences*, Australian National University (ANU). This course focuses on the science of water in the environment, with an emphasis on **groundwater systems** and the broader **hydrologic cycle**.
 
 ---
 
-## 🧭 Course Structure
+## 🎓 About the Course
 
-The course is organised in a series of lecture-based modules that follow the natural flow of the water cycle. Each lecture is delivered with structured slide sets, available here.
+The Water Course introduces students to the integrated processes of the hydrologic cycle—from atmospheric inputs like precipitation and evaporation, to land surface processes such as infiltration and runoff, and finally to subsurface storage and flow in aquifers.
+
+The course is structured around lecture modules that reflect the natural flow of water through Earth systems. Slide sets and exercises accompany each lecture and are available through the [Course Page](course.md).
+
+By the end of the course, students will gain:
+
+- A conceptual and quantitative understanding of the **water cycle**
+- Fundamental knowledge of **precipitation**, **evaporation**, **runoff**, and **infiltration**
+- In-depth coverage of **groundwater processes**, **aquifer behavior**, and **subsurface flow**
+- Experience with worked problems and real-world case studies
 
 ---
 
-## 📚 Reference Materials
+## 📚 Core References
 
-This course draws exclusively from two comprehensive and authoritative texts:
+This course draws on two foundational texts:
 
-- **Tim Davie** (2008), *Fundamentals of Hydrology*, 2nd Edition, Routledge.
-  _Used for precipitation, evaporation, runoff, and surface hydrology._
+- *Tim Davie (2008), Fundamentals of Hydrology*, 2nd Edition — for precipitation, evaporation, runoff, and surface hydrology  
+- *Franklin W. Schwartz & Hubao Zhang (2024), Fundamentals of Groundwater*, 2nd Edition — for aquifers, groundwater flow, contamination, and sustainability
 
-- **Franklin W. Schwartz & Hubao Zhang** (2024), *Fundamentals of Groundwater*, 2nd Edition, Wiley.
-  _Used for soil moisture, aquifers, flow theory, and groundwater management._
+These are the basis for all slides and should be used throughout for deeper understanding and exercises.
 
-Please refer to these books throughout the course for deeper insight and examples.
+---
+
+## 💡 Get Involved
+
+This site is a living resource, and contributions are welcome.
+
+Whether you're a student, researcher, modeller, or practitioner:
+
+- Provide feedback on course materials  
+- Join the discussion on the [Zulip board](https://rswater.zulipchat.com)  
+- Suggest additions or improvements to exercises and workflows  
+- Participate in future offerings of the course or workshops
 
 ---
 
 ## 📬 Contact
 
-For questions, suggestions, or to discuss the material, feel free to contact:
+For questions, feedback, or collaboration, reach out to:
 
-**Dr. Siavash Ghelichkhan**
-
-- _Email:_ [siavash.ghelichkhan@anu.edu.au](mailto:siavash.ghelichkhan@anu.edu.au)
-- _Office:_ *Jaeger 4, L18*
-- _Zulip discussion board:_ [https://rswater.zulipchat.com](https://rswater.zulipchat.com)
+**Dr. Siavash Ghelichkhan**  
+*Course Convenor – EMSC3025/6025*  
+📧 [siavash.ghelichkhan@anu.edu.au](mailto:siavash.ghelichkhan@anu.edu.au)  
+🏢 *Jaeger 4, Level 1.18*  
+💬 [Zulip Discussion Board](https://rswater.zulipchat.com)
 
 ---
