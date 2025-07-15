@@ -1,19 +1,26 @@
 .docname {Tutorial-Watercycle-Answers}
-.theme {beaver} layout:{minimal}
+.theme {beaver} layout:{latex}
 .doctype {paged}
 .doclang {English}
 
+.include{definitions.qmd}
+
+.pagemargin{bottomleft}
+    Model Answers
+
+.pagemargin{topright}
+    Water Cycle
+
+
 # Water Cycle
-
-## Answer 1
-
+## The Hydrological Cycle
 The **hydrological cycle** refers to the continuous movement of water between the atmosphere, land surface, and subsurface environments. It operates through various physical processes that transfer water in different phases (solid, liquid, gas) and between various reservoirs (e.g., ocean, land, air, vegetation, soil, groundwater).
 
 At the **global scale**, the hydrological cycle is primarily driven by:
 
-* **Evaporation** from oceans and land surfaces
-* **Condensation** and **precipitation** of atmospheric moisture
-* **Runoff** and **infiltration** returning water to surface and subsurface systems
+- **Evaporation** from oceans and land surfaces
+- **Condensation** and **precipitation** of atmospheric moisture
+- **Runoff** and **infiltration** returning water to surface and subsurface systems
 
 At the **catchment scale**, the same processes are present but modified by local topography, vegetation, and human activity. For example, precipitation may be intercepted by vegetation, infiltrate into soils, recharge groundwater, or run off into rivers. The **water balance equation** is used to quantify water inputs (precipitation), outputs (evaporation and runoff), and changes in storage.
 
@@ -25,55 +32,47 @@ Key processes:
 
 These processes connect global atmospheric dynamics to local water availability, influencing ecosystems, agriculture, and water resource management.
 
----
-
-#### Question 2 – Model Answer
-
+## Water Balance in a Semi-Arid Basin
 In a **semi-arid basin**, the water balance is typically characterised by:
 
-* **Low precipitation** $ P $: Rainfall is infrequent and often seasonal, leading to dry conditions most of the year.
-* **High evaporation** $ E $: Hot temperatures and sparse vegetation lead to significant moisture loss from soil and surface water.
-* **Minimal runoff** $ Q $: Surface runoff may be rare and occur only during intense rainfall events (flash floods).
-* **Storage changes** $ \Delta S $: Soil moisture and groundwater can vary substantially, often declining during dry seasons.
+- **Low precipitation** $ P $: Rainfall is infrequent and often seasonal, leading to dry conditions most of the year.
+- **High evaporation** $ E $: Hot temperatures and sparse vegetation lead to significant moisture loss from soil and surface water.
+- **Minimal runoff** $ Q $: Surface runoff may be rare and occur only during intense rainfall events (flash floods).
+- **Storage changes** $ \Delta S $: Soil moisture and groundwater can vary substantially, often declining during dry seasons.
 
 Challenges in this setting:
 
-* **Spatial variability**: Rainfall can be highly uneven across the basin.
-* **Temporal mismatch**: Rainfall may occur in short, intense events, but monitoring is typically done at daily or monthly scales.
-* **Estimating $ \Delta S $**: Soil moisture and groundwater data are often sparse or missing.
-* **Evapotranspiration estimation**: Requires reliable climate and vegetation data, which may not be available.
+- **Spatial variability**: Rainfall can be highly uneven across the basin.
+- **Temporal mismatch**: Rainfall may occur in short, intense events, but monitoring is typically done at daily or monthly scales.
+- **Estimating $ \Delta S $**: Soil moisture and groundwater data are often sparse or missing.
+- **Evapotranspiration estimation**: Requires reliable climate and vegetation data, which may not be available.
 
 Hydrologists in these regions must rely on sparse observations, remote sensing, and models to estimate each term in the water balance.
 
----
-
-#### Question 3 – Model Answer
-
+## Global water distribution
 Stumm’s statement is theoretically true — there is enough **total freshwater** globally to meet human needs. However, the key issue is that this water is **not evenly distributed** nor equally accessible.
 
 From the data:
 
-* **\~97%** of Earth’s water is saline (oceans).
-* Most freshwater is locked in **ice caps** and **groundwater**.
-* Only **\~0.27%** is accessible surface freshwater (Davie Fig. 1.6, Table 1.2).
+- **\~97%** of Earth’s water is saline (oceans).
+- Most freshwater is locked in **ice caps** and **groundwater**.
+- Only **\~0.27%** is accessible surface freshwater (Davie Fig. 1.6, Table 1.2).
 
 This limited supply is unevenly distributed:
 
-* **Iceland** has >500,000 m³/person/year, while **Kuwait** has virtually none (Table 1.3).
-* Climate patterns (e.g., arid zones), topography, and land use create disparities in availability.
-* **Australia** has relatively high per-capita water resources but with extreme variability over space and time.
+- **Iceland** has >500,000 m³/person/year, while **Kuwait** has virtually none (Table 1.3).
+- Climate patterns (e.g., arid zones), topography, and land use create disparities in availability.
+- **Australia** has relatively high per-capita water resources but with extreme variability over space and time.
 
 **Hydrology** addresses this challenge by:
 
-* Quantifying water inputs and outputs using models and data.
-* Understanding flow and storage dynamics (e.g., runoff generation, infiltration).
-* Supporting water resource planning and sustainable abstraction.
+- Quantifying water inputs and outputs using models and data.
+- Understanding flow and storage dynamics (e.g., runoff generation, infiltration).
+- Supporting water resource planning and sustainable abstraction.
 
 The applied side of hydrology — including engineering, remote sensing, and policy support — helps ensure **equitable distribution**, even in regions of scarcity.
 
----
-
-#### Question 4 – Model Answer
+## Delineating a Watershed Boundary
 
 Manual Delineation Steps:
 
@@ -90,6 +89,8 @@ Application to the Map:
 * The northern and western ridgelines show closely spaced contours curving outward — this is the high ground.
 * The watershed boundary follows these ridgelines, tracing the outermost contours that direct flow inward.
 * I would connect the ridge to the east, sweep around the top of the catchment (north), and close the loop along the western slope down to the outlet.
+
+!(50%)[topomap](image/tutorial_usgs_catchment_answer.png "A hypothetical topographic map of a catchment")
 
 Importance of Topographic Divides:
 

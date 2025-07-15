@@ -1,25 +1,30 @@
 .docname {Tutorial-Evaporation}
-.theme {beaver} layout:{minimal}
-.doctype {paged}
-.doclang {English}
+.theme{beaver} layout:{latex}
+.doctype{paged}
+.doclang{English}
 
 .include{definitions.qmd}
 
-##! Tut III: Interpreting Evaporation Components
+.pagemargin{bottomleft}
+    Tutorials
 
-#### Potential and Actual Evaporation
+.pagemargin{topright}
+    Evaporation
+
+# Evaporation
+## Potential and Actual Evaporation
 You are given three months of daily climate data (temperature, humidity, radiation, wind) for a small catchment.
 - Explain how you would estimate **potential evaporation** ($ E_{pt} $) from this data.
 - What key assumptions are you making in the calculation?
 - Explain how $ E_{pt} $ relates to actual evaporation, $ E_t $ and how you might evaluate if $ E_t \approx E_{pt} $ for the wet season.
 
-#### Evaporation Dynamics in Soil
+## Evaporation Dynamics in Soil
 A lysimeter experiment was conducted in two neighbouring plots: one bare soil, one vegetated.
 - Which plot would you expect to have higher total evaporation over the summer? Why?
 - Discuss how **soil moisture** affects actual evaporation in both plots.
 - Explain the role of **capillarity** and **transpiration** in the vegetated plot.
 
-#### Vapour Pressure Deficit
+## Vapour Pressure Deficit
 Given the following measurements at midday:
 | Air Temperature | Relative Humidity | Saturated Vapour Pressure |
 |----|----|----|
@@ -30,7 +35,7 @@ Given the following measurements at midday:
 - What might plants do in response to this VPD?
 
 
-####! Comparing Evaporation Measurement Methods
+## Comparing Evaporation Measurement Methods
 Evaluate the **advantages and limitations** of the following methods for measuring or estimating evaporation in a catchment:
 1. Evaporation pans
 2. Lysimeters
@@ -43,7 +48,7 @@ For each method, comment on:
 - Key sources of uncertainty
 
 
-#### The Thornthwaite Method for Estimating Potential Evapotranspiration
+## The Thornthwaite Method for Estimating Potential Evapotranspiration
 **Introduction -** In hydrologic analysis, estimating evaporation is crucial but challenging. While direct measurements using lysimeters provide the most accurate data, these devices are expensive and complex to maintain. In data-sparse regions, empirical models offer practical alternatives. The **Thornthwaite method** is one of the simplest and most widely used approaches, requiring only mean monthly air temperature and geographic latitude to estimate potential evapotranspiration (PET).
 
 The Thornthwaite equation estimates monthly potential evapotranspiration as:
@@ -55,8 +60,6 @@ Where:
 - $ T_a $ = mean monthly air temperature (°C)
 - $ I $ = annual heat index (dimensionless)
 - $ a $ = empirically derived exponent
-
-<<<
 
 **Step-by-Step Calculation:**
 
@@ -84,9 +87,7 @@ The table below provides daylight correction factors for different latitudes:
 | 50E        | 0.74 | 0.78 | 1.02 | 1.15 | 1.33 | 1.33 | 1.37 | 1.25 | 1.06 | 0.92 | 0.76 | 0.70 |
 "NRC mean hours of bright sunshine expressed in units of 30 days of 12 hours each day"
 
----
-
-#### Exercise: Applying the Thornthwaite Method
+## Applying the Thornthwaite Method
 
 **Problem Statement:**
 

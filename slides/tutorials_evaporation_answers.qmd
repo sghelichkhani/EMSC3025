@@ -1,12 +1,17 @@
 .docname {Tutorial-Evaporation-Answers}
-.theme {beaver} layout:{minimal}
+.theme {beaver} layout:{latex}
 .doctype {paged}
 .doclang {English}
 
 .include{definitions.qmd}
 
-# Answers – Evaporation
+.pagemargin{bottomleft}
+    Model Answers
 
+.pagemargin{topright}
+    Evaporation
+
+# Evaporation
 ## Potential and Actual Evaporation
 **How to estimate potential evaporation ($ E_{pt} $):** With access to daily temperature, humidity, radiation, and wind data, potential evaporation ($ E_{pt} $) can be estimated using an **energy and vapour-pressure based approach**, such as the **Dalton-type** or **Penman-type** equations. From the slides:
 

@@ -1,22 +1,23 @@
-.docname      {Tutorial-Precipitation}
-.theme        {paperwhite} layout:{latex}
-.doctype      {paged}
-.doclang      {English}
+.docname{Tutorial-Precipitation}
+.theme{beaver} layout:{latex}
+.doctype{paged}
+.doclang{English}
 
-.include {definitions.qmd}
+.include{definitions.qmd}
 
-#! Tutorial 2: Precipitation
+.pagemargin{bottomleft}
+    Tutorials
 
-###! 1. *The build-up season in the Top End*
+.pagemargin{topright}
+    Precipitation
 
+# Precipitation
+## The build-up season in the Top End
 The late-build-up season in **Darwin, NT**, is a period of oppressive heat and humidity. The temperature only rises a few degrees, but the humidity skyrockets. It does not rain as often as the wet season, but afternoon thunderstorms are frequent:
-
 - List **three atmospheric conditions** that must be satisfied before any of these storms can produce precipitation.
 - For each condition, explain (≈ 2 sentences) why failure of that condition would prevent rainfall – even under high relative humidity.
 
----
-
-###! 2. Warm vs Mixed-Phase Clouds
+## Warm vs Mixed-Phase Clouds
 
 Convective downpours over **Singapore** in March are dominated by warm-rain processes, whereas December snow-storms in the **Scottish Highlands** rely heavily on the Bergeron ice–crystal mechanism.
 
@@ -24,32 +25,23 @@ Convective downpours over **Singapore** in March are dominated by warm-rain proc
 - Describe how cloud-temperature structure and up-draught strength favour those mechanisms.
 - State one consequence for **raindrop/snow-crystal size distribution at the ground** in each case.
 
----
-
-###! 3. Sierra Nevada Transect
+## Sierra Nevada Transect
 
 *Figure A* shows a west-to-east cross-section across California’s Sierra Nevada from the Pacific coast to Owens Valley. On your copy of the figure, mark:
 - i. the zone of **maximum orographic precipitation**;
 - ii. the **rain-shadow region**.
 
-<<<
-
 .fullspan
     !(100%)[Sierra Nevada Transect](image/internet_googlemaps_sierraNevada.png "Sierra Nevada Transect on Google Earth")
 
-b. Annotate approximate temperature changes (°C) of a rising unsaturated parcel that moves:
-  1. sea-level to 3 000 m; 2. crest to Owens Valley floor.
-  (Use the dry- and saturated-adiabatic lapse rates as appropriate.)
+- Annotate approximate temperature changes (°C) of a rising unsaturated parcel that moves:
+    - sea-level to 3 000 m; 2. crest to Owens Valley floor. (Use the dry- and saturated-adiabatic lapse rates as appropriate.)
+    - Name **two rain-shadow communities** east of the crest and discuss, in  $ \approx 100 $ words, how this precipitation pattern shapes their water-supply strategies.
 
-c. Name **two rain-shadow communities** east of the crest and discuss, in  $ \approx 100 $ words, how this precipitation pattern shapes their water-supply strategies.
-
-
-###! 4. Paired Forest-Pasture Experiment  *(fully hypothetical)*
-
+## Paired Forest-Pasture Experiment  *(fully hypothetical)*
 Two tipping-bucket rain gauges operated for 14 consecutive days (Day 1 – Day 14):
-
-* **Forest-Gauge** mounted 1 m above ground beneath a closed-canopy, mature forest.
-* **Pasture-Gauge** sited in an open cattle pasture 600 m away on level terrain.
+- **Forest-Gauge** mounted 1 m above ground beneath a closed-canopy, mature forest.
+- **Pasture-Gauge** sited in an open cattle pasture 600 m away on level terrain.
 
 | Day | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | **Σ 14-d** |
 |-----|---|---|---|---|---|---|---|---|---|----|----|----|----|----|-----------|
@@ -61,10 +53,7 @@ Two tipping-bucket rain gauges operated for 14 consecutive days (Day 1 – Day 1
 - The Forest-Gauge shows a **15 % lower** 14-day cumulative total than the Pasture-Gauge. Explain **three plausible micro-site or measurement biases** that could produce this difference.
 - For *each* bias, recommend one **practical adjustment or field check** that would reduce its impact in future campaigns.
 
-
----
-
-###! 5. Method Evaluation  
+## Method Evaluation  
 A $ 2,500\ km^2 $ catchment in central **Nepal** has four long-term rain gauges, all below $ 1,800\ m\ asl $.  Snowfields begin at $ \approx 3,000 m $ and the crest reaches $ 5,000 m $.
 
 - Select **one** of the following to estimate areal rainfall for monthly water-balance work:

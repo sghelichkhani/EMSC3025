@@ -1,21 +1,23 @@
 .docname {Tutorial-Watercycle}
-.theme {beaver} layout:{minimal}
-.doctype {paged}
-.doclang {English}
+.theme{beaver} layout:{latex}
+.doctype{paged}
+.doclang{English}
 
 .include{definitions.qmd}
 
+.pagemargin{bottomleft}
+    Tutorials
+
+.pagemargin{topright}
+    Water Cycle
+
+
 # Water Cycle
-
-## Question 1:
-
+## The Hydrological Cycle
 Define the hydrological cycle and explain how it operates at both the global and catchment scales.
 In your answer, describe three key processes and how they interact across these scales.
 
----
-
-## Question 2:
-
+## Water Balance in a Semi-Arid Basin
 Consider a large basin in a semi-arid climate.  Using the water balance equation
 
 $ P = Q + E + \Delta S $
@@ -23,10 +25,7 @@ $ P = Q + E + \Delta S $
 discuss how each term is likely to behave in this setting.
 Explain what challenges this poses for hydrologists in measuring or estimating water availability.
 
----
-
-## Question 3:
-
+## Global water distribution
 Let's go back to a quote from the lecture:
 
 > “The total quantity of fresh water on Earth could satisfy all human needs if it were evenly distributed and accessible.”
@@ -34,10 +33,7 @@ Let's go back to a quote from the lecture:
 
 Critically evaluate this statement using information from the lecture and Chapter 1.  Include examples of spatial inequality in water resources and discuss how hydrology as a science and applied field contributes to addressing such challenges.
 
----
-
-## Question 4:
-
+## Delineating a Watershed Boundary
 Refer to the **topographic map provided** below. The contour lines represent elevation. A stream is visible in the valley. Your task is to manually delineate the **watershed boundary** for a given outlet point along the stream using standard hydrological reasoning.
 
 !(40%)[topomap](image/tutorial_usgs_catchment.png "A hypothetical topographic map of a catchment")
