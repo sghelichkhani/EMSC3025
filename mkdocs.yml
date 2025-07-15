@@ -1,5 +1,5 @@
-site_name: OMEGA
-site_url: https://omega.gadopt.org
+site_name: water-course
+site_url: water-course.github.io 
 nav:
   - Home: index.md
   - Course: course.md
