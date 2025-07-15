@@ -1,0 +1,8 @@
+.pagemargin{bottomcenter}
+    EMSC3025/6025: Remote Sensing of Water Resources
+
+.pagemargin{bottomleft}
+    Dr. Sia Ghelichkhan
+
+.pagemargin{bottomright}
+    [Home](https://sghelichkhani.github.io/EMSC3025/course/)

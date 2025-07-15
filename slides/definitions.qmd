@@ -17,5 +17,5 @@
   - tables: 1
   - figures: 1
 
-.pagemargin {bottomcenter}
+.pagemargin{bottomright}
   .currentpage / .totalpages
