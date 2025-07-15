@@ -33,6 +33,8 @@ Let's go back to a quote from the lecture:
 
 Critically evaluate this statement using information from the lecture and Chapter 1.  Include examples of spatial inequality in water resources and discuss how hydrology as a science and applied field contributes to addressing such challenges.
 
+<<<<
+
 ## Delineating a Watershed Boundary
 Refer to the **topographic map provided** below. The contour lines represent elevation. A stream is visible in the valley. Your task is to manually delineate the **watershed boundary** for a given outlet point along the stream using standard hydrological reasoning.
 
