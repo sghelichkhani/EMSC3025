@@ -13,7 +13,6 @@
     .text{.input} size:{larger} decoration:{underline} color:{red}
 
 .numbering
-  - headings: 1.A
   - tables: 1
   - figures: 1
 

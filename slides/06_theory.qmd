@@ -1,0 +1,432 @@
+.docname {Groundwater-Theory}
+.doctype {slides}
+.doclang {English}
+.theme {paperwhite} layout:{beamer}
+.slides transition:{fade}
+.docauthors
+  - Sia Ghelichkhan
+
+.include {definitions.qmd}
+.include {definitions_slides.qmd}
+
+
+#!
+.fullspan
+  .center
+    ![Logo](image/new_logo.png)
+
+    ---
+    #! Groundwater -- Principles
+    ###! EMSC3025/6025
+    ---
+
+    ###! _Dr. Sia Ghelichkhan_
+
+# Objectives
+.align{center}
+  .container width:{60%} background:{.lightblue}
+    .box title:{By the end of this lecture, you should be able to:}
+      - Understand the theory of saturated groundwater flow.
+      - Derive and apply the basic groundwater flow equation.
+      - Use flow nets to estimate hydraulic head distribution and flow paths.
+      - Identify boundary and initial conditions for analytical solutions.
+      - Solve simple steady-state flow problems using analytical methods.
+
+
+# Differential Equations of Groundwater Flow
+
+.row gap:{1cm}
+  .container width:{45%}
+    What sets hydrogeology apart is its emphasis on mathematical treatment of physical processes.
+
+    We aim to determine how hydraulic head varies in a domain, using:
+    1. **Governing equation** – describes groundwater flow.
+    2. **Domain** – geometry and layering.
+    3. **Boundary conditions** – head or flux specified at boundaries.
+
+    Once solved, the distribution of **hydraulic head** allows:
+    - Drawing **equipotentials**
+    - Deducing **flow paths**
+
+    This is illustrated in Figure 5.1:
+    1. shows the physical system
+    2. reformulates it mathematically
+    3. solves for head contours and flow directions
+
+  .container width:{55%}
+    !(100%)[Figure 5.1](image/franklin_fig_5-1.png "From physical system to solution: geometry → equation → head → flow pattern")
+
+
+# More About Dimensionality
+
+.row
+  .container width:{60%}
+    The dimensionality of the **flow domain** is not necessarily the same as that of the **flow equation**.
+
+    - A 1D equation can describe flow in a 3D domain if flow occurs in one direction only.
+    - The **actual direction of water movement** determines dimensionality.
+
+    Example:
+    - Figure 5.2 shows a confined aquifer between two rivers.
+    - Though 3D in structure, flow is only in x-direction.
+    - Therefore, it is governed by a 1D flow equation.
+
+  .container width:{40%}
+    !(100%)[River-aquifer system](image/franklin_fig_5-2.png "Flow is 1D even in a 3D system")
+
+
+# Deriving Groundwater Flow Equations
+
+.row
+  .container width:{60%}
+    Groundwater flow equations are derived from **mass conservation** applied to a **representative elementary volume (REV)**.
+
+    General conservation statement:
+
+    .container borderwidth:{0.5pt} padding:{0.5cm} background:{.lightblue} alignment:{center}
+      $ \text{mass inflow} - \text{mass outflow} = \text{change in storage over time} $
+
+    We account for:
+    - Flow through all faces of the REV
+    - Density ($ \rho_w $), porosity ($ n $)
+    - Velocity components in x, y, z
+
+  .container width:{40%}
+    !(100%)[REV and flow directions](image/franklin_fig_5-3.png "Control volume to derive the equation")
+
+# Mathematical Representation of Conservation
+.align{center}
+    .container width:{50%} background:{.lightblue} padding:{0.5cm} alignment:{center} borderwidth:{0.5pt}
+      $ M_{x1} - M_{x2} + M_{y1} - M_{y2} + M_{z1} - M_{z2} = \frac{\partial}{\partial t} (\rho_w n \Delta x \Delta y \Delta z) $
+    .align{end}
+      !(40%)[REV and flow directions](image/franklin_fig_5-3.png "Control volume to derive the equation")
+This says that the net mass inflow equals the rate of mass accumulation in the REV.
+
+
+# Mass Flux Derivation in x-direction
+
+.row
+  .container width:{50%}
+    For x-direction inflow:
+
+    .container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+      $ M_{x1} = \left[ \rho_w q_x - \frac{1}{2} \frac{\partial (\rho_w q_x)}{\partial x} \Delta x \right] \Delta y \Delta z $
+
+    For x-direction outflow:
+
+    .container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+      $ M_{x2} = \left[ \rho_w q_x + \frac{1}{2} \frac{\partial (\rho_w q_x)}{\partial x} \Delta x \right] \Delta y \Delta z $
+
+    Net inflow:
+
+    .container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+      $ M_{x1} - M_{x2} = - \frac{\partial (\rho_w q_x)}{\partial x} \Delta x \Delta y \Delta z $
+
+  .container width:{50%}
+    Same derivation applies in y and z:
+
+    .container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+      $ M_{y1} - M_{y2} = - \frac{\partial (\rho_w q_y)}{\partial y} \Delta x \Delta y \Delta z $
+
+    .container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+      $ M_{z1} - M_{z2} = - \frac{\partial (\rho_w q_z)}{\partial z} \Delta x \Delta y \Delta z $
+
+
+
+# Full Conservation Equation
+
+.container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+  $ - \left[ \frac{\partial (\rho_w q_x)}{\partial x} + \frac{\partial (\rho_w q_y)}{\partial y} + \frac{\partial (\rho_w q_z)}{\partial z} \right] = \frac{\partial (\rho_w n)}{\partial t} $
+
+Assuming $ \rho_w $ is constant:
+
+.container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+  $ - \left[ \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y} + \frac{\partial q_z}{\partial z} \right] = \frac{1}{\rho_w} \frac{\partial (\rho_w n)}{\partial t} $
+
+
+
+# Substituting Specific Storage
+
+.container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+  $ \frac{1}{\rho_w} \frac{\partial (\rho_w n)}{\partial t} = S_s \frac{\partial h}{\partial t} $
+
+Thus, the conservation equation becomes:
+
+.container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+  $ \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y} + \frac{\partial q_z}{\partial z} = - S_s \frac{\partial h}{\partial t} $
+
+
+
+# Darcy’s Law and Final Governing Equation
+
+Recall: $ q_x = -K_x \frac{\partial h}{\partial x} $, etc.
+
+.container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+  $ \frac{\partial}{\partial x} \left( K_x \frac{\partial h}{\partial x} \right) + \frac{\partial}{\partial y} \left( K_y \frac{\partial h}{\partial y} \right) + \frac{\partial}{\partial z} \left( K_z \frac{\partial h}{\partial z} \right) = S_s \frac{\partial h}{\partial t} $
+
+This is the **main equation for flow in saturated porous media**.
+
+
+
+# Special Cases of the Flow Equation
+
+## Steady-state ($ \partial h / \partial t = 0 $):
+
+.container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+  $ \frac{\partial}{\partial x} \left( K_x \frac{\partial h}{\partial x} \right) + \frac{\partial}{\partial y} \left( K_y \frac{\partial h}{\partial y} \right) + \frac{\partial}{\partial z} \left( K_z \frac{\partial h}{\partial z} \right) = 0 $
+
+If medium is isotropic and homogeneous:
+
+.container width:{80%} padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+  $ \frac{\partial^2 h}{\partial x^2} + \frac{\partial^2 h}{\partial y^2} + \frac{\partial^2 h}{\partial z^2} = 0 $
+
+
+
+# With Transmissivity and Source Term
+
+Using $ T_x = K_x b $, $ S = S_s b $:
+
+.align{center}
+  .container padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ \frac{\partial}{\partial x} \left( T_x \frac{\partial h}{\partial x} \right) + \frac{\partial}{\partial y} \left( T_y \frac{\partial h}{\partial y} \right) + \frac{\partial}{\partial z} \left( T_z \frac{\partial h}{\partial z} \right) = S \frac{\partial h}{\partial t} $
+
+Including source/sink term $ Q(x,y,z,t) $:
+
+.align{center}
+  .container padding:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ \frac{\partial}{\partial x} \left( K_x \frac{\partial h}{\partial x} \right) + \frac{\partial}{\partial y} \left( K_y \frac{\partial h}{\partial y} \right) + \frac{\partial}{\partial z} \left( K_z \frac{\partial h}{\partial z} \right) + Q(x,y,z,t) = S_s \frac{\partial h}{\partial t} $
+
+# Dupuit’s Assumption for Unconfined Aquifer
+
+In Dupuit approximation (vertical gradient negligible):
+
+.align{center}
+   .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+     $ \frac{\partial}{\partial x} \left( K(x,y) h \frac{\partial h}{\partial x} \right) + \frac{\partial}{\partial y} \left( K(x,y) h \frac{\partial h}{\partial y} \right) = S_y \frac{\partial h}{\partial t} $
+
+This is **Boussinesq's equation**, commonly used for unconfined aquifers.
+
+.align{center}
+  .container width:{70%} alignment:{center}
+    !(90%)[Dupuit flow](image/franklin_fig_5-4.png "Dupuit's assumption simplifies flow in an unfonfined aquifer. a) actual flow, b) Dupuit approximation")
+
+# Boundary Conditions
+.row
+  .container width:{40%}
+    To solve a groundwater flow equation, we must define **boundary conditions** — they define how the simulation domain interacts with its surroundings.
+
+    The three main types:
+    1. **Dirichlet** (first-type): set hydraulic head
+    2. **Neumann** (second-type): set water flux
+    3. **Cauchy** (third-type): relate head and flux
+
+    These are essential for:
+    - Specifying known conditions (e.g., river stage)
+    - Simulating internal features (e.g., wells)
+    - Representing no-flow or recharge zones
+
+  .container width:{60%}
+    !(100%)[Boundary examples](image/franklin_fig_5-5.png)
+    _Examples of Dirichlet, Neumann, and Cauchy BCs_
+
+
+# Boundary Conditions
+## First-Type Boundary (Dirichlet)
+
+.row
+  .container width:{55%}
+    Dirichlet boundaries specify **hydraulic head** directly.
+
+    Examples:
+    - Lake or river with known water level
+    - Constant head boundaries (e.g., 120 m)
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ h(x, y, z)|_\Gamma = h_1(x, y, z, t), \quad (x, y, z) \in \Gamma $
+
+## Second-Type Boundary (Neumann)
+
+.row
+  .container width:{55%}
+    Neumann boundaries specify **flux** across a surface (outflow or inflow).
+
+    Examples:
+    - Recharge zone
+    - Extraction or injection well
+    - No-flow boundary (special case: $ q_n = 0 $)
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ q_n|_\Gamma = q_n(x, y, z, t) \quad \text{or} \quad Q_n|_\Gamma = Q_1(x, y, z, t) $
+
+    where $ q_n $ is Darcy velocity [L/T], $ Q_n $ is total flow [L³/T]
+
+# Boundary Conditions
+## Third-Type Boundary (Cauchy)
+
+.row
+  .container width:{55%}
+    Cauchy boundaries relate **flux to head difference** between domain and external system.
+
+    - Often used at interfaces with surface water bodies (e.g., river–aquifer exchange)
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ q_n = \frac{K_m}{M} \left[ h(x,y,z,t) - h_m(x,y,z,t) \right], \quad (x,y,z) \in \Gamma $
+
+    where:
+    - $ K_m $ = hydraulic conductivity of boundary material
+    - $ M $ = boundary thickness
+    - $ h_m $ = external head (e.g., river stage)
+
+## Summary of Boundary Conditions
+
+.row
+  .container width:{100%}
+    - **Dirichlet**: known head — simple to implement, good for constant-head features
+    - **Neumann**: known flux — useful for recharge, no-flow, or well inflow/outflow
+    - **Cauchy**: flexible — allows head to vary and adjusts flux based on difference
+
+    The choice depends on physical setting, data availability, and model objectives.
+
+
+
+# Initial Conditions
+
+.row
+  .container width:{60%}
+    For **transient problems**, we must specify an **initial condition** — the hydraulic head throughout the domain at time $ t = 0 $.
+
+    This is not required for **steady-state** problems.
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ h(x, y, z, 0) = h_0(x, y, z) $
+
+
+
+# Flow-Net Analysis
+
+.row
+  .container width:{60%}
+    Once the flow equation and boundaries are specified, we can sketch:
+    - **Streamlines**: direction of groundwater flow
+    - **Equipotential lines**: contours of equal hydraulic head
+
+    These intersect at right angles in isotropic, homogeneous systems.
+
+    The Laplace equation for 2D steady-state flow is:
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ \frac{\partial^2 h}{\partial x^2} + \frac{\partial^2 h}{\partial y^2} = 0 $
+
+
+
+# Rules for Flow Nets
+
+.row
+  .container width:{100%}
+    - Equipotential lines are perpendicular to streamlines
+    - Curvilinear squares form where lines intersect
+    - Same head drop across equipotentials; same flow between streamlines
+    - No-flow boundaries are parallel to flow lines
+    - Constant-head boundaries align with equipotentials
+
+
+
+# Flow Net Example
+
+.row
+  .container width:{55%}
+    This dam seepage problem shows:
+    - Constant head on each side (pool levels)
+    - No flow along bottom boundary (impermeable base)
+    - Flow net with curved equipotentials & streamlines forming squares
+
+  .container width:{45%}
+    !(100%)[Flow net under dam](image/franklin_fig_5-6.png)
+    _Seepage through a permeable layer beneath a dam_
+
+
+
+# Estimating Flow with Darcy’s Law
+
+.row
+  .container width:{50%}
+    For one flow channel between equipotentials:
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ \Delta Q = T \Delta h \frac{\Delta W}{\Delta L} $
+
+  .container width:{50%}
+    Total flow using $ n_f $ flow channels and $ n_d $ equipotentials:
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ Q = \frac{n_f}{n_d} T \Delta H $
+
+
+
+# Flow Nets in Heterogeneous Media
+
+.row
+  .container width:{55%}
+    In **heterogeneous media**, lines don’t form squares. Still, continuity of flow applies:
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ T_1 \Delta h_1 \frac{\Delta W_1}{\Delta L_1} = T_2 \Delta h_2 \frac{\Delta W_2}{\Delta L_2} $
+
+    If $ \Delta h_1 = \Delta h_2 $, then:
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ \frac{T_1}{T_2} = \frac{\Delta L_1 \Delta W_2}{\Delta L_2 \Delta W_1} $
+
+  .container width:{45%}
+    !(100%)[Flow net heterogeneous](image/franklin_fig_5-9.png)
+    _Flow path changes with transmissivity_
+
+
+
+# Flow Line Refraction at Interfaces
+
+.row
+  .container width:{55%}
+    Flow changes direction when crossing a boundary between media with different conductivity.
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ \frac{K_1}{K_2} = \frac{\tan(\alpha_1)}{\tan(\alpha_2)} $
+
+    This is the **refraction law** for flow lines.
+
+  .container width:{45%}
+    !(100%)[Refraction](image/franklin_fig_5-10.png)
+    _Flow lines bend at boundaries of differing $ K $ values_
+
+
+
+# Flow Nets in Anisotropic Media
+
+.row
+  .container width:{60%}
+    When $ K_x \ne K_y $, we transform coordinates:
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ \left( \frac{K_x}{K_y} \right) \frac{\partial^2 h}{\partial x^2} + \frac{\partial^2 h}{\partial y^2} = 0 $
+
+    Change coordinates to:
+
+  .container alignment:{center} padding:{0.2cm} borderwidth:{0.5pt} background:{.lightblue}
+    $ X = \left( \frac{K_y}{K_x} \right)^{1/2} x \quad \Rightarrow \quad \frac{\partial^2 h}{\partial X^2} + \frac{\partial^2 h}{\partial y^2} = 0 $
+
+    Now the problem becomes Laplacian again — squares restored in transformed domain.
+
+
+
+# Flow Net Transformation Summary
+
+.row
+  .container width:{50%}
+    1. Identify principal directions of $ K $
+    2. Transform $ x $-axis by $ (K_y / K_x)^{1/2} $
+    3. Sketch flow net with squares
+    4. Reproject to original coordinates
+
+  .container width:{50%}
+    !(100%)[Anisotropic flow net](image/franklin_fig_5-11.png)
+    _From rectangles to squares using coordinate transformation_
