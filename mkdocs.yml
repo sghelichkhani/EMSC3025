@@ -2,7 +2,7 @@ site_name: water-course
 site_url: https://water-course.github.io 
 nav:
   - Home: index.md
-  - Course: course.md
+  - Content: content.md
 theme:
   name: material
   palette:
