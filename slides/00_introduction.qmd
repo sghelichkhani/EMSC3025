@@ -1,4 +1,4 @@
-.docname {Introdcution}
+.docname {Introduction}
 .doctype {slides}
 .doclang {English}
 .theme {paperwhite} layout:{beamer}
