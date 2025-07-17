@@ -256,7 +256,7 @@
   	- Key global processes:
   	  - **Evaporation** from oceans/lakes
   	  - **Precipitation** over land and sea
-  	  - **Runoff** moves water back to oceans
+  	  - **Run-off** moves water back to oceans
   	- Oceans evaporate more than they receive.
   	- Continents receive more precipitation than they lose.
 
@@ -271,7 +271,7 @@
   .container width:{40%}
   	- Precipitation is partitioned into:
   	  - **Evaporation**
-  	  - **Runoff**
+  	  - **Run-off**
   	  - **Groundwater recharge**
   	- Distribution varies by climate:
   	  - Humid temperate: balanced
@@ -331,11 +331,11 @@
   	- Focuses on processes at **basin scale**:
   	  - **Evaporation**
   	  - **Precipitation**
-  	  - **Runoff**
+  	  - **Run-off**
   	- Includes sub-processes:
   	  - Interception
   	  - Transpiration
-  	  - Infiltration and throughflow
+  	  - Infiltration and through-flow
 
   .container width:{70%}
   	!(100%)[catchmentcycle](image/davie_fig_1-10.png "Hydrological cycle processes at the catchment scale")
@@ -359,7 +359,7 @@
   	- $ P $: Precipitation
   	- $ E $: Evaporation
   	- $ \Delta S $: Change in storage
-  	- $ Q $: Runoff (or river discharge)
+  	- $ Q $: Run-off (or river discharge)
 
   .container width:{50%}
   	!(100%)[balanceequation](image/internet_waterbalance.jpg)
@@ -397,7 +397,7 @@
   	  - **Spatial variability** in rainfall
   	  - **Temporal mismatch** in data resolution
   	  - Estimating $ \Delta S $ is often hard
-  	- Hydrological **models** often use the water balance to simulate runoff.
+  	- Hydrological **models** often use the water balance to simulate run-off.
   	- Model example:
   	  Input daily rainfall and evaporation to calculate daily discharge using:
   	  $ Q = P - E - \Delta S $

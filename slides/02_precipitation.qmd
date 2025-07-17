@@ -115,7 +115,7 @@ forces within a cloud.
         - surface for vapour to condense into liquid.
         - Include dust, smoke, sea salt
         - Without them, supersaturation can occur without precipitation
-        - Forms a basis for **cloud seeding** (silver iodide, more recently *potassium cloride*)
+        - Forms a basis for **cloud seeding** (silver iodide, more recently *potassium chloride*)
         - Various forms of cloud seeding: References (Mather et al. 1997)
         - Case of a paper mill in South Africa.
 
@@ -138,8 +138,8 @@ forces within a cloud.
 .row gap:{1cm}
     .container width:{50%}
         - **Condensation**, difference in vapour pressure and water: slow, vapour adds to droplets
-        - **Sublimation on ice**, difference in pressur is bigger: faster, due to greater vapour gradient
-        - Main process that raindrops grow: **Collision and coalescence**, two waterdrops collide and join together and they repeat.
+        - **Sublimation on ice**, difference in pressure is bigger: faster, due to greater vapour gradient
+        - Main process that raindrops grow: **Collision and coalescence**, two water-drops collide and join together and they repeat.
             - Dominant in warm clouds.
             - Droplets collide, merge, and grow large enough to fall.
 
@@ -147,9 +147,9 @@ forces within a cloud.
         .emph{Bergeon Process}
 
         - Explains how ices crystals are formed in mixed-phase clouds.
-        - Important is the saturation vapour prssure.
+        - Important is the saturation vapour pressure.
         - $ P_{\text{sat. water over ice}} < P_{\text{ambient}} < P_{\text{sth}} $
-        - The mechanism of drolet formation within clouds are not completely understood.
+        - The mechanism of droplet formation within clouds are not completely understood.
 
 
 
@@ -198,7 +198,7 @@ forces within a cloud.
     .container width:{50%}
         .mermaid
             flowchart LR
-                A([Precipiation]) --> B([Dynamic Controls])
+                A([Precipitation]) --> B([Dynamic Controls])
                 A --> C([Static Controls])
                 C --> D([Altitude])
                 C --> E([Aspect])
@@ -222,7 +222,7 @@ forces within a cloud.
         !(100%)[New Zealand](image/davie_fig_2-5-a.png)
 
     .container width:{60%}
-        - Predominent weather pattern for the South Island of New Zealand is a series of rain-bearing depressions sweeping up from the Souther Ocean, interrupted by drier blocking anticyclones.
+        - Predominant weather pattern for the South Island of New Zealand is a series of rain-bearing depressions sweeping up from the Southern Ocean, interrupted by drier blocking anticyclones.
 
         - Weather pattern: westerly airflow, bringing moist air from the Tasman Sea.
         - One the west side, mostly rain. On the eastern side: föhn (locally as nor-wester).
@@ -287,7 +287,7 @@ forces within a cloud.
         - Volume is divided by the area to get **depth**.
         - Simple in concept — but prone to **multiple sources of error**.
     .container width:{27%}
-        !(100%)[Text](image/davie_fig_2-6-a.png "Fourteenth-centruing rain gauge from Korea.")
+        !(100%)[Text](image/davie_fig_2-6-a.png "Fourteenth-century rain gauge from Korea.")
     .container width:{30%}
         !(100%)[Text](image/davie_fig_2-6-b.png "Rain gauge sitting above the surface to avoid splash.")
 
@@ -300,7 +300,7 @@ forces within a cloud.
             A([Rainfall Measurement Errors]) --> B([Evaporation])
             A([Rainfall Measurement Errors]) --> C([Wetting])
             A([Rainfall Measurement Errors]) --> D([Rain Splash])
-            A([Rainfall Measurement Errors]) --> E([Turbulance])
+            A([Rainfall Measurement Errors]) --> E([Turbulence])
 
 .row
     .container width:{50%}
@@ -372,9 +372,9 @@ forces within a cloud.
         - Can **significantly improve** measurement accuracy.
 
     .container width:{40%} height:{100%}
-        !(100%)[Turbulant flow](image/davie_fig_2-8.png "Top: Turbulent flow over a raised gauge (eddies and drop deflection). Bottom: Baffles surrounding a rain gauge to lessen the impact of wind. Wind shield ")
+        !(100%)[Turbulent flow](image/davie_fig_2-8.png "Top: Turbulent flow over a raised gauge (eddies and drop deflection). Bottom: Baffles surrounding a rain gauge to lessen the impact of wind. Wind shield ")
 
-        !(100%)[Turbulant flow](image/davie_fig_2-9.png)
+        !(100%)[Turbulent flow](image/davie_fig_2-9.png "Turbulent flow over an elevated rain gauge.")
 
 
 
@@ -382,7 +382,7 @@ forces within a cloud.
 
 .row
   .container width:{50%}
-    .box title:{How to optimse?} background:{.lightred}
+    .box title:{How to optimise?} background:{.lightred}
         - No universal "perfect" design.
         - The **best gauge** depends on:
             - Local conditions (e.g. snow, wind exposure)

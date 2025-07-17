@@ -54,8 +54,7 @@
 
 .row gap:{1cm}
     .container width:{40%}
-        .cite {davie2019fundamentals} _River Wye: Average values for 100 days during autumn of 1995_
-        !(100%)[River Wye, Wales](image/davie_fig_5-1.png)
+        !(100%)[River Wye, Wales](image/davie_fig_5-1.png "River Wye: Average values for 100 days during autumn of 1995")
 
     .container width:{50%}
         - **Peak/storm flow**: Water present in a stream during and immediately after a significant rainfall event.
@@ -78,21 +77,19 @@
 
     .container width:{60%}
         .align{center}
-            !(100%)[Storm Hydrograph](image/davie_fig_5-2.png)
-            .cite {davie2019fundamentals} _A typical storm hydrograph_
+            !(100%)[Storm Hydrograph](image/davie_fig_5-2.png "A typical storm hydrograph")
 
 # Runoff Mechanism
 
 .row gap:{1cm}
     .container width:{50%}
-        !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png)
-        .cite {davie2019fundamentals} _Hillslope runoff processes_
+        !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png "Hillslope runoff processes")
 
         Continuous sheets of overland water flow are rarely observed in nature.
 
     .container width:{50%}
         - **Overland flow**: Water flowing over the land surface after precipitation.
-        - Horton (1933) .cite {horton1933role}: Overland flow occurs when rainfall intensity exceeds the infiltration capacity of the soil.\
+        - Horton (1933): Overland flow occurs when rainfall intensity exceeds the infiltration capacity of the soil.\
             Excess water then flows as a shallow surface layer.\
             Infiltration capacity acts as a **threshold**.
         - .emph{However}, in most cases, infiltration rates exceed typical rainfall intensities.
@@ -109,13 +106,12 @@
 
 .row gap:{1cm}
     .container width:{50%}
-        !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png)
-        .cite {davie2019fundamentals} _Fig. 5.3 Hillslope runoff processes_
+        !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png "Fig. 5.3 Hillslope runoff processes")
 
     .container width:{50%}
-        - Betson (1964) .cite {betson1964watershed}: Introduced the concept of partial contributing areas — only specific parts of a catchment produce overland flow.\
+        - Betson (1964): Introduced the concept of partial contributing areas — only specific parts of a catchment produce overland flow.\
             The importance of infiltration is retained, but the idea of uniform thin flow is questioned.
-        - Hewlett & Hibbert (1967) .cite {mcdonnel2009hewlett}: Overland flow occurs when the water table rises to the surface due to infiltration and throughflow.\
+        - Hewlett & Hibbert (1967): Overland flow occurs when the water table rises to the surface due to infiltration and throughflow.\
             This results in saturated areas near channels and lower slopes where **return flow** and **direct precipitation** dominate.
 
 .align{center}
@@ -204,8 +200,8 @@
         - The Maimai experiments confirmed groundwater as a **rapid** source of streamflow.
 
     .container width:{40%}
-        !(100%)[Maimai River](image/davie_fig_5-5.png)
-        _.cite {davie2019fundamentals} McGlynn et al. (2002) confirmed significant groundwater contributions to streamflow at Maimai, including piston flow and macropore evidence_.
+        !(100%)[Maimai River](image/davie_fig_5-5.png "McGlynn et al. (2002) confirmed significant groundwater contributions to streamflow at Maimai, including piston flow and macropore evidence")
+
 
 # A summary of different processes
 .fullspan
@@ -245,7 +241,7 @@
         - The velocity–area method works well for **small rivers**, but its **accuracy depends on sampling strategy**.
         - It becomes less reliable in **turbid, shallow, or rough-bedded streams** (e.g., mountain creeks).
         - In such cases, consider alternative methods like **dilution gauging**.
-        _.cite {davie2019fundamentals} Illustration of float-based surface velocity measurement_
+        _Illustration of float-based surface velocity measurement_
 
 
 # Stage–Discharge Relationship
@@ -271,8 +267,7 @@
         - Thus, **errors increase at the upper end** of the curve.
 
         Remember: discharge is **inferred** from measured stage — not directly observed.
-        !(100%)[Rating curve](image/davie_fig_5-8.png)
-        .cite {davie2019fundamentals} _Fig 5.8 - A stage-discharge (rating) curve_
+        !(100%)[Rating curve](image/davie_fig_5-8.png "A stage-discharge (rating) curve")
 
 
 # Flumes and weirs
@@ -307,8 +302,7 @@
         - These equations follow **ISO 1438** standards for gauging structures.
 
     .container width:{50%}
-        !(100%)[Discharge coefficient](image/davie_fig_5-10.png)
-        .cite {davie2019fundamentals} _Fig 5.10 – Discharge coefficient for different V-notch angles_
+        !(100%)[Discharge coefficient](image/davie_fig_5-10.png "Discharge coefficient for different V-notch angles")
 
 
 # Flumes and weirs: design considerations
@@ -334,14 +328,12 @@
             - **Weir**: Water flows **over** a structure (like a small waterfall).
             - **Flume**: Water flows **through** a structure without dropping.
         - Flumes tend to produce **less sedimentation**, making them suitable for **high-energy environments**.
-        !(100%)[V-notch vs flume](image/davie_fig_5-11.png)
-        .cite {davie2019fundamentals} V notch weir.
+        !(100%)[V-notch vs flume](image/davie_fig_5-11.png "V notch weir")
 
     .container width:{30%}
-        - Trapezoidal flumes can **flush out sediment** efficiently, avoiding stilling pond buildup.
+        - Trapezoidal flumes can **flush out sediment** efficiently, avoiding stilling pond build-up.
         - Both are suitable for small streams but not large rivers, due to structural stress.
-        !(100%)[Trapezoidal flume](image/davie_fig_5-12.png)
-        .cite {davie2019fundamentals} Trapezoidal Flume
+        !(100%)[Trapezoidal flume](image/davie_fig_5-12.png "Trapezoidal Flume")
 
 # Summary
 
@@ -354,8 +346,3 @@
             - Key mechanisms include variable source areas, piston flow, and macropore-driven throughflow.
             - Groundwater contributes rapidly via capillary rise during storms.
             - Streamflow is measured using methods like velocity–area, stage–discharge curves, and gauging structures (weirs/flumes).
-
-
-
-#
-.bibliography {bibliography.bib} style:{acm} decorativetitle:{yes}
