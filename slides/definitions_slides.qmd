@@ -1,8 +1,10 @@
 .pagemargin{bottomcenter}
-    EMSC3025/6025: Remote Sensing of Water Resources
-
-.pagemargin{bottomleft}
-    Dr. Sia Ghelichkhan
+    .container width:{35%} borderwidth:{1px} padding:{0.1cm} radius:{0.1cm} background:{.lightblue}
+        EMSC3025/6025: Remote Sensing of Water Resources
 
 .pagemargin{bottomright}
-    [Home](https://sghelichkhani.github.io/EMSC3025/course/)
+    Dr. Sia Ghelichkhan
+
+.pagemargin{bottomleft}
+    .container width:{100%} borderwidth:{1px} padding:{0.1cm} radius:{0.1cm} background:{.lightred}
+        [water-course](https://water-course.github.io/content)

@@ -1,10 +1,18 @@
-site_name: water-course
-site_url: https://water-course.github.io 
+site_name: Water Course
+site_url: https://water-course.github.io
 nav:
   - Home: index.md
   - Content: content.md
 theme:
   name: material
+  favicon: assets/favicon.png
+  logo: assets/favicon.png
   palette:
     scheme: default
     primary: light blue
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: ''

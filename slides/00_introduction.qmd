@@ -21,11 +21,49 @@
 
     ###! _Dr. Sia Ghelichkhan_
 
+# Welcome
+.align{center}
+  .container width:{60%} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
+    ##! Remote Sensing of Water Resources
+
+.row alignment:{center}
+    .container width:{60%} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{rgb(200, 225, 200)}
+      ####! Course Evolution
+      **Historical Focus Areas:**
+        - Previously titled **Groundwater**: Emphasised geochemistry and fine-scale groundwater processes, with aspects of hydrogeology.
+        - Later transitioned to **Remote Sensing of Water**.
+
+      **Current Direction:**
+      This year marks my first as course convenor, and I will be delivering the course for the foreseeable future. The curriculum has been comprehensively restructured and now consists of three core modules:
+        - Hydrological Cycle
+        - Remote Sensing of Water Resources
+        - Groundwater
+
+# Our Relationship to Water
+.whitespace height:{4cm}
+
+.align{center}
+  .container width:{60%} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
+    #! What is water to you?
+
+# Our Relationship to Water
+.row gap:{1cm} alignment:{center}
+  .container borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue} alignment:{center}
+    ##! What is water to Sia Ghelichkhan?
+
+.row gap:{1cm} alignment:{center}
+  .container width:{60%} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
+    - I am an Earth scientist with a strong interest in fluid dynamics and numerical modeling.
+    - My research is primarily focused on developing numerical methods to better understand Earth processes involving fluid flow.
+    - These processes include groundwater flow, glacio-isostatic adjustment of the Earth's surface, and mantle convection—each of which can be described as fluid dynamics under the right conditions.
+    - My main area of expertise is in data assimilation, aiming to improve our understanding of complex Earth systems through the integration of models and observations.
+
+
 # Course Objectives
 .align{center}
   .container width:{80%}
     .box title:{What is this course about} background:{.lightblue}
-        - Demonstrate an understanding of the **different components of water** in the landscape and how they interact.
+        -  Demonstrate an understanding of the **different components of water** in the landscape and how they interact.
         - Undertake quantitative analysis and interpretation of actual data related to water in Australia.
         - Understand a variety of remote sensing satellite missions and how the observations inform water research.
         - Critically evaluate technical reports and journal articles.
@@ -47,6 +85,16 @@ _Note: The actual content might change depending on our pace_
 | 10 | Groundwater -- Geology and Hydrogeology               ||
 | 11 | Misc. and Course Revision                              ||
 | 12 | Exam                                                  ||
+
+# Course Materials
+.align{center}
+  .container width:{60%} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
+    - [Canvas](https://canvas.anu.edu.au/courses/3453) will provide all the necessary resources for this course.
+    - [water-course.github.io](https://water-course.github.io) is the course website. It is part of me experimenting with new ways of delivering the course.
+    - I will be providing additional resources in form of (AI generated)podcasts and links to articles and videos for the course.
+    - Use either [Zulip](https://rswater.zulipchat.com) or [Canvas](https://canvas.anu.edu.au/courses/3453) to ask questions and discuss the course material.
+    - I am looking forward to your feedback on the course.
+
 
 
 # Assessment
@@ -89,35 +137,31 @@ _Note: The actual content might change depending on our pace_
     .box title:{Assignment III}
       - Groundwater component
       _ Post Week 7
-      - _Running a simulation+parameter analysis_.
+      - _parameter analysis_.
 .fullspan
   .align{center}
     .container width:{50%}
       .box type:{note} background:{.lightred}
-        Assignments will be posted on canvas and online.
+        - Assignments will be posted on canvas.
+        - All assignments will have the same grade.
 
 
 # Paper Critique
 
 .row gap:{1cm}
-  .container width:{50%}
+  .container width:{50%} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
     ## 1. Presentations & Reports
     - Each student presents a selected paper (10-minute talk). (Chosen from a list of papers, first come first serve)
     - Submit a written report ( $ \approx $ 5 pages).
-
-    ---
 
     ## 2. Engagement
     - Attend all presentations.
     - Ask questions and take notes — these will inform your peer review.
 
-
-  .container width:{50%}
+  .container width:{50%} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{rgb(200, 225, 200)}
     ## 3. Peer Review Assignment
     - After all presentations, each student will be assigned a peer to review.
     - Assignments are announced only *after* all talks are completed.
-
-    ---
 
     ## 4. Peer Review Criteria
     - Use notes and discussion points to guide your evaluation.
@@ -129,22 +173,23 @@ _Note: The actual content might change depending on our pace_
 # Schedule
 
 .align{center}
-  _EMSC3025 / EMSC6025 Timetable – Semester 2_
-  | Time  | Monday             | Wednesday          | Thursday            | Friday            |
-  |:------|--------------------|---------------------|--------------------|-------------------|
-  | 09–10 | Lec A, R1.02, J8   |                     |                    |                   |
-  | 11–12 |                    | Lec B, R1.02, J8    |                    |                   |
-  | 12–13 |                    |                     | TutA, R1.02, J8    |                   |
-  | 16–17 |                    |                     |                    | ComB, R1.02, J8*  |
-  | 17–18 |                    |                     | ComA, R1.02, J8    |                   |
+  .container borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{rgb(200, 225, 200)}
+    _EMSC3025 / EMSC6025 Timetable – Semester 2_
+    | Time  | Monday             | Wednesday          | Thursday            | Friday            |
+    |:------|--------------------|---------------------|--------------------|-------------------|
+    | 09–10 | Lec A, R1.02, J8   |                     |                    |                   |
+    | 11–12 |                    | Lec B, R1.02, J8    |                    |                   |
+    | 12–13 |                    |                     | TutA, R1.02, J8    |                   |
+    | 16–17 |                    |                     |                    | ComB, R1.02, J8*  |
+    | 17–18 |                    |                     | ComA, R1.02, J8    |                   |
 
 .box type:{Note} background:{.lightred}
-  [*] - At this point, we think _ComB_ will be a drop-in session in my office.
+  [*] - At this point, we think _ComB_ will be a drop-in session in my office on Fridays 1500-1600.
 
 # Lecturers
 
-.row gap:{1cm}
-  .container width:{35%} alignment:{center}
+.row gap:{0.5cm}
+  .container alignment:{center} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
     .box background:{.lightblue}
       Dr. Sia Ghelichkhan\
       siavash.ghelichkhan@anu.edu.au\
@@ -154,9 +199,7 @@ _Note: The actual content might change depending on our pace_
     .clip {circle}
       !(80%)[Sky](image/internet_SiaG.webp)
 
-
-
-  .container width:{30%} alignment:{center}
+  .container alignment:{center} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
     .box background:{.lightblue}
       Prof. Paul Tregoning\
       paul.tregoning@anu.edu.au\
@@ -166,7 +209,7 @@ _Note: The actual content might change depending on our pace_
     .clip {circle}
       !(80%)[Sky](image/internet_PaulT.webp)
 
-  .container width:{25%} alignment:{center}
+  .container width:{25%} alignment:{center} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
     .box background:{.lightblue}
       River Shaddock\
       River.Shaddock@anu.edu.au\
@@ -200,3 +243,21 @@ _Note: The actual content might change depending on our pace_
       - AD Education passes feedback to us so that we can improve the course
 
       **Need a volunteer. Email me if interested.**
+
+
+# Looking for more?
+
+.row gap:{1cm} alignment:{center}
+  .container width:{80%} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{rgb(200, 225, 200)}
+    ###! There are research opportunities!
+    ###! There are opportunities to undertake research projects related to this course, particularly in numerical modeling of groundwater systems.
+    ###! Please contact me if you are interested in pursuing these research opportunities!
+
+
+#
+.row gap:{1cm} alignment:{center}
+  .container borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{rgb(200, 225, 200)} alignment:{center}
+    #! Questions?
+
+.fullspan
+    !(40%)[Questiosn](image/internet_questions.jpg)

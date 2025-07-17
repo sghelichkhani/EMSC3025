@@ -1,4 +1,12 @@
-# Content 
+# Content
+Below is a comprehensive list of course materials for the Water Course.
+
+!!! Tip
+    The slides are presented in web-based format: navigate through them using the **arrow keys** to advance or go back, or press **ESC** for a slide overview.
+
+!!! Note
+
+    If you are an *ANU student* that is currently enrolled in the course, you could have a PDF format of the slides on [Canvas](https://canvas.anu.edu.au/courses/3453).
 
 ## Lecture Sequence
 
@@ -26,7 +34,7 @@
 
 ## 📚 Reference Materials
 
-This course draws exclusively from two comprehensive and authoritative texts:
+This course draws exclusively from two comprehensive texts:
 
 - **Tim Davie** (2008), *Fundamentals of Hydrology*, 2nd Edition, Routledge.
   _Used for precipitation, evaporation, runoff, and surface hydrology._
