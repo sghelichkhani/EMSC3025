@@ -22,9 +22,24 @@
     ###! _Dr. Sia Ghelichkhan_
 
 
+# Objectives of this Lecture
+.whitespace height:{2cm}
+
+.row gap:{1cm} alignment:{center}
+  .container width:{60%} borderwidth:{1pt} padding:{0.3cm} background:{.lightblue} radius:{0.5cm}
+    By the end of this lecture, you should be able to:
+    - Describe the **structure and properties of water** relevant to hydrology
+    - Understand the **concept and components of the hydrological cycle**
+    - Explain the **global distribution of water** and its limited availability
+    - Define the **water balance equation** and interpret each term
+    - Be able to recognise a **surface catchment**
+    - Identify challenges in applying hydrological concepts at different scales
+
+.fullspan
+  .align{center}
+    This lecture forms the foundation for all subsequent modules in the course.
 
 # What is hydrology?
-
 .row
   .container width:{60%}
     - *Hydrology* comes from Greek *hydor* (water) and Latin *logia* (study).
@@ -34,30 +49,28 @@
       - Distribution and movement of water
       - Interactions with land, atmosphere, and ecosystems
 
-  .container width:{30%}
-    !(80%)[Vivitus](image/internet_vivitus.jpg "The oldest known description of water cycle.")\
-    The oldest known description of water cycle: [...] _precipitation falling in the mountains infiltrated the Earth's surface and led to streams and springs in the lowlands_. [...]
+    .whitespace height:{1cm}
 
----
+    The oldest known description of water cycle:
+    >[...] _precipitation falling in the mountains infiltrated the Earth's surface and led to streams and springs in the lowlands. [...]
+
+  .container width:{30%}
+    !(80%)[Vivitus](image/internet_vivitus.jpg "The oldest known description of water cycle.")
+
+
 
 # Humans and water
-
-
-
 .fullspan
   .align{center}
     These human–water interactions are central to sustainable water management.\
     Hydrology includes the study of **human impacts** on water systems.
-    [Abbot et al. Nature 2019](https://www.researchgate.net/publication/333678347_Human_domination_of_the_global_water_cycle_absent_from_depiction_and_perceptions)\
-    !(80%)[Water Interaction](image/internet_Abbott.png)
-  <!-- Comment -->
+    [Abbot et al. Nature 2019](https://www.researchgate.net/publication/333678347_Human_domination_of_the_global_water_cycle_absent_from_depiction_and_perceptions)
 
----
+    !(80%)[Water Interaction](image/internet_Abbott.png "from Abbot et al. Nature 2019")
 
 # Hydrology as a science
-
 .row
-  .container width:{60%}
+  .container width:{50%}
     > “The total quantity of fresh water on earth could satisfy all the needs of the human population if it were evenly distributed and accessible.”
     > — Stumm (1986)
 
@@ -66,13 +79,13 @@
       - A **pure science** – understanding natural processes
       - An **applied science** – solving water challenges
 
-  .container width:{40%}
-    !(100%)[SDGs](image/internet_SDGs.png)
-    _Resolving global disparities in water availability and demand is one of the key SDGs_ [17 Sustainable Development Goals](https://sdgs.un.org/goals)
----
+  .container width:{50%} alignment:{center}
+    !(100%)[SDGs](image/internet_SDGs.png "Resolving global disparities in water availability and demand is one of the key SDGs")
+
+    .container borderwidth:{1pt} alignment:{center} padding:{0.2cm} background:{rgb(240,240,240)}
+      [UN's 17 Sustainable Development Goals](https://sdgs.un.org/goals)
 
 # Disciplinary pathways
-
 .row
   .container width:{60%}
     - Two main traditions:
@@ -83,15 +96,14 @@
       - **Geohydrology** – groundwater systems
       - **Ecohydrology** – water–ecosystem interactions
 
-  .container width:{40%}
-    !(100%)[Engineering Hydrology](image/internet_ETHHydraulicEngineering.jpg)
-    _We will focus on water processes in this course. Hydraulic engineering is more focused on design and measurement focus_. [ETH-Zurich](https://vaw.ethz.ch/en/research/hydraulic-engineering.html)
+  .container width:{40%} alignment:{center}
+    [ETH-Zurich](https://vaw.ethz.ch/en/research/hydraulic-engineering.html)
 
----
+    !(100%)[Engineering Hydrology](image/internet_ETHHydraulicEngineering.jpg "We will focus on water processes in this course. Hydraulic engineering is more focused on design and measurement focus.")
 
-# Why is water important?
 
-.row
+# A resource and more
+.row gap:{1cm}
   .container width:{50%}
     - Covers more than **70%** of Earth’s surface
     - Essential to:
@@ -100,40 +112,36 @@
       - **Ecological functioning**
     - For **Indigenous Australians**, water is integral to **Country**, ceremony, and responsibility
 
-  .container width:{50%}
-    !(80%)[Baaka Monthly](image/internet_monthBaakaa.png)\
-    Watch [Homily to Country - National Gallery of Victoria](https://vimeo.com/517606482?p=1s)
+  .container width:{50%} alignment:{center}
+    !(80%)[Baaka Monthly](image/internet_monthBaakaa.png "An article in *the Monthly* magazine on the fate of the Murray-Darling Basin")
 
----
+    .container borderwidth:{1pt} alignment:{center} padding:{0.1cm} background:{rgb(240,240,240)}
+      Watch [Homily to Country - National Gallery of Victoria](https://vimeo.com/517606482?p=1s)
 
 # Molecular properties of water
-
 .row
   .container width:{50%}
-    - Water = H₂O: two hydrogen atoms covalently bonded to oxygen
+    - Water: $ H_2O $  two hydrogen atoms covalently bonded to oxygen
+
     - It is a **bipolar molecule**:
       - Positive hydrogen, negative oxygen
+
     - Bonds:
       - **Covalent** within molecules
       - **Hydrogen** between molecules
 
-    !(40%)[molecule](image/davie_fig_1-1.png)
-
-    .align{center}
-      _Structure of a water molecule_
+    !(40%)[molecule](image/davie_fig_1-1.png "Structure of a water molecule")
 
   .container width:{50%}
-        - Leads to:
+    - Leads to:
       - High **surface tension**
       - Strong **cohesion**
       - Exceptional **solvent** capability
 
-    !(70%)[hydrogenbonding](image/davie_fig_1-2.png)\
-    _Hydrogen bonding between water molecules_
+    !(70%)[hydrogenbonding](image/davie_fig_1-2.png "Hydrogen bonding between water molecules")
 
 
 # Physical Properties
-
 .row
    .container width:{50%}
       ## Density
@@ -142,6 +150,7 @@
       - Implications:
             - Lakes freeze from top-down
             - Aquatic ecosystems persist in cold conditions
+
       !(80%)[density](image/davie_fig_1-3.png "Water density as a function of temperature")
 
     .container width:{50%}
@@ -157,10 +166,10 @@
       | Dry soil         | 1.1                      |
       | Ethanol          | 0.7                      |
       | Iron             | 0.44                     |
+      "Specific heat capacity of different substances"
 
 
 # Phase transitions
-
 .row
   .container width:{40%}
     - Water changes state:
@@ -175,10 +184,14 @@
   .container width:{60%}
     !(100%)[phasetransitions](image/davie_fig_1-4.png "Phase transitions and latent heat of water")
 
----
+#
+.whitespace height:{3cm}
+.row alignment:{center}
+  .container borderwidth:{1pt} padding:{0.2cm} background:{.lightblue} radius:{0.5cm}
+      #! A spatial unit to study the water cycle?
 
-# What is a catchment?
 
+# A catchment?
 .row
   .container width:{50%}
     - A **catchment** is a land area where surface water drains to a common point
@@ -189,10 +202,7 @@
   .container width:{50%}
     !(100%)[catchmentmap](image/davie_fig_1-5.png "Catchment boundaries and surface drainage patterns")
 
----
-
 # Groundwater vs surface catchments
-
 .row
   .container width:{40%}
     - **Surface water divides** ≠ **groundwater divides**
@@ -204,9 +214,7 @@
   .container width:{60%}
     !(100%)[gwdivide](image/davie_fig_1-6.png "Difference between groundwater and surface water divides")
 
-
 # The hydrological cycle
-
 .row
   .container width:{50%}
   	- The **hydrological cycle** describes water movement between Earth and atmosphere as gas, liquid, or solid.
@@ -216,12 +224,9 @@
   	  - Only **~0.27%** of water is available for human use.
 
   .container width:{50%}
-    !(100%)[HydroCycle](image/internet_hydrocycle.jpg)
-
----
+    !(100%)[HydroCycle](image/internet_hydrocycle.jpg "Different elements of the hydrological cycle")
 
 # Global distribution of water
-
 .row
   .container width:{60%}
   	- Most of Earth's water is stored in:
@@ -243,14 +248,9 @@
   	| Marsh/wetlands       | 11.5              | 0.0008     |
   	| Rivers               | 2.12              | 0.00015    |
   	| Biota                | 1.12              | 0.00008    |
-
-    _Table  shows global estimates_
-
-
----
+    "Global estimates of water distribution"
 
 # Components of the global cycle
-
 .row
   .container width:{50%}
   	- Key global processes:
@@ -261,8 +261,7 @@
   	- Continents receive more precipitation than they lose.
 
   .container width:{50%}
-  	!(100%)[globalcycle](image/davie_fig_1-7.png "The global hydrological cycle and proportional flow volumes")
-    _Rekacewicz, UNEP 2008_
+  	!(100%)[globalcycle](image/davie_fig_1-7.png "The global hydrological cycle and proportional flow volumes, Rekacewicz, UNEP 2008")
 
 
 # Climate zones and water partitioning
@@ -282,17 +281,16 @@
 
 
 # Water availability vs population
-
 .row
   .container width:{40%}
   	- Per capita water availability is **misleading** if population and use patterns are ignored.
   	- Example: Australia is water-rich by volume but highly variable in space and time.
   	- Effective management depends on **abstraction**, **storage**, and **equity**.
 
-  .container width:{60%}
+  .container width:{60%} alignment:{center}
 
   	| Richest countries | 1,000 m³/yr | Poorest countries | 1,000 m³/yr |
-  	|-------------------|-------------|-------------------|-------------|
+  	|:------------------|-------------|:------------------|-------------|
   	| Iceland           | 525         | Kuwait            | 0           |
   	| Guyana            | 301         | Bahrain           | 0.003       |
   	| Suriname          | 184         | UAE               | 0.016       |
@@ -304,13 +302,12 @@
   	| Australia         | 21          | South Africa      | 0.843       |
   	| USA               | 8           | Kenya             | 0.467       |
   	| USA               | 2           | Israel            | 0.093       |
+  	"Comparison of annual internal renewable water per capita."
 
-  	_Comparison of annual internal renewable water per capita_
+    Other examples: Australia (21), USA (9), UK (2.3)
 
-  	Other examples: Australia (21), USA (9), UK (2.3)
 
 # Water abstraction
-
 .row
   .container width:{30%}
   	- OECD countries vary widely in **water abstraction**.
@@ -325,7 +322,6 @@
   	!(100%)[abstraction](image/davie_fig_1-9.png "Water abstraction per capita for OECD countries")
 
 # The catchment hydrological cycle
-
 .row
   .container width:{30%}
   	- Focuses on processes at **basin scale**:
@@ -340,18 +336,18 @@
   .container width:{70%}
   	!(100%)[catchmentcycle](image/davie_fig_1-10.png "Hydrological cycle processes at the catchment scale")
 
-
 # The water balance equation
-
-.row
+.row gap:{1cm}
   .container width:{50%}
   	- The **water balance equation** represents the continuity of water mass in a system.
   	- It quantifies water input, output, and storage over time.
-  	- In its most fundamental form:
+  	-a In its most fundamental form:
 
-  	  $ P \pm E \pm \Delta S \pm Q = 0 $
+    .container width:{100%} alignment:{center} radius:{0.5cm} borderwidth:{1pt} padding:{0.2cm} background:{.lightred}
 
-  	- Often rearranged to estimate **streamflow (Q)**:
+      $ P \pm E \pm \Delta S \pm Q = 0 $
+
+  	- Often rearranged to estimate **streamflow (Q)**
 
   	  $ Q = P - E - \Delta S $
 
@@ -362,11 +358,9 @@
   	- $ Q $: Run-off (or river discharge)
 
   .container width:{50%}
-  	!(100%)[balanceequation](image/internet_waterbalance.jpg)
-      _The only concept in the balance equation is_ **mass conservation**
+  	!(100%)[balanceequation](image/internet_waterbalance.jpg "Mass conservation is the primary concept in the water balance equation.")
 
 # Understanding the terms
-
 .row
   .container width:{60%}
   	- The equation includes both **fluxes** and **stores**:
@@ -388,9 +382,7 @@
   	  $ Q = 100 - 40 - 10 = 50 $
 
 
-
 # Challenges in practice
-
 .row
   .container width:{60%}
   	- Difficulties in application include:
@@ -405,7 +397,6 @@
   .container width:{40%}
 
 # Magnitude–frequency–duration
-
 .row
   .container width:{40%}
   	- Hydrological events vary by:
@@ -425,10 +416,8 @@
   .container width:{60%}
   	!(100%)[flowfrequency](image/davie_fig_1-11.png "Flow magnitude and frequency in River Boyd catchment")
 
----
 
 # Duration and design rainfall
-
 .row
   .container width:{40%}
   	- Magnitude–frequency–duration (MFD) curves relate:
@@ -440,3 +429,17 @@
 
   .container width:{60%}
   	!(100%)[idfcurve](image/davie_fig_1-12.png "Rainfall MFD curves for the River Boyd catchment")
+
+
+# Summary
+.whitespace height:{2cm}
+
+.row gap:{1cm} alignment:{center}
+  .container width:{60%} borderwidth:{1pt} padding:{0.3cm} background:{.lightblue} radius:{0.5cm} alignment:{center}
+    In this lecture, we covered:
+    - The **definition and scope of hydrology** as a science of fresh water
+    - The **physical and molecular properties** of water that influence climate and flow
+    - The structure and function of the **hydrological cycle**, from global to catchment scale
+    - Key concepts such as **catchments**, **water availability**, and **flux vs storage**
+    - The **water balance equation** as a tool for understanding and modelling water movement
+    - Challenges in **quantifying water fluxes** and interpreting hydrological variability

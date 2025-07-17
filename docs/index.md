@@ -13,7 +13,11 @@ Welcome to the **Water Course** — a companion site for the course **EMSC3025 /
 
 The Water Course introduces students to the integrated processes of the hydrologic cycle—from atmospheric inputs like precipitation and evaporation, to land surface processes such as infiltration and runoff, and finally to subsurface storage and flow in aquifers.
 
-The course is structured around lecture modules that reflect the natural flow of water through Earth systems. Slide sets and exercises accompany each lecture and are available through the [Content Page](content.md) and [Canvas](https://canvas.anu.edu.au/courses/3453). Note that modules strictly focusing on **Remote Sensing** are only provided on [Canvas](https://canvas.anu.edu.au/courses/3453).
+The course is structured around lecture modules that reflect the natural flow of water through Earth systems. Slide sets and exercises accompany each lecture and are available through the [Content Page](content.md) and [Canvas](https://canvas.anu.edu.au/courses/3453).
+
+!!! Note
+
+    Modules focusing on **Remote Sensing** are only provided on [Canvas](https://canvas.anu.edu.au/courses/3453).
 
 !!! warning
 
@@ -56,10 +60,10 @@ Whether you're a student, researcher, modeller, or practitioner:
 
 For questions, feedback, or collaboration, reach out to:
 
-**Dr. Siavash Ghelichkhan**
-*Course Convenor – EMSC3025/6025*
-📧 [siavash.ghelichkhan@anu.edu.au](mailto:siavash.ghelichkhan@anu.edu.au)
-🏢 *Jaeger 4, Level 1.18*
+**Dr. Siavash Ghelichkhan**<br>
+*Course Convenor – EMSC3025/6025*<br>
+📧 [siavash.ghelichkhan@anu.edu.au](mailto:siavash.ghelichkhan@anu.edu.au)<br>
+🏢 *Jaeger 4, Level 1.18*<br>
 💬 [Zulip Discussion Board](https://rswater.zulipchat.com)
 
 ---

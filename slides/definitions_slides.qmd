@@ -7,4 +7,4 @@
 
 .pagemargin{bottomleft}
     .container width:{100%} borderwidth:{1px} padding:{0.1cm} radius:{0.1cm} background:{.lightred}
-        [water-course](https://water-course.github.io/content)
+        [Back to water-course](https://water-course.github.io/content)
