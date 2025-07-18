@@ -50,7 +50,7 @@ Challenges in this setting:
 Hydrologists in these regions must rely on sparse observations, remote sensing, and models to estimate each term in the water balance.
 
 ## Global water distribution
-Stumm’s statement is theoretically true — there is enough **total freshwater** globally to meet human needs. However, the key issue is that this water is **not evenly distributed** nor equally accessible.
+Stumm's statement is theoretically true — there is enough **total freshwater** globally to meet human needs. However, the key issue is that this water is **not evenly distributed** nor equally accessible.
 
 From the data:
 
@@ -102,3 +102,62 @@ Limitation:
 
 * Manual delineation is slow, subjective, and less precise in flat or complex terrain.
 * Digital methods allow for scalable, reproducible watershed mapping using DEMs and flow algorithms.
+
+
+
+## Extra: Digital Delineation of Watersheds using the D8 Method
+
+Digital watershed delineation is typically performed using a Digital Elevation Model (DEM), which provides a grid of elevation values over a landscape. One widely used algorithm for calculating flow direction is the **D8 method** (Deterministic Eight).
+
+### Step-by-step Procedure
+
+1. **Fill Sinks**
+   - DEMs may contain local depressions or pits (sinks) that disrupt flow modelling.
+   - These are removed or filled to ensure water can flow continuously downslope.
+   - Algorithms typically raise the elevation of the sink to the lowest spillover point surrounding it.
+
+2. **Compute Flow Direction (D8 Algorithm)**
+   - For each cell in the DEM, the algorithm compares the elevation to its **eight neighbours** (N, NE, E, SE, S, SW, W, NW).
+   - Flow is assigned in the direction of **steepest downslope** (maximum drop in elevation per unit distance).
+   - Each cell can only drain into **one** of the eight directions (hence, deterministic).
+
+3. **Compute Flow Accumulation**
+   - Starting from the headwater cells (no inflow), accumulate the number of upstream cells draining into each cell.
+   - This identifies stream channels and the drainage network structure.
+
+4. **Select an Outlet**
+   - The user defines an outlet (pour point) — usually at a stream junction or known outflow.
+
+5. **Watershed Delineation**
+   - Starting from the outlet, trace upstream through the flow direction grid.
+   - All cells that drain to the outlet are included in the **watershed**.
+
+### Notes on Implementation
+
+- The D8 algorithm is simple and fast but can produce unrealistic straight-line drainage paths on flat or complex terrain.
+- Other flow direction algorithms distribute flow among multiple downslope neighbours, improving realism in some settings.
+
+### Visual Summary
+
+| Cell | Flow Direction | Description                  |
+|------|----------------|------------------------------|
+| A    | E              | Flows to the cell to the East|
+| B    | SE             | Flows to the cell to the SE  |
+
+Each cell in a D8 flow direction grid is encoded with a value (e.g. 1–128) representing the compass direction. Here's a common encoding scheme:
+
+| Direction | Code |
+|-----------|------|
+| E         | 1    |
+| SE        | 2    |
+| S         | 4    |
+| SW        | 8    |
+| W         | 16   |
+| NW        | 32   |
+| N         | 64   |
+| NE        | 128  |
+
+### Example Tools and Libraries
+
+- **Python**: see `pysheds` [GitHub](https://github.com/mdbartos/pysheds). You can also use `numpy`, `scipy.ndimage`, or `richdem` for DEM manipulation.
+- **GIS Software**: QGIS, ArcGIS provide built-in tools for watershed delineation.
