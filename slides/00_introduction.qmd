@@ -53,10 +53,10 @@
 
 .row gap:{1cm} alignment:{center}
   .container width:{60%} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
-    - I am an Earth scientist with a strong interest in fluid dynamics and numerical modeling.
-    - My research is primarily focused on developing numerical methods to better understand Earth processes involving fluid flow.
-    - These processes include groundwater flow, glacio-isostatic adjustment of the Earth's surface, and mantle convection—each of which can be described as fluid dynamics under the right conditions.
-    - My main area of expertise is in data assimilation, aiming to improve our understanding of complex Earth systems through the integration of models and observations.
+    - I am an Earth scientist with a strong interest in **fluid dynamics** and **numerical modelling**.
+    - My research is primarily focused on developing **numerical methods** to better understand **Earth processes** involving fluid flow.
+    - These processes include .emph{groundwater flow}, .emph{glacial-isostatic adjustment} of the Earth's surface, and .emph{mantle convection}—each of which can be described as fluid dynamics under the right conditions.
+    - My main area of expertise is in .emph{data assimilation}, aiming to improve our understanding of complex Earth systems through the integration of models and observations.
 
 
 # Course Objectives
@@ -64,10 +64,10 @@
   .container width:{80%}
     .box title:{What is this course about} background:{.lightblue}
         -  Demonstrate an understanding of the **different components of water** in the landscape and how they interact.
-        - Undertake quantitative analysis and interpretation of actual data related to water in Australia.
-        - Understand a variety of remote sensing satellite missions and how the observations inform water research.
-        - Critically evaluate technical reports and journal articles.
-        - Synthesise key concepts in hydrology and/or remote sensing to understand changes in water resources.
+        - Undertake **quantitative analysis** and interpretation of actual data related to water in Australia.
+        - Understand a variety of **remote sensing** satellite missions and how the observations inform water research.
+        - **Critically evaluate** technical reports and journal articles.
+        - Synthesise key concepts in hydrology and/or remote sensing to understand **changes in water resources**.
 
 # Structure of the course
 _Note: The actual content might change depending on our pace_
@@ -93,7 +93,7 @@ _Note: The actual content might change depending on our pace_
     - [water-course.github.io](https://water-course.github.io) is the course website. It is part of me experimenting with new ways of delivering the course.
     - I will be providing additional resources in form of (AI generated)podcasts and links to articles and videos for the course.
     - Use either [Zulip](https://rswater.zulipchat.com) or [Canvas](https://canvas.anu.edu.au/courses/3453) to ask questions and discuss the course material.
-    - I am looking forward to your feedback on the course.
+    - **I am looking forward to your feedback on the course.**
 
 
 
@@ -152,7 +152,7 @@ _Note: The actual content might change depending on our pace_
   .container width:{50%} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
     ## 1. Presentations & Reports
     - Each student presents a selected paper (10-minute talk). (Chosen from a list of papers, first come first serve)
-    - Submit a written report ( $ \approx $ 5 pages).
+    - Submit a written report (max 10 pages).
 
     ## 2. Engagement
     - Attend all presentations.
@@ -191,7 +191,7 @@ _Note: The actual content might change depending on our pace_
 .row gap:{0.5cm}
   .container alignment:{center} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
     .box background:{.lightblue}
-      Dr. Sia Ghelichkhan\
+      Dr. Sia Ghelichkhan (he/him)\
       siavash.ghelichkhan@anu.edu.au\
       Building J4 room L18\
       _Anything except for the remote sensing module_
@@ -201,7 +201,7 @@ _Note: The actual content might change depending on our pace_
 
   .container alignment:{center} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
     .box background:{.lightblue}
-      Prof. Paul Tregoning\
+      Prof. Paul Tregoning (he/him)\
       paul.tregoning@anu.edu.au\
       Building J3 room 150\
       _Satellite Geodesy_
@@ -211,7 +211,7 @@ _Note: The actual content might change depending on our pace_
 
   .container width:{25%} alignment:{center} borderwidth:{1px} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
     .box background:{.lightblue}
-      River Shaddock\
+      River Shaddock (they/she)\
       River.Shaddock@anu.edu.au\
       Computer Labs
 
