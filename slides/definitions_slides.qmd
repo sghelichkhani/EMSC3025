@@ -8,3 +8,7 @@
 .pagemargin{bottomleft}
     .container width:{100%} borderwidth:{1px} padding:{0.1cm} radius:{0.1cm} background:{.lightred}
         [Back to water-course](https://water-course.github.io/content)
+
+.pagemargin{topright}
+    .container width:{100%} borderwidth:{1px} padding:{0.1cm} radius:{0.1cm} background:{rgb(240,240,240)}
+        .currentpage / .totalpages

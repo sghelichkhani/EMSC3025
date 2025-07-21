@@ -62,11 +62,9 @@
 # Humans and water
 .fullspan
   .align{center}
-    These human–water interactions are central to sustainable water management.\
-    Hydrology includes the study of **human impacts** on water systems.
+    The human–water interactions are central to sustainable water management.
     [Abbot et al. Nature 2019](https://www.researchgate.net/publication/333678347_Human_domination_of_the_global_water_cycle_absent_from_depiction_and_perceptions)
-
-    !(80%)[Water Interaction](image/internet_Abbott.png "from Abbot et al. Nature 2019")
+    !(95%)[Water Interaction](image/internet_Abbott.png "from Abbot et al. Nature 2019")
 
 # Hydrology as a science
 .row
@@ -117,6 +115,13 @@
 
     .container borderwidth:{1pt} alignment:{center} padding:{0.1cm} background:{rgb(240,240,240)}
       Watch [Homily to Country - National Gallery of Victoria](https://vimeo.com/517606482?p=1s)
+
+#
+
+.whitespace height:{5cm}
+.row alignment:{center}
+  .container width:{80%} borderwidth:{1pt} padding:{0.2cm} background:{.lightblue} radius:{0.5cm} alignment:{center}
+    #! Physical properties of water
 
 # Molecular properties of water
 .row
@@ -214,6 +219,33 @@
   .container width:{60%}
     !(100%)[gwdivide](image/davie_fig_1-6.png "Difference between groundwater and surface water divides")
 
+# How to identify a catchment?
+
+.row gap:{1cm}
+  .container width:{60%} borderwidth:{1pt} padding:{0.2cm} background:{.lightblue} radius:{0.5cm}
+    1. Get a topographic map
+      - A contour map with visible elevation lines.
+      - Mark known streams (especially the outlet point).
+
+    2. Identify the outlet (pour point)
+      - The point you want to delineate the catchment (where stream exits).
+
+    3. Mark all flow lines (ridges to valleys)
+    	- Draw approximate flow paths down the steepest slope.
+    4. Trace ridgelines (water divides)
+      - Trace along high points (ridges) that separate your catchment from neighbouring ones.
+      - Follow the highest elevation between two drainage areas.
+      - Cross contour lines at right angles (steepest ascent).
+      - Close the boundary loop at the other side of the outlet.
+
+    5. Check connectivity
+      - Ensure all water within your boundary flows to the outlet.
+      - Everything outside drains elsewhere.
+
+  .container width:{40%} borderwidth:{1pt} padding:{0.2cm}
+    ![Catchment](image/internet_catchment_delineation.jpg "Catchment identification")
+
+
 # The hydrological cycle
 .row
   .container width:{50%}
@@ -304,8 +336,6 @@
   	| USA               | 2           | Israel            | 0.093       |
   	"Comparison of annual internal renewable water per capita."
 
-    Other examples: Australia (21), USA (9), UK (2.3)
-
 
 # Water abstraction
 .row
@@ -320,6 +350,16 @@
 
   .container width:{70%}
   	!(100%)[abstraction](image/davie_fig_1-9.png "Water abstraction per capita for OECD countries")
+
+# Groundwater Embedded in Global Food Trade
+.row gap:{1cm}
+  .container width:{40%}
+    > approximately eleven per cent of non-renewable groundwater use for irrigation is embedded in international food trade, of which two-thirds are exported by Pakistan, the USA and India alone.
+    > - Dalin et al (2017), Nature
+
+  .container width:{50%}
+    !(100%)[groundwater_food_trade](image/internet_globalfoodtrade.png "Groundwater Exchange Embedded in Global Food Trade")
+
 
 # The catchment hydrological cycle
 .row
