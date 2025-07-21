@@ -6,6 +6,7 @@
 .docauthors
   - Sia Ghelichkhan
 
+
 .include {definitions.qmd}
 .include {definitions_slides.qmd}
 
@@ -52,11 +53,11 @@
     .whitespace height:{1cm}
 
     The oldest known description of water cycle:
-    >[...] _precipitation falling in the mountains infiltrated the Earth's surface and led to streams and springs in the lowlands. [...]
+    >[...] precipitation falling in the mountains infiltrated the Earth's surface and led to streams and springs in the lowlands. [...]
+    > - Vitruvius, Roman Architect, 1st century BC
 
   .container width:{30%}
-    !(80%)[Vivitus](image/internet_vivitus.jpg "The oldest known description of water cycle.")
-
+    !(80%)[Vivitus](image/internet_vivitus.jpg "Hydrology is one of the oldest sciences. Egyptians, Mesopotamians, Greeks and Chinese needed to understand water cycle to build irrigation systems. The oldest known description of water cycle is Vitruvius. ")
 
 
 # Humans and water
@@ -117,7 +118,6 @@
       Watch [Homily to Country - National Gallery of Victoria](https://vimeo.com/517606482?p=1s)
 
 #
-
 .whitespace height:{5cm}
 .row alignment:{center}
   .container width:{80%} borderwidth:{1pt} padding:{0.2cm} background:{.lightblue} radius:{0.5cm} alignment:{center}
@@ -177,6 +177,7 @@
 # Phase transitions
 .row
   .container width:{40%}
+    - The high energy required to break hydrogen bonds makes water an ideal .emph{climate stabiliser}.
     - Water changes state:
       - Solid ↔ Liquid ↔ Gas
     - Processes include:
@@ -259,13 +260,22 @@
     !(100%)[HydroCycle](image/internet_hydrocycle.jpg "Different elements of the hydrological cycle")
 
 # Global distribution of water
-.row
+.row gap:{1cm}
   .container width:{60%}
   	- Most of Earth's water is stored in:
   	  - Oceans/seas: **96.5%**
   	  - Ice/glaciers: **1.74%**
   	  - Groundwater: **1.69%**
   	- Rivers and lakes make up **tiny fractions** of total volume.
+
+    .container width:{100%} alignment:{center} borderwidth:{1pt} padding:{0.2cm} background:{.lightblue} radius:{0.5cm}
+       groundwater with the 1st km of the surface, and discount ice and snow => we have **0.27%** of which is accessible.
+
+    .whitespace height:{1cm}
+
+    .align{center}
+      .container alignment:{center} borderwidth:{1pt} padding:{0.2cm} background:{.lightred} radius:{0.5cm}
+        ###! Q: Is this enough water per person?
 
   .container width:{60%}
   	| Storage              | Volume (×10³ km³) | % of total |
@@ -283,7 +293,7 @@
     "Global estimates of water distribution"
 
 # Components of the global cycle
-.row
+.row gap:{1cm}
   .container width:{50%}
   	- Key global processes:
   	  - **Evaporation** from oceans/lakes
@@ -291,6 +301,7 @@
   	  - **Run-off** moves water back to oceans
   	- Oceans evaporate more than they receive.
   	- Continents receive more precipitation than they lose.
+    - Ironically the terrestial component of the cycle is by far the smallest.
 
   .container width:{50%}
   	!(100%)[globalcycle](image/davie_fig_1-7.png "The global hydrological cycle and proportional flow volumes, Rekacewicz, UNEP 2008")
@@ -313,8 +324,14 @@
 
 
 # Water availability vs population
-.row
+.row gap:{1cm}
+
   .container width:{40%}
+    .container width:{100%} alignment:{center} borderwidth:{1pt} padding:{0.2cm} background:{.lightblue} radius:{0.5cm}
+      ###! 146 million litres per person per year is misleading!!!
+
+    .whitespace height:{1cm}
+
   	- Per capita water availability is **misleading** if population and use patterns are ignored.
   	- Example: Australia is water-rich by volume but highly variable in space and time.
   	- Effective management depends on **abstraction**, **storage**, and **equity**.
