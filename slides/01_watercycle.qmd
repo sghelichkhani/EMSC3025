@@ -39,7 +39,6 @@
 .fullspan
   .align{center}
     This lecture forms the foundation for all subsequent modules in the course.
-# terrestial
 
 # What is hydrology?
 .row
@@ -382,17 +381,20 @@
     !(100%)[groundwater_food_trade](image/internet_globalfoodtrade.png "Groundwater Exchange Embedded in Global Food Trade")
 
 # The consequence
-
-.row gap:{1cm}
-  .container width:{50%}
-    .align{center}
-      !(100%)[Groundwater](image/internet_nyt_groundwater.png "Alarming low levels of groundwater in South and central South. NYT 2024")
-
-  .container width:{50%}
+.fullspan
+  .center
     .html
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/DdNtraY6HhQ?si=0Soxoc0FsKPDs8_B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div style="position:relative; width:100%; height:0px; padding-bottom:63.830%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/ym4ni2?autoplay=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+
+# The consequence
+.fullspan
+  .center
+    .html
+      <iframe width="100%" height="515" src="https://www.youtube.com/embed/DdNtraY6HhQ?si=0Soxoc0FsKPDs8_B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     Link to Youtube: WSJ report on groundwater depletion in Kansas.
+
+
 
 # The catchment hydrological cycle
 .row
