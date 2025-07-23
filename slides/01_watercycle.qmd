@@ -39,6 +39,7 @@
 .fullspan
   .align{center}
     This lecture forms the foundation for all subsequent modules in the course.
+# terrestial
 
 # What is hydrology?
 .row
@@ -64,7 +65,7 @@
 .fullspan
   .align{center}
     The human–water interactions are central to sustainable water management.
-    [Abbot et al. Nature 2019](https://www.researchgate.net/publication/333678347_Human_domination_of_the_global_water_cycle_absent_from_depiction_and_perceptions)
+    [Abbot et al. Nature 2019](https://www.nature.com/articles/s41561-019-0374-y)
     !(95%)[Water Interaction](image/internet_Abbott.png "from Abbot et al. Nature 2019")
 
 # Hydrology as a science
@@ -192,6 +193,11 @@
 
 #
 .whitespace height:{3cm}
+
+.row alignment:{center}
+  .container borderwidth:{1pt} padding:{0.2cm} background:{.lightred} radius:{0.1cm} alignment:{center}
+      ##! Let's switch from micro to macro! Where do we look?
+
 .row alignment:{center}
   .container borderwidth:{1pt} padding:{0.2cm} background:{.lightblue} radius:{0.5cm}
       #! A spatial unit to study the water cycle?
@@ -253,8 +259,6 @@
   	- The **hydrological cycle** describes water movement between Earth and atmosphere as gas, liquid, or solid.
   	- It is a conceptual model — useful but simplified.
   	- Hydrology begins with the **global scale**, then zooms into **catchments**.
-  	- Earth's water is mostly in oceans/seas; very little is usable:
-  	  - Only **~0.27%** of water is available for human use.
 
   .container width:{50%}
     !(100%)[HydroCycle](image/internet_hydrocycle.jpg "Different elements of the hydrological cycle")
@@ -377,6 +381,18 @@
   .container width:{50%}
     !(100%)[groundwater_food_trade](image/internet_globalfoodtrade.png "Groundwater Exchange Embedded in Global Food Trade")
 
+# The consequence
+
+.row gap:{1cm}
+  .container width:{50%}
+    .align{center}
+      !(100%)[Groundwater](image/internet_nyt_groundwater.png "Alarming low levels of groundwater in South and central South. NYT 2024")
+
+  .container width:{50%}
+    .html
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DdNtraY6HhQ?si=0Soxoc0FsKPDs8_B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    Link to Youtube: WSJ report on groundwater depletion in Kansas.
 
 # The catchment hydrological cycle
 .row
