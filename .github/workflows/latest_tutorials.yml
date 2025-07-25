@@ -40,4 +40,4 @@ jobs:
           path: ready  # or the extracted files
 
       - name: List downloaded content
-        run: ls 
+        run: find ./  
