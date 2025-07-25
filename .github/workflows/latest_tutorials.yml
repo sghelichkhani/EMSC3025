@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
     inputs:
 
+secrets:
+  TUTORIALSACCESS: ${{ secrets.TUTORIALSACCESS }}
+
 jobs:
   download-artifact:
     runs-on: ubuntu-latest
