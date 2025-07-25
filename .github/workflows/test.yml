@@ -15,9 +15,9 @@ jobs:
         run: |
           response=$(curl -s \
             -H "Authorization: token ${{ secrets.TUTORIALSACCESS }}" \
-            "https://api.github.com/repos/water-course/water-course.github.io/actions/workflows/jupytext-conversion.yml/runs?status=success&per_page=1")
-
+            "https://api.github.com/repos/water-course/tutorials/actions/workflows/jupytext-conversion.yml/runs?status=success&per_page=1")
           run_id=$(echo "$response" | jq -r '.workflow_runs[0].id')
+          echo $run_id
           echo "run_id=$run_id" >> $GITHUB_OUTPUT
 
       - name: Get artifact download URL
@@ -25,7 +25,7 @@ jobs:
         run: |
           artifacts=$(curl -s \
             -H "Authorization: token ${{ secrets.TUTORIALSACCESS }}" \
-            "https://api.github.com/repos/water-course/water-course.github.io/actions/runs/${{ steps.get_run.outputs.run_id }}/artifacts")
+            "https://api.github.com/repos/water-course/tutorials/actions/runs/${{ steps.get_run.outputs.run_id }}/artifacts")
 
           download_url=$(echo "$artifacts" | jq -r '.artifacts[] | select(.name=="shared-folder") | .archive_download_url')
           echo "download_url=$download_url" >> $GITHUB_OUTPUT
