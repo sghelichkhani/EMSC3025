@@ -1,3 +1,11 @@
+on:
+  workflow_dispatch:
+    inputs:
+      my_input:
+        description: 'A custom input for the workflow'
+        required: false
+        default: 'default_value'
+
 jobs:
   download-artifact:
     runs-on: ubuntu-latest
