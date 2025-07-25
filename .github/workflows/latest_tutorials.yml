@@ -35,7 +35,7 @@ jobs:
           echo "Token present? ${TOKEN:0:4} ..."
           curl -L -H "Authorization: token ${{ secrets.TUTORIALSACCESS }}" \
             -o ready.zip "${{ steps.get_artifact.outputs.download_url }}"
-          unzip -l ready.zip
+          unzip ready.zip
 
       - name: List downloaded content
         run: find ./  
