@@ -33,11 +33,5 @@ jobs:
           curl -L -H "Authorization: token ${{ secrets.REPO_A_PAT }}" \
             -o ready "${{ steps.get_artifact.outputs.download_url }}"
 
-      - name: Upload artifact for the website 
-        uses: actions/upload-artifact@v4
-        with:
-          name: The converted tutorials 
-          path: ready  # or the extracted files
-
       - name: List downloaded content
         run: find ./  
