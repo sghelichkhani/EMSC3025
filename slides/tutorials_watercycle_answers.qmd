@@ -60,7 +60,7 @@ From the data:
 
 This limited supply is unevenly distributed:
 
-- **Iceland** has >500,000 $ m^3 / person / year $, while **Kuwait** has virtually none (Table 1.3).
+- **Iceland** has >500,000 $ m^3 / person / year $, while **Kuwait** has virtually none.
 - Climate patterns (e.g., arid zones), topography, and land use create disparities in availability.
 - **Australia** has relatively high per-capita water resources but with extreme variability over space and time.
 
