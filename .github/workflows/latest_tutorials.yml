@@ -31,7 +31,8 @@ jobs:
 
       - name: Download and unzip artifact
         run: |
-          echo "Token present? ${{ secrets.TUTORIALSACCESS:0:4 }}..."
+          export TOKEN="${{ secrets.TUTORIALSACCESS }}"
+          echo "Token present? ${{ TOKEN:0:4 }}..."
           curl -L -H "Authorization: token ${{ secrets.TUTORIALSACCESS }}" \
             -o ready.zip "${{ steps.get_artifact.outputs.download_url }}"
           unzip -l ready.zip
