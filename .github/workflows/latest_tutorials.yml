@@ -31,9 +31,10 @@ jobs:
 
       - name: Download and unzip artifact
         run: |
-          curl -L -H "Authorization: token ${{ secrets.REPO_A_PAT }}" \
-            -o ready "${{ steps.get_artifact.outputs.download_url }}"
-          ls -R ready
+          echo "Token present? ${TUTORIALSACCESS:0:4}..."
+          curl -L -H "Authorization: token ${{ secrets.TUTORIALSACCESS }}" \
+            -o ready.zip "${{ steps.get_artifact.outputs.download_url }}"
+          unzip -l ready.zip
 
       - name: List downloaded content
         run: find ./  
