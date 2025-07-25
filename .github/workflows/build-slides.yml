@@ -1,4 +1,4 @@
-name: Build Slides with Quarkdown
+name: build_slides 
 
 on:
   push:
