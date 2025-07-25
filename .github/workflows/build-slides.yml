@@ -68,12 +68,16 @@ jobs:
             "https://api.github.com/repos/water-course/tutorials/actions/runs/${{ steps.get_run.outputs.run_id }}/artifacts")
 
           download_url=$(echo "$artifacts" | jq -r '.artifacts[] | select(.name=="ready") | .archive_download_url')
+          echo ${download_url}
           echo "download_url=$download_url" >> $GITHUB_OUTPUT
 
-      - name: Download artifact
+      - name: Download and unzip artifact
         run: |
-          curl -L -H "Authorization: token ${{ secrets.REPO_A_PAT }}" \
-            -o ready "${{ steps.get_artifact.outputs.download_url }}"
+          export TOKEN="${{ secrets.TUTORIALSACCESS }}"
+          echo "Token present? ${TOKEN:0:4} ..."
+          curl -L -H "Authorization: token ${{ secrets.TUTORIALSACCESS }}" \
+            -o ready.zip "${{ steps.get_artifact.outputs.download_url }}"
+          unzip ready.zip
 
       - name: List downloaded content
         run: |
