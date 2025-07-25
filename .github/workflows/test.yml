@@ -1,3 +1,5 @@
+name: Latest Tutorials
+
 on:
   workflow_dispatch:
     inputs:
@@ -27,7 +29,7 @@ jobs:
             -H "Authorization: token ${{ secrets.TUTORIALSACCESS }}" \
             "https://api.github.com/repos/water-course/tutorials/actions/runs/${{ steps.get_run.outputs.run_id }}/artifacts")
 
-          download_url=$(echo "$artifacts" | jq -r '.artifacts[] | select(.name=="shared-folder") | .archive_download_url')
+          download_url=$(echo "$artifacts" | jq -r '.artifacts[] | select(.name=="ready") | .archive_download_url')
           echo "download_url=$download_url" >> $GITHUB_OUTPUT
 
       - name: Download and unzip artifact
