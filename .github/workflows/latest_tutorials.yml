@@ -4,9 +4,6 @@ on:
   workflow_dispatch:
     inputs:
 
-secrets:
-  TUTORIALSACCESS: ${{ secrets.TUTORIALSACCESS }}
-
 jobs:
   download-artifact:
     runs-on: ubuntu-latest
@@ -34,7 +31,7 @@ jobs:
 
       - name: Download and unzip artifact
         run: |
-          echo "Token present? ${TUTORIALSACCESS:0:4}..."
+          echo "Token present? ${{ secrets.TUTORIALSACCESS:0:4 }}..."
           curl -L -H "Authorization: token ${{ secrets.TUTORIALSACCESS }}" \
             -o ready.zip "${{ steps.get_artifact.outputs.download_url }}"
           unzip -l ready.zip
