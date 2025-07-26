@@ -81,7 +81,7 @@ jobs:
 
       - name: List downloaded content
         run: |
-          cp ready/*.ipynb site/content/
+          mv -v *.ipynb site/content/
 
       - name: Upload built slides
         uses: actions/upload-pages-artifact@v3
