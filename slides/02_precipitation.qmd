@@ -93,7 +93,7 @@
     .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
         - Moist Air = Water vapour + Dry air
         - The maximum amount of vapour that air can hold depends on the temperature.
-        - ** Clausius-Clapeyron equation** describes the relationship between temperature and vapour pressure.
+        - **Clausius-Clapeyron equation** describes the relationship between temperature and vapour pressure.
 
         $ \frac{dP}{dT} = \frac{P L}{T^2 \Delta v} $
 
@@ -126,8 +126,13 @@
         - **Example**: At 30°C vs 20°C:
             - 30°C: 26 g water vapour per kg air
             - 20°C: 15 g water vapour per kg air
-        - **Condensation example**: Cold glass in warm air forms droplets due to temperature drop.
 
+    .container width:{40%}
+        !(100%)[Atmosphere](image/davie_ed3_fig_2-1.png " Clausius-Clapeyron Relationship" )
+
+# Ideal Gas Law
+
+.row gap:{1cm} alignment:{center}
     .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
         - **Ideal Gas Law** shows fundamental relationships between pressure, volume, and temperature.
         - The ratio between pressure and the product of temperature and density is constant:
@@ -267,7 +272,8 @@
         - Which means the ice particles can grow at the expense of the water droplets.
         - **Vapour diffusion**: vapour moves from higher pressure (cloud droplets) to lower pressure (ice particles).
         - But this results in drier clouds => cloud droplets evaporate.
-        - $ e_{\text{sat. water over ice}} < P_{\text{ambient}} < e_{\text{sth}} $
+
+         $ e_{\text{sat. over ice}} < P_{\text{ambient}} < e_{\text{sat. water over water}} $
         - Ice particles attract water vapour efficiently, causing **desublimation** (direct vapour to ice).
 
     .container width:{40%}
@@ -304,7 +310,6 @@
         .center
             .html
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/XHNN5DAq-jI?si=a_48CMyll9QqP6f2" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer" allowfullscreen></iframe>
-
 
 # Dewfall
 
@@ -412,15 +417,17 @@
 
 
 
-# Case Study: Mareeba
+# Case Study: The rain shadow effect in Mareeba
 
-.row gap:{1cm}
-    .container width:{40%}
+.row gap:{1cm} alignment:{center}
+    .container width:{80%}
         .html
             <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.2645%; padding-top: 120px;"><a href="https://www.abc.net.au/news/2025-06-29/rain-shadow-effect-inspires-sunny-mareeba/105467478" data-iframely-url="//iframely.net/3fdoIBuv?theme=light"></a></div></div><script async src="//iframely.net/embed.js"></script>
 
-    .container width:{60%}
-        !(100%)[Google Maps Mareeba](image/internet_mareeba_earth.png)
+# Case Study: The rain shadow effect in Mareeba
+.row gap:{1cm} alignment:{center}
+    .container width:{100%}
+        !(80%)[Google Maps Mareeba](image/internet_mareeba_earth.png "Elevation profile for moist air coming from the East")
 
 # Dynamic Influences on Precipitation
 
