@@ -25,92 +25,194 @@
 # Objectives
 
 .row gap:{1cm}
-    .container width:{50%}
-        - Introduce the role of .emph{precipitation} in the hydrological cycle.
-        - Understand how precipitation .emph{forms} in the atmosphere.
-        - Explore .emph{factors controlling the amount and distribution} of precipitation.
+    .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - Introduce the role of **precipitation** in the hydrological cycle.
+        - Understand how precipitation **forms** in the atmosphere.
+        - Explore **factors** controlling the **amount and distribution** of precipitation.
         - Examine how vegetation interacts with and modifies precipitation.
-        - Review .emph{methods for measuring} and estimating precipitation.
-    .container width:{40%}
+        - Review **methods for measuring** and estimating precipitation.
+
+        - Fig. 1 -> From [scijinks.gov](https://scijinks.gov/precipitation/)
+
+    .container width:{50%}
         .align{center}
-            !(80%)[precipitation](image/internet_NOAprecipitation.gif)
-            [scijinks.gov](https://scijinks.gov/precipitation/)
+            !(80%)[precipitation](image/internet_NOAprecipitation.gif "")
 
 
 
-<!--
-If a body of warm, moist air is cooled then it will become saturated with water
-vapour and eventually the water vapour will condense into liquid or solid water (i.e. water or ice
-droplets). The water will not condense spontaneously however; there need to be minute particles
-present in the atmosphere, called condensation nuclei, upon which the water or ice droplets form.
-The water or ice droplets that form on condensation nuclei are normally too small to fall to the
-surface as precipitation; they need to grow in order to have enough mass to overcome uplifting
-forces within a cloud.
--->
 
-# Conditions for Precipitation
+# Precipitation
 
-###! .emph{Precipitation:} The release of water from the atmosphere to reach the surface of the Earth.
-.align{center}
-    Covers all forms of water: **snow**, **hail**, **sleet**, and **rainfall**.\
-    The ability of air to hold water vapour is .emph{temperature} dependent.
+.row gap:{1cm} alignment:{center}
+    .container borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue} alignment:{center}
+        ##! The release of water from the atmosphere to reach the surface of the Earth.
+
+
+.row gap:{1cm}
+    .container width:{30%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - Covers all forms of water: **snow**, **hail**, **sleet**, and **rainfall**.
+        - The ability of air to hold water vapour is temperature dependent.
+
+    .container width:{70%}
+            !(100%)[Rain Sleet Hail Snow](image/internet_rainsleethail.webp)
+
+
+# Understanding the Atmosphere
+
+###!  Before we can understand precipitation, we need to understand the atmosphere, or more specifically:
+
+.whitespace height:{3cm}
+.center
+    .container borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        #! What causes the air to cool?
+
+# Composition of the Atmosphere
+
+.row gap:{1cm} alignment:{center}
+        .container borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+            ##! Let's understand pressure and temperature relationships first.
+
+.row gap:{1cm}
+    .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - Atmosphere around us is a **mixture of gases**
+        - Nitrogen and oxygen make up 99% of the atmosphere (plus some water vapour)
+        - **Gravity** keeps the atmosphere close to the surface, hence the pressure is higher at the surface.
+        - e.g., at 5500m elevation, the pressure is 50% of the surface pressure.
+        - Units $ [Pa] = \frac{N}{m^{-2}} $, but commonly reported in $ [millibars] $ or $ [kPa] $
+        - Water vapour accounts for $ < 0.3 \% $ of the atmospheric pressure.
+
+    .container width:{60%}
+        .mermaid caption:{Atmosphere composition}
+            pie showData
+                "Nitrogen" : 78
+                "Oxygen" : 21
+                "Other gasses, including water vapour" : 1
+
+# Cooling of the atmosphere
+.row gap:{1cm}
+    .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - Moist Air = Water vapour + Dry air
+        - The maximum amount of vapour that air can hold depends on the temperature.
+        - ** Clausius-Clapeyron equation** describes the relationship between temperature and vapour pressure.
+
+        $ \frac{dP}{dT} = \frac{P L}{T^2 \Delta v} $
+
+        - _Figure 2_ ->\
+        Saturation vapour pressure curve representing absolute humidity for a given dew point temperature. Note that the saturation vapour pressure curve over ice is lower.
+
+    .container width:{40%}
+        !(100%)[Atmosphere](image/davie_ed3_fig_2-1.png " Clausius-Clapeyron Relationship" )
+
+# Cooling of the atmosphere
+.row gap:{1cm}
+    .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Vapour pressure** $ e(T) $, cannot exceed **saturated vapour pressure** $ e_{sat} $ .
+        - $ e_{sat} $ represent absolute humidity, the point where vapour turns into liquid.
+        - For this reason it is also known as the **dew point temperature** / **Frost point temperature**
+        - We could also have **super-saturated** air, where the vapour pressure is higher than the saturated vapour pressure (maximum 1 or 2%).
+        - The dotted line represents the saturation vapour pressure curve over ice.
+        - Easier to escape from the liquid phase to the vapour phase compared to the solid phase.
+        - Subzero temperatures: where desublimation occurse. (**hoarfrost**).
+
+    .container width:{40%}
+        !(100%)[Atmosphere](image/davie_ed3_fig_2-1.png " Clausius-Clapeyron Relationship" )
+
+# Cooling of the atmosphere
+.row gap:{1cm}
+    .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Vapour Pressure** is a reflection of the concentration of water vapour molecules in air.
+        - **Specific humidity**: mass of water vapour (g) per unit mass of air (kg).
+        - Temperature increase of 10°C allows air to hold ~11g more water vapour per kg of air.
+        - **Example**: At 30°C vs 20°C:
+            - 30°C: 26 g water vapour per kg air
+            - 20°C: 15 g water vapour per kg air
+        - **Condensation example**: Cold glass in warm air forms droplets due to temperature drop.
+
+    .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Ideal Gas Law** shows fundamental relationships between pressure, volume, and temperature.
+        - The ratio between pressure and the product of temperature and density is constant:
+
+        $ \frac{P}{T_a \cdot \rho_a} = R_a $
+
+        where:
+        - $ P $ = atmospheric pressure (kPa)
+        - $ T_a $ = air temperature (K)
+        - $ \rho_a $ = mass density of air (kg/m³)
+        - $ R_a $ = gas constant for air
+
+        If pressure decreases, the product of temperature and density must also decrease to maintain the constant.
+
+
+# Adiabatic Cooling and Lapse Rates
+.row gap:{1cm}
+    .container width:{30%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Adiabatic cooling**: When air moves upward to lower pressure, it expands and cools.
+        - Cooling occurs due to **pressure and density changes**, not heat loss.
+        - **Fundamentally important** in precipitation formation process.
+        - **Dry Adiabatic Lapse Rate (DALR)**: ~9.8°C per km for dry air.
+        - **Saturated Adiabatic Lapse Rate (SALR)**: Slower than DALR due to latent heat release from condensation.
+        - SALR can be **half the DALR** - precise value depends on pressure and temperature.
+
+    .container width:{70%}
+        .align{center}
+            !(100%)[Adiabatic Cooling](image/internet_Adiabatic_lapse_rate.png "Adiabatic cooling process")
+
+# Environmental Lapse Rate
+.row gap:{1cm}
+    .container width:{30%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Environmental Lapse Rate (ELR)**: Conventional temperature decrease with altitude.
+        - Related to distance from radiating body (Earth).
+        - Approximately **6°C per km**, but varies.
+        - **Three types of lapse rates**:
+            - **DALR**: ~9.8°C/km (dry air)
+            - **SALR**: ~4-6°C/km (saturated air, varies)
+            - **ELR**: ~6°C/km (environmental, varies)
+
+    .container width:{70%}
+        .align{center}
+            !(100%)[Lapse Rates](image/internet_Adiabatic_lapse_rate.png )
+            _Adiabatic cooling process_
+
+#
+
+.row gap:{1cm} alignment:{center}
+    .container borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue} alignment:{center}
+        ##! Now we understand the atmosphere, but how does precipitation form?
+
+.whitespace height:{2cm}
 
 .row gap:{1cm}
     .container width:{40%}
         Three physical conditions must be met for precipitation to occur:
-        - **Cooling** of the atmosphere
-        - **Condensation** onto atmospheric nuclei
-        - **Growth** of water/ice droplets large enough to overcome updrafts
-    .container width:{60%}
-        .align{center}
-            !(100%)[Rain Sleet Hail Snow](image/internet_rainsleethail.webp)
 
+    .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - .ul{Cooling} of the atmosphere
+        - .ul{Condensation} onto atmospheric nuclei
+        - .ul{Growth} of water/ice droplets large enough to overcome updrafts
+        - a .ul{supply} of moisture to continue the process
 
-# Atmospheric Cooling Mechanisms
-
-.row gap:{1cm}
-    .container width:{60%} height:{100%}
-        .align{center}
-            - Rising air expands and cools (Adiabatic lapse rate)
-            - For dry air: negative of the rate of temperature change with altitude:
-
-             $ \Gamma = - \frac{dT}{dz} = \frac{g}{c_p} \text{for dry air } \frac{9.81}{1005}=9.8 \degree C/km $
-            .align{center}
-                !(60%)[Boyle’s Law](image/internet_Adiabatic_lapse_rate.png)\
-                _Simplified graph of atmospheric lapse rate near sea level_
-
-
-
-    .container width:{40%} height:{100%}
-        .align{center}
-            !(100%)[Boyle’s Law](image/internet_Boyles_Law_animated.gif)
-            [Boyle’s Law - NASA](https://www.grc.nasa.gov/WWW/K-12/airplane/aboyle.html)
-
-
-
-# Atmospheric Cooling Mechanisms
+# How do we cool the air?
 
 .row gap:{1cm}
-    .container width:{40%} height:{100%}
-        Cooling is essential for condensation and precipitation:
+    .container width:{30%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - Cooling is essential for condensation and precipitation:
         - Rising air expands and cools (Boyle’s Law)
         - Main causes of uplift:
-            - .emph{Convective}: surface heating
-            - .emph{Orographic}: air rising over mountains
-            - .emph{Cyclonic}: air lifted in low-pressure systems
+            - .ul{Convective}: surface heating
+            - .ul{Orographic}: air rising over mountains
+            - .ul{Cyclonic}: air lifted in low-pressure systems
         - Also caused by contact with cooler surfaces or air masses
 
-    .container width:{60%} height:{100%}
+    .container width:{70%} height:{100%}
         .align{center}
-            !(100%)[Boyle’s Law](image/internet_atamospheric_uplift.webp)
-            [Britanica](https://kids.britannica.com/students/assembly/view/53902)
+            !(100%)[Causes of uplift](image/internet_meteorology_uplift.jpg "Lifting mechanisms of air")
 
 
 
 # Condensation Nuclei
 
 .row gap:{1cm}
-    .container width:{50%} height:{100%}
+    .container width:{40%} height:{100%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
         - Minute particles (1 $ \mu m $ ), initiating droplet formation.
         - surface for vapour to condense into liquid.
         - Include dust, smoke, sea salt
@@ -119,46 +221,96 @@ forces within a cloud.
         - Various forms of cloud seeding: References (Mather et al. 1997)
         - Case of a paper mill in South Africa.
 
-    .container width:{50%} height:{100%}
+    .container width:{60%}
         .align{center}
-            !(100%)[Cloud Seeding](image/internet_cloud_seeding.webp)
-            _Much controversy over the value of cloud seeding; Some studies support its effectiveness e.g. Gagin and Neumann, 1981; other authors query the results e.g. Rangno and Hobbs, 1995_
+            !(100%)[Cloud Seeding](image/internet_cloud_seeding.webp "Much controversy over the value of cloud seeding; Some studies support its effectiveness e.g. Gagin and Neumann, 1981; other authors query the results e.g. Rangno and Hobbs, 1995")
 
 
 
 # Droplet Growth Processes
 
 
-.align{center}
+.row gap:{1cm} alignment:{center}
+    .container width:{30%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - Water/ice droplets need to be large enough for them weight to overcome upward draught (from a cloud).
+        - They need to grow from $ \approx $ 1 $ \mu m $ to  $ \approx $ 3000 $ \mu m $.
+
     .container width:{70%}
-        .box
-            Water/ice droplets need to be large enough for them weight to overcome upward draught (from a cloud).
-            They need to grow from $ \approx $ 1 $ \mu m $ to  $ \approx $ 3000 $ \mu m $.
+        !(100%)[Droplet Growth](image/davie_ed3_fig_2-2.png "Comparing rain drops and cloud droplets")
+
+
+# Droplet Growth Processes
 
 .row gap:{1cm}
-    .container width:{50%}
-        - **Condensation**, difference in vapour pressure and water: slow, vapour adds to droplets
-        - **Sublimation on ice**, difference in pressure is bigger: faster, due to greater vapour gradient
-        - Main process that raindrops grow: **Collision and coalescence**, two water-drops collide and join together and they repeat.
+    .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - Difference in vapour pressure and water => vapour adds to droplets (**slow**)=> .ul{Condensation on water}.
+        - Difference in pressure with ice bigger => **faster**, due to greater vapour gradient .ul{Sublimation on ice}.
+        - Main process that raindrops grow: .ul{Collision and coalescence}, two water-drops collide and join together and they repeat.
             - Dominant in warm clouds.
             - Droplets collide, merge, and grow large enough to fall.
+        - Larger droplet fall faster, sweep a larger area and are more likely to collide with other droplets.
+        - When ice droplets grow by collision, it's called .ul{aggregation}.
 
     .container width:{50%}
-        .emph{Bergeon Process}
+        !(80%)[Droplet Growth](image/internet_collisionmodel2.jpg "Droplet growth processes")
 
-        - Explains how ices crystals are formed in mixed-phase clouds.
-        - Important is the saturation vapour pressure.
-        - $ P_{\text{sat. water over ice}} < P_{\text{ambient}} < P_{\text{sth}} $
-        - The mechanism of droplet formation within clouds are not completely understood.
+# Different types of clouds
+.fullspan
+    !(70%)[Different types of clouds](image/davie_3rd_fig_2-3.png "Different types of clouds")
 
+# Bergeron Process
+.row gap:{1cm}
+    .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - .ul{Bergeon-Findeisen Process} or cold cloud process.
+        - At sub zero temperatures, the saturation vapour pressure over ice is lower than over water.
+        - This means .ul{air is saturated for ice but not for water}.
+        - Which means the ice particles can grow at the expense of the water droplets.
+        - **Vapour diffusion**: vapour moves from higher pressure (cloud droplets) to lower pressure (ice particles).
+        - But this results in drier clouds => cloud droplets evaporate.
+        - $ e_{\text{sat. water over ice}} < P_{\text{ambient}} < e_{\text{sth}} $
+        - Ice particles attract water vapour efficiently, causing **desublimation** (direct vapour to ice).
+
+    .container width:{40%}
+        .align{center}
+            !(100%)[Bergeron Process](image/davie_ed3_fig_2-1.png "Saturation vapour pressure curves showing ice-water difference")
+
+
+# Hail Formation
+.row gap:{1cm}
+    .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Hail stones**: typically ~5mm, spherical, sometimes irregular ice particles.
+        - **Size range**: golf ball size common, rare cases >15cm diameter recorded.
+        - **Formation location**: highest parts of cumulonimbus clouds (storm clouds).
+        - **Process**: ice particles circulate in violent up/down draughts.
+        - **Growth mechanism**: ice particles collide with supercooled water droplets → immediate freezing.
+        - **Cross-section**: alternating layers of clear and translucent ice.
+            - **Clear ice**: slower freezing (cloud tops)
+            - **Translucent ice**: instant freezing, trapped air
+
+    .container width:{60%}
+        !(100%)[Hail Formation](image/internet_hail.jpg)
+
+# Hail Formation Process
+.row gap:{1cm}
+    .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Circulation**: hail stones circulate multiple times in violent draughts.
+        - **Fall mechanism**: increasing mass eventually overcomes up draught.
+        - **Melting**: if conditions warmer below cloud base → melt and fall as rain.
+        - **Damage potential**: serious damage to infrastructure and agriculture.
+        - **Economic impact**: US hail storms cause ~$1 billion/year in losses.
+        - **Reference**: [National Storm Damage Centre](https://stormdamagecenter.org/hail-storm.php)
+
+    .container width:{60%}
+        .center
+            .html
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XHNN5DAq-jI?si=a_48CMyll9QqP6f2" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer" allowfullscreen></iframe>
 
 
 # Dewfall
 
-.row gap:{1cm}
-    .container width:{50%}
-        .emph{Condensation} of vapour onto cool surfaces:
-
+.row gap:{1cm} alignment:{center}
+    .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - .ul{Condensation} of vapour onto cool surfaces:
         - Occurs at night when surfaces cool below dew point
         - Common in humid-temperate zones (e.g., autumn)
         - Forms on grass, leaves, metal, etc.
@@ -167,17 +319,40 @@ forces within a cloud.
     .container width:{30%}
         !(100%)[Dewfall](image/internet_dewfall.webp)
 
+# Precipitations and Definitions
+
+.container width:{100%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{rgb(240, 240, 250)}
+
+    | **Class**                              | **Definition**                                                                                                                                                                                                 |
+    |----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Drizzle                                | A subset of fine rain with droplets between 0.1 and 0.5 mm, but close together                                                                                                                                |
+    | Rain                                   | Liquid water droplets with diameter between 0.5 and 0.7 mm, but smaller if widely scattered                                                                                                                  |
+    | Freezing rain or drizzle               | Rain or drizzle, the drops of which freeze on impact with a solid surface. Also called sleet in the USA                                                                                                       |
+    | Sleet                                  | Partly melted snowflakes, or rain and snow falling together (UK). Fairly transparent grains or pellets of ice (USA)                                                                                          |
+    | Ice crystals, ice prisms, snow and snowflakes | Snow can fall as single branched hexagonal or star-like ice crystals, or in the case of ice prisms, as unbranched ice crystals in the form of hexagonal needles, columns or plates. The nature of the crystal depends on the temperature at which it forms and the corresponding amount of water vapour. More often snow falls as agglomerated snowflakes. |
+    | Snow grains                            | Very small, white, opaque grains of ice, flat or elongated, with diameter generally <1 mm. Also called granular snow                                                                                         |
+    | Snow pellets                           | White, opaque grains of spherical or conical ice (2–5 mm). Also called granular snow, or graupel                                                                                                              |
+    | Ice pellets                            | Transparent or translucent pellets of ice, spherical or irregular with diameter <5 mm                                                                                                                         |
+    | Hail                                   | Balls or pieces of ice usually between 5 and 125 mm in diameter, commonly showing alternating concentric layers of clear and opaque ice in cross-section                                                     |
+    "Types of precipitation"
+
+# Understanding spatial distribution
+
+.row gap:{1cm} alignment:{center}
+    .container width:{80%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue} alignment:{center}
+        ## We understood the process, but we need to understand how precipitation is distributed mostly in space
+
 # Precipitation Distribution
 
 .row gap:{1cm}
-    .container width:{40%}
+    .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
         Precipitation varies across both **space** and **time**:
         - Spatial variation: different locations receive different amounts.
         - Temporal variation: amount of rainfall changes over time at the same location.
 
         Influences on precipitation fall into two categories:
-        - **Static** influences: do not change from storm to storm (e.g. altitude, aspect, slope)
-        - **Dynamic** influences: change with weather conditions (e.g. air masses, storm tracks)
+        - .ul{Static} influences: do not change from storm to storm (e.g. altitude, aspect, slope)
+        - .ul{Dynamic} influences: change with weather conditions (e.g. air masses, storm tracks)
 
         _Higher rainfall in the north-west states (Oregon and Washington) due to
         linked to wetter cyclonic weather systems from the
@@ -186,17 +361,16 @@ forces within a cloud.
         Caribbean sea_
 
     .container width:{60%}
-        !(100%)[USA 1996 Precipitation](./image/davie_fig_2-4.png)
-        _National Atmospheric Deposition Program - annual precipitation USA in 1996.
-        Although mountainous areas have a higher rainfall, and block rainfall reaching the centre,
-        they do not provide the only explanation_
+        !(100%)[USA 1996 Precipitation](./image/davie_fig_2-4.png "National Atmospheric Deposition Program - annual precipitation USA in 1996. Although mountainous areas have a higher rainfall, and block rainfall reaching the centre, they do not provide the only explanation")
 
 
 # Static Influences on Precipitation
 
+.whitespace height:{1cm}
+
 .row gap:{1cm}
     .container width:{50%}
-        .mermaid
+        .mermaid caption:{Influences on precipitation}
             flowchart LR
                 A([Precipitation]) --> B([Dynamic Controls])
                 A --> C([Static Controls])
@@ -204,14 +378,18 @@ forces within a cloud.
                 C --> E([Aspect])
                 C --> F([Slope])
 
-    .container width:{50%}
+                classDef bigText font-size:28px;
+                class A,B,C,D,E,F bigText
+
+
+    .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
 
         Static influences are fixed features of the landscape:
 
-        - **Altitude**: Modulating temperature. Higher elevations receive more rainfall due to cooling of rising air (orographic effect)
-        - **Aspect**: Less important than altitude. Slopes facing prevailing winds often receive more precipitation.
+        - .ul{Altitude}: Modulating temperature. Higher elevations receive more rainfall due to cooling of rising air (orographic effect)
+        - .ul{Aspect}: Less important than altitude. Slopes facing prevailing winds often receive more precipitation.
             - Humid mid-latitudes (35-65 $ \degree $): cyclonic weather systems coming from W. So slopes facing east will be more sheltered.
-        - **Slope**: Only important at very small scale - i.e., the difference between a level gauge and one on a slope.
+        - .ul{Slope}: Only important at very small scale - i.e., the difference between a level gauge and one on a slope.
 
 
 
@@ -234,12 +412,21 @@ forces within a cloud.
 
 
 
+# Case Study: Mareeba
+
+.row gap:{1cm}
+    .container width:{40%}
+        .html
+            <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.2645%; padding-top: 120px;"><a href="https://www.abc.net.au/news/2025-06-29/rain-shadow-effect-inspires-sunny-mareeba/105467478" data-iframely-url="//iframely.net/3fdoIBuv?theme=light"></a></div></div><script async src="//iframely.net/embed.js"></script>
+
+    .container width:{60%}
+        !(100%)[Google Maps Mareeba](image/internet_mareeba_earth.png)
 
 # Dynamic Influences on Precipitation
 
 .row gap:{1cm}
     .container width:{60%} height:{100%}
-        Dynamic influences result from .emph{atmospheric processes} (climatic controls) that vary with time:
+        Dynamic influences result from .ul{atmospheric processes} (climatic controls) that vary with time:
         - **Storm tracks**: paths of cyclones and weather systems
         - **Frontal systems**: interactions between warm and cold air masses
         - **Moisture availability**: seasonal shifts in humidity sources (e.g. monsoons)
@@ -253,15 +440,20 @@ forces within a cloud.
             - Seasonal wind and temperature patterns affect rainfall distribution
 
     .container width:{40%} height:{100%}
-        !(100%)[Storm Tracks](image/internet_storm_tracks.webp)
-        _Tropical oceans spawn approximately 80 tropical storms annually, and about two-thirds are severe (category 1 or higher on the Saffir-Simpson scale of intensity). Almost 90 percent of these storms form within $ 20 \degree $ north or south of the Equator_\
-        _[Britanica](https://www.britannica.com/science/tropical-cyclone/Location-and-patterns-of-tropical-cyclones)_
+        !(100%)[Storm Tracks](image/internet_storm_tracks.webp "Tropical oceans spawn approximately 80 tropical storms annually, and about two-thirds are severe (category 1 or higher on the Saffir-Simpson scale of intensity). Almost 90 percent of these storms form within $ 20 \degree $ north or south of the Equator.")
 
 
 
 # Measurement of Precipitation
 
-.row
+.whitespace height:{2cm}
+
+.row gap:{1cm} alignment:{center}
+    .container borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue} alignment:{center}
+        #! How do we measure precipitation?
+
+# Measurement of Precipitation
+.row gap:{1cm}
     .container width:{60%}
         - Measured as a **vertical depth** of water (e.g. mm or inches).
         - Represents the depth that would accumulate if all water remained on the surface.
@@ -301,6 +493,9 @@ forces within a cloud.
             A([Rainfall Measurement Errors]) --> C([Wetting])
             A([Rainfall Measurement Errors]) --> D([Rain Splash])
             A([Rainfall Measurement Errors]) --> E([Turbulence])
+
+            classDef bigText font-size:28px;
+                class A,B,C,D,E,F bigText
 
 .row
     .container width:{50%}
@@ -361,35 +556,39 @@ forces within a cloud.
 # Wind Turbulence and Gauge Height
 
 .row gap:{1cm}
-    .container width:{60%} height:{100%}
+    .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
         - Raised gauges reduce splash, but **disrupt airflow**.
         - Wind creates **turbulent eddies**, leading to **under-catch**.
         - Loss increases with:
             - Wind speed: At 20 km/h: up to **20% loss**, at 90 km/h: up to **40% loss**
             - Drop size
+    .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
         - Solution: fit gauge with a **wind shield** (e.g. baffles or slats).
         - Shields reduce wind speed around the orifice.
         - Can **significantly improve** measurement accuracy.
 
-    .container width:{40%} height:{100%}
-        !(100%)[Turbulent flow](image/davie_fig_2-8.png "Top: Turbulent flow over a raised gauge (eddies and drop deflection). Bottom: Baffles surrounding a rain gauge to lessen the impact of wind. Wind shield ")
 
-        !(100%)[Turbulent flow](image/davie_fig_2-9.png "Turbulent flow over an elevated rain gauge.")
+.row gap:{1cm}
+    .container width:{50%} height:{100%}
+        !(80%)[Turbulent flow](image/davie_fig_2-8.png "Top: Turbulent flow over a raised gauge (eddies and drop deflection). Bottom: Baffles surrounding a rain gauge to lessen the impact of wind. Wind shield ")
+
+    .container width:{40%} height:{100%}
+        !(80%)[Turbulent flow](image/davie_fig_2-9.png "Turbulent flow over an elevated rain gauge.")
 
 
 
 # Rain measurement in Australia
 
 .row
-  .container width:{50%}
-    .box title:{How to optimise?} background:{.lightred}
-        - No universal "perfect" design.
-        - The **best gauge** depends on:
-            - Local conditions (e.g. snow, wind exposure)
-            - Practical installation needs
-        - The **non-splash grid + surface-level** gauge is closest to ideal:
-            - Reduces splash and turbulence
-            - Unsuitable for snow-prone areas (risk of burial)
+  .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+
+    - No universal "perfect" design.
+    - The **best gauge** depends on:
+        - Local conditions (e.g. snow, wind exposure)
+        - Practical installation needs
+    - The **non-splash grid + surface-level** gauge is closest to ideal:
+        - Reduces splash and turbulence
+        - Unsuitable for snow-prone areas (risk of burial)
 
   	- The standard rain gauge in Australia is a **203 mm manual gauge**, which collects rainfall into a graduated cylinder.
   	- It is mounted **0.3 m above the ground**, away from obstructions.

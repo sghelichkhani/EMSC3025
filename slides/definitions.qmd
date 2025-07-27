@@ -1,3 +1,7 @@
+.function {ul}
+    input:
+    .text{.input} decoration:{underline} color:{red}
+
 .function {emph}
     input:
     .text{.input} size:{larger} decoration:{underline} color:{red}
