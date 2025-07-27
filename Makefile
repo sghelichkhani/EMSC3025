@@ -7,7 +7,7 @@ all: mkdocs slides
 # Run mkdocs in test directory
 mkdocs:
 	@echo "Building documentation with mkdocs..."
-	mkdir -p site && mkdocs build -d ./site/
+	rm -rv site && mkdir -p site && mkdocs build --dirty -d ./site/
 	@echo "Documentation built successfully"
 
 # Run the Makefile in slides directory

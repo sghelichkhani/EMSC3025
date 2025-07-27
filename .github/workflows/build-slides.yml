@@ -1,4 +1,4 @@
-name: build_slides 
+name: build_slides
 
 on:
   push:
@@ -35,21 +35,6 @@ jobs:
       - name: Add quarkdown to PATH
         run: echo "PATH=$PATH:$GITHUB_WORKSPACE/quarkdown/build/install/quarkdown/bin/" >> $GITHUB_ENV
 
-      - name: Set up Python
-        run: uv python install
-
-      # - name: Install Python dependencies
-      #   run: uv pip install mkdocs-material
-
-      - name: Building mkdocs
-        run: |
-          uv run mkdocs build --clean --site-dir site
-
-      - name: Build slides with Quarkdown
-        run: |
-          cd slides
-          make
-
       - name: Get latest successful workflow run from tutorials
         id: get_run
         run: |
@@ -81,14 +66,30 @@ jobs:
 
       - name: List downloaded content
         run: |
-          mv -v *.ipynb site/content/
+          mkdir -p docs/tutorials && mv -v *.ipynb docs/tutorials/
+
+      - name: Set up Python
+        run: uv python install
+
+      # - name: Install Python dependencies
+      #   run: uv pip install mkdocs-material
+
+      - name: Building mkdocs
+        run: |
+          uv run mkdocs build --clean --site-dir site
+
+      - name: Build slides with Quarkdown
+        run: |
+          cd slides
+          make
+
 
       - name: Upload built slides
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
-     
+
   deploy:
     runs-on: ubuntu-latest
     needs: build-quarkdown-slides
