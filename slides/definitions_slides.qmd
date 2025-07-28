@@ -1,3 +1,5 @@
+.slides center:{true}
+
 .pagemargin{bottomcenter}
     .container width:{35%} borderwidth:{1px} padding:{0.1cm} radius:{0.1cm} background:{.lightblue}
         EMSC3025/6025: Remote Sensing of Water Resources
@@ -12,3 +14,4 @@
 .pagemargin{topright}
     .container width:{100%} borderwidth:{1px} padding:{0.1cm} radius:{0.1cm} background:{rgb(240,240,240)}
         .currentpage / .totalpages
+
