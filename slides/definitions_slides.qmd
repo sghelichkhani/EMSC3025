@@ -1,5 +1,7 @@
 .slides center:{true}
 
+.font size:{14pt}
+
 .pagemargin{bottomcenter}
     .container width:{35%} borderwidth:{1px} padding:{0.1cm} radius:{0.1cm} background:{.lightblue}
         EMSC3025/6025: Remote Sensing of Water Resources
