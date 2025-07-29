@@ -2,7 +2,6 @@ name: latest_tutorials
 
 on:
   workflow_dispatch:
-    inputs:
 
 jobs:
   download-artifact:
@@ -38,4 +37,4 @@ jobs:
           unzip ready.zip
 
       - name: List downloaded content
-        run: find ./  
+        run: find ./
