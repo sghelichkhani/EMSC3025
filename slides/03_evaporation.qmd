@@ -23,16 +23,14 @@
 
 # Objectives
 
-.align{center}
-    .container width:{60%} background:{.lightblue}
-        .box title:{By the end of this lecture, you should be able to:}
-            - Define evaporation and its role in the water cycle.
-            - Differentiate between open water, potential, and actual evaporation.
-            - Understand transpiration and evapotranspiration.
-            - Identify key controls: energy, water availability, and vapour pressure deficit.
-            - Recognise methods to measure and estimate evaporation.
-            - Be ready for the tutorial dealing with evaporation.
-
+.center
+    .container width:{60%} background:{.lightblue} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm}
+        By the end of this lecture, you should be able to:
+          - Define .ul{evaporation} and its role in the water cycle.
+          - Differentiate between open water, potential, and actual evaporation.
+          - Understand transpiration and evapotranspiration.
+          - Identify .ul{key controls}: energy, water availability, and vapour pressure deficit.
+          - Recognise methods to measure and estimate evaporation.
 
 # Evaporation
 
@@ -43,17 +41,16 @@
             Transfer of liquid water into gaseous state into the atmosphere
 
         evaporation's importance is mainly affected by two factors:
-        - The amount of available energy
-        - Available water
+          1. .fragment behavior:{show} content:{The amount of available energy}
+          2. .fragment behavior:{show} content:{Available water}
 
-        Both of these are modulated by .emph{climate}.
+        Both of these are modulated by .ul{climate}.
         Think of cases where evaporation might not be as important:
-        - Humid climate in winter: much water but **limited energy**
-        - Arid climate in dry season: much energy but **limited water**
+        - .fragment content:{Humid climate in winter: much water but **limited energy**}
+        - .fragment content:{Arid climate in dry season: much energy but **limited water**}
 
     .container width:{50%}
-        !(70%)[Evaporation](image/internet_evaporation.jpg)\
-        _Available water and energy control  the main controlling factors_
+        !(70%)[Evaporation](image/internet_evaporation.jpg "Available water and energy control the main controlling factors")
 
 
 # Different Definitions of Evaporation
@@ -66,32 +63,68 @@
             - **Potential Evaporation**, $ E_{pt} $ : Amount of evaporation above land if there was unlimited water.
             - **Total Evaporation**, $ B_t $:  This is the actual evaporation. Wet seasons: $ E_t \approx E_{pt} $
 
-        .align{center}
-            We are mostly interested in $ E_O $ and $ E_t $, but $ E_{pt} $ gives us a good indicator of what $ E_t $ might be.
-
+        .center
+            - We are mostly interested in $ E_O $ and $ E_t $, but $ E_{pt} $ gives us a good indicator of what $ E_t $ might be.
+            - Fig. 2 -> Global Water Cycle, $ E_0 $ dominates the global component of evaporation
 
     .container width:{50%}
         .align{center}
-            !(100%)[Global Water Cycle](./image/davie_fig_1-6.png)
-            _Global Water Cycle, $ E_0 $ dominates the global component of evaporation_
+            !(100%)[Global Water Cycle](./image/davie_fig_1-7.png "Remember this figure from the water cycle lecture?")
+
 
 #
-.mermaid
+.mermaid caption:{Different Components of Evaporation}
     flowchart TD
         TOP([Evaporation]) --> BOTTOMRIGHT([Transpiration Related to Plants])
         TOP([Evaporation]) --> BOTTOMLEFT([From Soil Matrix itself])
 
 .row gap:{1cm}
-    .container width:{50%}
-        Transpiration is the result of photosynthesis and respiration in the plants.
-        - It is controlled by the ability of the leafs in opening or closing of the leafs stomata in response to vapour pressure difference.
-        - It is further control by amount of water, the solid, the ability of plants to transfer water to the leaves.
+    .container width:{50%} borderwidth:{1pt} padding:{0.2cm} radius:{0.1cm} background:{.lightblue}
+        Transpiration is the result of photosynthesis and respiration in the plants. It is controlled by:
+        - .fragment content:{... the ability of the leafs in opening or closing of the leafs stomata in response to vapour pressure difference.}
+        - .fragment content:{... further by amount of water, the solid, the ability of plants to transfer water to the leaves.}
+
+    .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.1cm} background:{.lightblue}
+      We are considering evaporation as a negative source. But water lost, is just transferred to the atmosphere. A meteorologist would consider evaporation as
+      a positive source and dewafll as a negative one.
+
+# Transpiration, and bit of fun with TSA
+.fullspan
+  .center
+    .html
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/13tccn8jvBU?si=jgr0NaNXEb9kbfqx&amp;start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  .whitespace height:{1cm}
+
+# Understanding Transpiration
+.row gap:{1cm}
+    .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Effect on Local Weather:**
+            - Increases **heat index**: feels hotter with added humidity.
+            - High humidity can stress humans by hindering sweat evaporation.
+            - **Night time temperatures** stay warmer due to high humidity.
+
+        - **Seasonal and Regional Impact:**
+            - Most impactful during hot summer months.
+            - Affects areas near agricultural hubs like:
+              - .fragment content:{.ul{cornfields -> corn sweat}}
 
     .container width:{50%}
-        .box type:{warning} background:{.lightblue}
-            We are considering evaporation as a negative source. But water lost, is just transferred to the atmosphere. A meteorologist would consider evaporation as
-            a positive source and dewafll as a negative one.
+        .align{center}
+          ![Corn Sweat](image/internet_transpiration.jpg "The process of transpiration")
 
+# Corn Sweat:
+
+.row gap:{1cm}
+    .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+         A common phenomenon in summer in US midwest
+          - Millions of acres of cornfields add moisture to the air.
+          - One acre can release 3,000-4,000 gallons of water per day.
+          - Iowa's cornfields could add 40.5 billion gallons of water daily.
+
+    .container width:{50%}
+        .align{center}
+          .html
+            <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 66.625%; padding-top: 120px;"><a href="https://earthsky.org/earth/what-is-corn-sweat-heat-humidity/" data-iframely-url="https://cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fearthsky.org%2Fearth%2Fwhat-is-corn-sweat-heat-humidity%2F&key=d4806df985347e90a96e331adf114995"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 # Evaporation as a process
 
@@ -104,7 +137,7 @@
         **Where:**
         - $ E $ — Evaporation rate.
         - $ e_x $ — Vapour pressure at the water surface.
-        - $ eₐ $ — Vapour pressure of the surrounding air.
+        - $ e_a $ — Vapour pressure of the surrounding air.
         - $ C $ — Empirical constant (depends on wind, temperature, etc.).
 
         **Key Idea**: Evaporation increases with the difference in vapour pressure between the water surface and the air.
@@ -112,11 +145,13 @@
     .container width:{30%}
         !(100%)[John Dalton](image/internet_JohnDalton.jpg)
 
-.mermaid
-    flowchart TD
-        a(available energy)
-        b(available water)
-        c(capacity of air for water)
+.row gap:{1cm} alignment:{center}
+    .container width:{80%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        .mermaid
+            flowchart TD
+                a(available energy)
+                b(available water)
+                c(capacity of air for water)
 
 # Available Energy
 
@@ -132,12 +167,11 @@
         - $ Q_G $: Energy absorbed and released from the soil.
 
         Two other sources of energy that _might_ become important:
-        - In urban settings, energy released from buildings  in cold winters. From organic sources of energy.
-        - Advective heat: As introduced in [introduction](./00_introduction/text.html)
+        - .fragment content:{In urban settings, energy released from buildings  in cold winters. From organic sources of energy.}
+        - .fragment content:{Advective heat: As introduced in [introduction](https://water-course.github.io/content/Watercycle/index.html)}
 
     .container width:{50%}
-        !(100%)[Radiation](./image/internet_radiation.jpg)\
-        _Radiation_
+        !(100%)[Radiation](./image/internet_radiation.jpg "")
 
 
 # Water supply and evaporation
@@ -154,7 +188,6 @@
             - A **moisture gradient** forms, pulling water upward
             - This upward movement must overcome **gravity** and **soil capillarity**
         - Plants also draw water to the surface via **osmosis** in their roots.
-        - The relationship between **soil moisture** and evaporation is dynamic and will be revisited later.
 
 .row
     .align{center}
@@ -163,22 +196,24 @@
           _Water supply_
 
 
-# Vapour pressure deficit
+# The receiving atmosphere
 
 .row
     .container width:{50%} alignment:{center}
+        - Once the water is evaporated, it diffuses into the atmosphere.
         - Evaporation depends on the difference between:
           - $ e_s $: saturated vapour pressure
           - $ e_a $: actual vapour pressure
-        - The difference $ (e_s - e_a) $ is the **vapour pressure deficit (vpd)**.
+        - The difference $ (e_s - e_a) $ is the **vapour pressure deficit (vpd)** or **saturation deficit**.
         - Higher VPD → higher potential for evaporation
         - Relative humidity is the ratio $ e_a / e_s $
+        - Note that mixing is very important to provide more capacity for evaporation.
 
   .container width:{40%}
         !(100%)[vpdgraph](image/davie_fig_3-2.png "Vapour pressure deficit at 20°C")
 
 
-# Open-water versus soil evaporation
+# .ul{Open-water} versus .ul{soil} evaporation
 
 .row
   .container width:{50%}
@@ -250,9 +285,53 @@
       - Aerodynamic profile
       - Bowen ratio
 
+# Direct: Eddy covariance
+.row gap:{1cm}
+    .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Eddy Covariance (Turbulence) Method**
+        - **Principle:** Directly measures turbulent fluxes by computing the covariance between vertical wind velocity and scalar quantities (e.g., temperature or vapor).
+        - **Equations:**
+            - $H = \rho c_p \overline{w'T'}$ (sensible heat flux)
+            - $\lambda E = \lambda \rho \overline{w'q'}$ (latent heat flux)
+        - **Data Needs:** High-frequency (10–20 Hz) 3D wind and scalar measurements.
+        - **Assumptions:** Stationarity, homogeneous surface.
+        - **Pros:** Most accurate and direct method; no need for gradient assumptions.
+        - **Cons:** Expensive; complex instruments and processing; sensitive to sensor alignment, data gaps, and surface heterogeneity.
+
+    .container width:{40%}
+        !(100%)[Eddy covariance](image/internet_anenometer.jpg "Eddy covariance system consisting of an ultrasonic anemometer and infrared gas analyser. The anemometer measures the wind speed and direction, and the infrared gas analyser measures the water vapour concentration.")
+
+# Direct: Aerodynamic profile (Flux-Gradient)
+.row gap:{1cm}
+    .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Aerodynamic Profiling (Flux-Gradient) Method**
+        - **Principle:** Based on Monin-Obukhov Similarity Theory (MOST) to relate vertical gradients of wind, temperature, and humidity to turbulent fluxes.
+        - **Key Inputs:** Profiles of wind speed, temperature, humidity; roughness length; stability corrections.
+        - **Assumptions:** Stationarity, horizontally homogeneous surface, valid MOST conditions.
+        - **Pros:** Useful in many micrometeorological settings.
+        - **Cons:** Requires accurate profile data; sensitive to stability corrections and roughness parameters.
+
+    .container width:{40%}
+        .align{center}
+            !(100%)[Aerodynamic Profile](image/internet_aerodynamic_profile.jpg "Aerodynamic profile method measuring vertical gradients of temperature and humidity")
+
+# Direct: Bowen ratio
+.row gap:{1cm}
+    .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - **Bowen Ratio Method**
+        - **Principle:** Uses measured temperature and humidity gradients between two heights to infer latent and sensible heat fluxes.
+        - **Key Variable:** Bowen ratio $\beta = H/\lambda E$, where $H$ is sensible and $\lambda E$ is latent heat flux.
+        - **Data Needs:** Two levels of temperature and humidity, net radiation, ground heat flux.
+        - **Assumptions:** Steady state, negligible horizontal advection, similarity of turbulent transfer of heat and moisture.
+        - **Pros:** Low cost; easy to maintain.
+        - **Cons:** Unreliable when gradients are small or near zero.
+
+    .container width:{50%}
+      .center
+        .html
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6KaQ1l8Q_pw?si=mNYE7GqMQqEf7h5F&amp;start=358" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Indirect: water balance methods
-
 .row
   .container width:{60%}
     - Evaporation can be inferred from the **water balance**:

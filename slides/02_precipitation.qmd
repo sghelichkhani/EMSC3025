@@ -181,14 +181,19 @@
 #
 
 .row gap:{1cm} alignment:{center}
-    .container borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue} alignment:{center}
+    .container width:{70%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue} alignment:{center}
         ##! Now we understand the atmosphere, but how does precipitation form?
 
 .whitespace height:{2cm}
 
-.row gap:{1cm}
-    .container width:{40%}
+.row gap:{1cm} alignment:{center}
+
+    .container width:{10%}
+
+    .container width:{20%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightred}
         Three physical conditions must be met for precipitation to occur:
+
+    .container width:{10%}
 
     .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
         - .ul{Cooling} of the atmosphere
@@ -687,9 +692,53 @@
   .container width:{30%}
   	!(100%)[spatialestimation](image/davie_fig_2-13.png "Estimating areal rainfall from point measurements using Thiessen polygons")
 
+# Thiessen Polygons
+.row
+    .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - American hydrologist **Thiessen** developed a method to overcome uneven distribution of rainfall gauges.
+        - Attach an area to each gauge. Every point in the area is closer to that gauge than any other gauge.
+            - Connect each gauge to its nearest neighbours.
+            - Find the perpendicular bisector of the line segment connecting the two gauges.
+            - Extend the bisectors until they meet.
+            - Find the area associated with each gauge.
+        - Then:
+
+            $ R = \sum_{i=1}^{n} r_i \times \left(\frac{a_i}{A}\right) $
+
+            where $ R $ is the areal rainfall, $ r_i $ is the rainfall at the $ i $-th gauge, $ a_i $ is the area of the $ i $-th polygon, and $ A $ is the total area of the catchment.
+
+    .container width:{40%}
+        !(80%)[Thiessen Polygons](image/davie_fig_2-13.png "Estimating areal rainfall from point measurements using Thiessen polygons")
+
+# Hypsometric method
+
+.row
+    .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - It is well known that the altitude of the catchment (among other factors) affects the rainfall.
+        - Here we change the polygons into a hypsometric curves.
+        - That is we are assuming points with unknown rain measurements should have the same rainfall as the points with known rainfall at the same altitude.
+
+    .container width:{40%}
+        !(80%)[Hypsometric method](image/davie_3rd_fig_2-14.png "Estimating areal rainfall from the altitude of the catchment")
+
+# Isohyetal method
+
+.row
+    .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+        - Isohyetal method is a way to estimate the areal rainfall from the altitude of the catchment.
+        - It is a way to estimate the areal rainfall from the altitude of the catchment.
+        - With the advent of computing, these techniques have improved a lot.
+        - e.g., kriging!
+
+    .container width:{40%}
+        !(80%)[Hypsometric method](image/davie_3rd_fig_2-14.png)\
+        _Same figure as before, but imagine you draw contour lines of the rainfall distribution from before_
+
+
+
 # Summary:
 .box title:{Precipitation: Formation, Measurement, and Spatial Estimation} background:{.lightred}
-    We covered therole of **precipitation** in the hydrological cycle, its **formation mechanisms**, and **factors affecting its distribution**.
+    We covered the role of **precipitation** in the hydrological cycle, its **formation mechanisms**, and **factors affecting its distribution**.
 
     - **Conditions for precipitation**: atmospheric cooling, condensation nuclei, and droplet growth.
     - **Cooling mechanisms**: adiabatic processes, convective/orographic/cyclonic uplift.
