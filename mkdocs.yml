@@ -3,7 +3,7 @@ site_url: https://water-course.github.io
 nav:
   - Home: index.md
   - Content: content.md
-  - Computer Labs: computer-labs.md
+  - Computer Labs: computer-lab.md
 plugins:
   - mkdocs-jupyter:
       toc_depth: 2
