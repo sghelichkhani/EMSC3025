@@ -46,8 +46,9 @@ Below is a short demo showing how to load the full Jupyter notebook directory in
 
 ## 📘 Tutorial List
 
-- [Basics 1](https://water-course.github.io/tutorials/Ex1_Precipitation/)A beginner-friendly introduction to Python programming for geoscience applications, covering basic maths, loops, formatted output, and simple map plotting with Cartopy.
-- [Tutorial 1 - Precipitation](tutorials/Ex1_Precipitation.ipynb):
+- [Basics 1](tutorials/basics_00_solutions.ipynb): A beginner-friendly introduction to Python programming for geoscience applications, covering basic maths, loops, formatted output, and simple map plotting with Cartopy.
+- [Basics 2](tutorials/basics_01_solutions.ipynb): Learn how to perform geospatial analysis in Python by working with shapefiles, spatial queries, NetCDF rainfall data, and basin-scale integration over the Murray-Darling Basin.
+- [Tutorial 1 - Precipitation](tutorials/Ex1_Precipitation_solutions.ipynb): Apply and compare multiple interpolation methods to estimate missing rainfall values, using real storm data and geospatial coordinates — adapted from a tutorial by [Jesús Casado Rodríguez](https://github.com/casadoj).
 
 ---
 
