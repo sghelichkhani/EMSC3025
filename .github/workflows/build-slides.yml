@@ -68,7 +68,7 @@ jobs:
 
       - name: List downloaded content
         run: |
-          mkdir -p docs/computer-labs && mv -v *.ipynb docs/computer-labs/
+          mkdir -p docs/computer-lab && mv -v *.ipynb docs/computer-lab/
 
       - uses: astral-sh/setup-uv@v5
       - name: Set up Python
