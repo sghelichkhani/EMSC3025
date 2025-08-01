@@ -28,16 +28,16 @@ Convective downpours over **Singapore** in March are dominated by warm-rain proc
 ## Sierra Nevada Transect
 
 Fig. 1 shows a west-to-east cross-section across California’s San Jose from the Pacific coast to Bishop. On your copy of the figure, mark:
-- i. the zone of **maximum orographic precipitation**;
-- ii. the **rain-shadow region**.
 
-<<<
+1. the zone of **maximum orographic precipitation**.
+2. the **rain-shadow region**.
+
 .fullspan
     !(100%)[Sierra Nevada Transect](image/internet_googlemaps_sierraNevada.png "Sierra Nevada Transect on Google Earth")
 
 - Annotate approximate temperature changes (°C) of a rising unsaturated parcel that moves:
-    1. sea-level to 3 000 m; 
-    2. crest to Owens Valley floor. (Use the dry- and saturated-adiabatic lapse rates as appropriate.)
+    1. sea-level to 3 000 m. 
+    2. crest to Owens Valley floor. (Use the dry- and saturated-adiabatic lapse rates as appropriate.).
     3. (Use your online resources for this:) name **two rain-shadow communities** east of the crest and discuss, in  $ \approx 100 $ words, how this precipitation pattern shapes their water-supply strategies.
 
 ## Paired Forest-Pasture Experiment  *(fully hypothetical)*
@@ -51,7 +51,7 @@ Two tipping-bucket rain gauges operated for 14 consecutive days (Day 1 – Day 1
 | **Forest-Gauge (mm)**  | 0 | 4 | 9 | 0 | 17 | 7 | 3 | 13 | 8 | 18 | 6 | 15 | 9 | 10 | **119 mm** |
 "Daily totals from the 14-day paired-gauge experiment."
 
-1. Draw a **paired bar chart** comparing daily rainfall at the two gauges.
+1. Draw a **paired bar chart** comparing daily rainfall at the two gauges. The spreadsheet containing the data can be found [here](https://data.gadopt.org/water-course/Paired_Gauges_Table.csv).
 2. The Forest-Gauge shows a **15 % lower** 14-day cumulative total than the Pasture-Gauge. Explain **three plausible micro-site or measurement biases** that could produce this difference.
 3. For *each* bias, recommend one **practical adjustment or field check** that would reduce its impact in future campaigns.
 

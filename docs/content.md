@@ -1,4 +1,4 @@
-# Content
+## Main Content
 Below is a comprehensive list of course materials for the Water Course.
 
 !!! Tip
@@ -8,7 +8,7 @@ Below is a comprehensive list of course materials for the Water Course.
 
     If you are an *ANU student* that is currently enrolled in the course, you could have a PDF format of the slides on [Canvas](https://canvas.anu.edu.au/courses/3453).
 
-## 🧑‍🏫 Lecture Sequence
+### 🧑‍🏫 Lecture Sequence
 - [**Introduction to the Course**](Introduction/index.html)
 - [**The Hydrologic Cycle**](Watercycle/index.html)
 - [**Precipitation**](Precipitation/index.html)
@@ -20,7 +20,7 @@ Below is a comprehensive list of course materials for the Water Course.
 
 ---
 
-## 📄 Tutorials
+### 📄 Tutorials
 - [**The Hydrologic Cycle**](Tutorial-Watercycle/index.html)
 - [**Precipitation**](Tutorial-Precipitation/index.html)
 - [**Evapotranspiration**](Tutorial-Evaporation/index.html)
@@ -29,9 +29,15 @@ Below is a comprehensive list of course materials for the Water Course.
 - **Groundwater - Theory of Flow**
 - **Groundwater - Aquifers**
 
+### 🔖 Assignments 
+- [**Assignment 1**](AssignmentOne/index.html)
+- **Assignment 2**
+- **Groundwater - Aquifers**
+
+
 ---
 
-## 📚 Reference Materials
+### 📚 Textbook References
 
 This course draws exclusively from two comprehensive texts:
 
@@ -44,7 +50,9 @@ This course draws exclusively from two comprehensive texts:
 Please refer to these books throughout the course for deeper insight and examples.
 
 ---
-## 🎧 Audio Summaries
+
+## Extra
+### 🎧 Audio Summaries
 
 - **The Hydrologic Cycle** (*AI*)
 
@@ -56,7 +64,7 @@ Please refer to these books throughout the course for deeper insight and example
 
 ---
 
-## 🎥 Videos
+### 🎥 Videos
 
 - **NGV Triennial | JR's Homily to Country**:
 This powerful visual work by artist JR documents a procession through the dry Menindee Lakes in New South Wales, drawing attention to the ecological decline of the Darling / Baaka River — a major tributary in Australia’s largest river system.<br>
@@ -66,5 +74,5 @@ More than a scientific issue, the river is part of the living cultural heritage 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/KakMgvx59vU?si=QC1lLniiTax_aXb7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-## 📖 Extra
+### 📖 Extra
 - [300 Sunny Days in Mareeba - Rain-Shadow Effect; ABC News](https://www.abc.net.au/news/2025-06-29/rain-shadow-effect-inspires-sunny-mareeba/105467478)
