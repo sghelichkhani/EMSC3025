@@ -16,4 +16,3 @@
 .pagemargin{topright}
     .container width:{100%} borderwidth:{1px} padding:{0.1cm} radius:{0.1cm} background:{rgb(240,240,240)}
         .currentpage / .totalpages
-

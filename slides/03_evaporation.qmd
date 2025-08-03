@@ -8,7 +8,6 @@
 
 .include {definitions.qmd}
 .include {definitions_slides.qmd}
-
 #!
 .fullspan
   .center
@@ -213,6 +212,14 @@
         !(100%)[vpdgraph](image/davie_fig_3-2.png "Vapour pressure deficit at 20°C")
 
 
+#
+
+.row gap:{1cm} alignment:{center}
+  .container width:{60%} alignment:{center} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+
+    ## Evaporation should be looked at in the context of the environment.
+
+
 # .ul{Open-water} versus .ul{soil} evaporation
 
 .row
@@ -253,17 +260,29 @@
 
 
 # Transpiration and total evaporation
-.fullspan
+.row gap:{1cm}
+  .container width:{60%}
     .align{center}
-       .container width:{60%}
-         | Component                        | Puruki (Central North Island, NZ)<br>(% of annual rainfall) | Balmoral (Central South Island, NZ)<br>(% of annual rainfall) |
+         | Component                        | Puruki (Central North Island, NZ)(% of annual rainfall) | Balmoral (Central South Island, NZ)(% of annual rainfall) |
          |----------------------------------|-------------------------------------------------------------|----------------------------------------------------------------|
          | **Annual rainfall**             | 1,405 mm                                                   | 870 mm                                                        |
          | **Annual interception loss**    | 370 mm (26%)                                               | 220 mm (25%)                                                  |
          | **Annual transpiration**        | 705 mm (50%)                                               | 255 mm (29%)                                                  |
          | **Annual soil evaporation**     | 95 mm (7%)                                                 | 210 mm (24%)                                                  |
          | **Remainder (runoff + percolation)** | 235 mm (17%)                                          | 185 mm (21%)                                                  |
-         *Source: Data adapted from Kelliher and Jackson (2001)*
+         "Comparison of two Pine Radiata Forests in New Zealand (Kelliher and Jackson, 2001)"
+
+  .container width:{40%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+    The relative importance of each component depends on the climate, degree of vegetation cover.
+
+
+#
+
+.row gap:{1cm} alignment:{center}
+  .container width:{60%} alignment:{center} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+
+    ## How do we measure evaporation?
+
 
 # Measuring evaporation is hard
 
@@ -290,10 +309,7 @@
     .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
         - **Eddy Covariance (Turbulence) Method**
         - **Principle:** Directly measures turbulent fluxes by computing the covariance between vertical wind velocity and scalar quantities (e.g., temperature or vapor).
-        - **Equations:**
-            - $H = \rho c_p \overline{w'T'}$ (sensible heat flux)
-            - $\lambda E = \lambda \rho \overline{w'q'}$ (latent heat flux)
-        - **Data Needs:** High-frequency (10–20 Hz) 3D wind and scalar measurements.
+        - **Data Needs:** High-frequency 3D wind and scalar measurements.
         - **Assumptions:** Stationarity, homogeneous surface.
         - **Pros:** Most accurate and direct method; no need for gradient assumptions.
         - **Cons:** Expensive; complex instruments and processing; sensitive to sensor alignment, data gaps, and surface heterogeneity.
@@ -302,29 +318,27 @@
         !(100%)[Eddy covariance](image/internet_anenometer.jpg "Eddy covariance system consisting of an ultrasonic anemometer and infrared gas analyser. The anemometer measures the wind speed and direction, and the infrared gas analyser measures the water vapour concentration.")
 
 # Direct: Aerodynamic profile (Flux-Gradient)
-.row gap:{1cm}
+.row gap:{1cm} alignment:{center}
     .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
         - **Aerodynamic Profiling (Flux-Gradient) Method**
-        - **Principle:** Based on Monin-Obukhov Similarity Theory (MOST) to relate vertical gradients of wind, temperature, and humidity to turbulent fluxes.
+        - **Principle:** Relates vertical gradients of wind, temperature, and humidity to turbulent fluxes.
         - **Key Inputs:** Profiles of wind speed, temperature, humidity; roughness length; stability corrections.
-        - **Assumptions:** Stationarity, horizontally homogeneous surface, valid MOST conditions.
         - **Pros:** Useful in many micrometeorological settings.
         - **Cons:** Requires accurate profile data; sensitive to stability corrections and roughness parameters.
-
-    .container width:{40%}
-        .align{center}
-            !(100%)[Aerodynamic Profile](image/internet_aerodynamic_profile.jpg "Aerodynamic profile method measuring vertical gradients of temperature and humidity")
 
 # Direct: Bowen ratio
 .row gap:{1cm}
     .container width:{60%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
         - **Bowen Ratio Method**
         - **Principle:** Uses measured temperature and humidity gradients between two heights to infer latent and sensible heat fluxes.
-        - **Key Variable:** Bowen ratio $\beta = H/\lambda E$, where $H$ is sensible and $\lambda E$ is latent heat flux.
+        - **Key Variable:** Bowen ratio $ \beta = H/LE $, where $ H $ is sensible and $ LE $ is latent heat flux.
         - **Data Needs:** Two levels of temperature and humidity, net radiation, ground heat flux.
-        - **Assumptions:** Steady state, negligible horizontal advection, similarity of turbulent transfer of heat and moisture.
-        - **Pros:** Low cost; easy to maintain.
-        - **Cons:** Unreliable when gradients are small or near zero.
+
+        $ B = \frac{\gamma \cdot \Delta T}{\Delta e} $
+
+         with $ \gamma $ the psychrometric constant.
+
+        - Assumes steady state, negligible horizontal advection, similarity of turbulent transfer of heat and moisture.
 
     .container width:{50%}
       .center
@@ -381,6 +395,112 @@
   .container width:{50%}
     !(100%)[lysimeter](image/davie_fig_3-4.png "A weighing lysimeter sitting flush with the surface. The cylinder is filled with soil and vegetation similar to the surroundings.")
 
+# Surrogate methods
+.row
+  .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+    - **Surrogate methods** are indirect methods that estimate evaporation based on other variables.
+    - They focus on climotological variables that are understood to affect evaporation.
+
+  .container width:{50%}
+    .mermaid
+      flowchart LR
+        A[Surrogate Methods] --> B[Thornthwaite]
+        A[Surrogate Methods] --> C[Penman]
+        A[Surrogate Methods] --> D[Penman-Monteith]
+
+# Thornthwaite
+
+.row gap:{1cm}
+  .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+    - A empirical method that estimates potential evaporation based on average temperature temperature.
+    - Sensible as we know temperature is a proxy for the available energy.
+    - A monthly heat index (i) for a region
+
+    $ i = \left( \frac{T}{5} \right)^{1.514} $
+
+    - Annual heat index (I) is the sum of the monthly heat indices.
+
+    $ I = \sum_{i=1}^{12} i $
+
+  .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+
+    - Potential evaporation (E_p) is then given by:
+
+    $ E_p = 16 b \left( \frac{10T}{I} \right)^{a} $
+
+    - $ b $ accounts for unequal day length between months.
+    - $ a $ is calibrated as a cubic function of the heat index.
+
+    $ a = 6.75 \times 10^{-7} I^3 - 7.7 \times 10^{-5} I^2 + 0.018 I + 0.49 $
+
+    A **raw estimate** only on temperature.\
+    It can only work on a **monthly scale**.
+    Calibrated for a specific region. For regions with high potential evaporation, **underestimates** evaporation.
+
+# Penman for Open Water Evaporation
+
+- Combination of .ul{energy balance} and .ul{vapour pressure deficit}.
+- It is a very complex model, but it is very accurate (10 days to daily).
+
+$ E_O = \frac{\Delta Q^* + \gamma E_a}{\Delta + \gamma} $
+
+where an empirical relationship states that:
+
+$ E_a = 2.6 \delta_e \left( 1 + \frac{u}{1.862}\right) $
+
+with $ Q^* $ the net radiation, $ \delta_e $ the vapour pressure deficit, and $ u $ the wind speed at 2 m elevation, $ \Delta $ is the rate of increase of the saturation vapour deficit with temperature, $ \gamma $ is the psychrometric constant (0.063 kPa / °C).
+
+Requires observations of .ul{temperature}, .ul{wind speed}, .ul{vapour pressure} and .ul{net radiation}, and provides the rate of evaporation in mm / day. Ignores soil heat flux, and that the vapour pressure deficit is the only limiting factor.
+
+# Simplifications to Penman
+
+.row gap:{1cm}
+  .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+    - Several attempts have been made to simplify the Penman equation for widespread use.
+    - Priestly and Taylor (1972) derived a simplified Penman formula for large-scale estimation of evaporation, where large-scale advection is not important, and only accounted for through **sensible heat**.
+
+    $ PE = \alpha \frac{\Delta (Q^* - Q_G)}{\Delta + \gamma} $
+
+  .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+    - $ Q_G $ is the soil heat flux term
+    - $ \alpha $ is the Priestly–Taylor parameter, approximates the sensible heat transfer function, estimated by Priestly and Taylor (1972) to be 1.26 for saturated land surfaces, oceans, and lakes.
+    - This adaptation is important for regional scale evapotranspiration assessment using satellite remote sensing.
+
+# Relationship between Actual and Potential Evaporation
+
+.row gap:{1cm}
+  .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+    - Without stomatal control (e.g., pastures), the relationship between actual evaporation ($ E_t $) and potential evaporation ($ P_E $) is primarily driven by water availability.
+    - Water availability can be estimated from soil moisture content.
+    - No units on the x-axis and two different curves (depends on soil and plant types).
+    - This simple relationship is useful for soil water budgeting models (e.g., Davie et al. 2001) but not for precise modeling.
+    - The relationship is not linear, and it is not a simple function of soil moisture.
+
+  .container width:{50%}
+    ![Soil moisture](image/davie_3rd_3-10.png "Relationship between actual and potential evaporation")
+
+# Influence of Vegetation on Evaporation
+
+.row gap:{1cm}
+  .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+    - In vegetation types with stomatal control (e.g., coniferous forests), evaporation is influenced by both soil moisture and vapour pressure deficit (VPD).
+    - Figure -> shows a time series of soil moisture, transpiration, and VPD for Pinus radiata in New Zealand.
+    - Transpiration was measured using sap-flow meters, soil moisture with a neutron probe, and VPD from a meteorological station.
+
+  .container width:{50%}
+    ![Soil moisture](image/davie_3rd_fig_3-11.png "Relationship between actual and potential evaporation")
+
+# Influence of Vegetation on Evaporation
+
+.row gap:{1cm}
+  .container width:{50%} borderwidth:{1pt} padding:{0.5cm} radius:{0.5cm} background:{.lightblue}
+    - At the start of summer (Oct-Nov 1998), high soil moisture leads to a rapid increase in transpiration.
+    - Transpiration plateaus despite increasing VPD, indicating stomatal control.
+    - From Jan 1999, transpiration drops, initially matching a drop in VPD, but continues to decrease due to soil moisture limitations.
+    - Figure 13. -> illustrates the complex interaction between evaporation, soil moisture, and atmospheric conditions.
+
+  .container width:{50%}
+    ![Soil moisture](image/davie_3rd_fig_3-11.png "Relationship between actual and potential evaporation")
 
 
 # Summary

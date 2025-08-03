@@ -92,7 +92,17 @@
         - Horton (1933): Overland flow occurs when rainfall intensity exceeds the infiltration capacity of the soil.\
             Excess water then flows as a shallow surface layer.\
             Infiltration capacity acts as a **threshold**.
-        - .emph{However}, in most cases, infiltration rates exceed typical rainfall intensities.
+        - .fragment content:{.ul{However}, in most cases, infiltration rates exceed typical rainfall intensities.}
+
+# Runoff Mechanism
+.row gap:{1cm}
+    .container width:{50%}
+        !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png "Hillslope runoff processes")
+
+        Continuous sheets of overland water flow are rarely observed in nature.
+
+    .container width:{50%}
+        - However, in most cases, infiltration rates exceed typical rainfall intensities.}
 
         | **Soil and vegetation** | **Infiltration rate (mm/hr)** | **Rainfall type**    | **Rainfall intensity (mm/hr)** |
         |-------------------------|-------------------------------|----------------------|-------------------------------|
@@ -100,6 +110,7 @@
         | Loam pasture            | 10–70                         | Heavy rain           | 5–20                          |
         | Sand                    | 3–15                          | Moderate rain        | 0.5–5                         |
         | Bare clay               | 0–4                           | Light rain           | 0.5                           |
+        "Typical infiltration rates versus rainfall intensities Burt (1987)"
 
 
 # Runoff Mechanism
@@ -113,18 +124,6 @@
             The importance of infiltration is retained, but the idea of uniform thin flow is questioned.
         - Hewlett & Hibbert (1967): Overland flow occurs when the water table rises to the surface due to infiltration and throughflow.\
             This results in saturated areas near channels and lower slopes where **return flow** and **direct precipitation** dominate.
-
-.align{center}
-
-    | **Soil and vegetation** | **Infiltration rate (mm/hr)** | **Rainfall type** | **Rainfall intensity (mm/hr)** |
-    |:------------------------|-------------------------------|:------------------|-------------------------------|
-    | Forested loam           | 100–200                       | Thunderstorm      | 50–100                        |
-    | Loam pasture            | 10–70                         | Heavy rain        | 5–20                          |
-    | Sand                    | 3–15                          | Moderate rain     | 0.5–5                         |
-    | Bare clay               | 0–4                           | Light rain        | 0.5                           |
-
-    Typical infiltration rates versus rainfall intensities *Source: From Burt (1987)*
-
 
 
 # Who was right?
