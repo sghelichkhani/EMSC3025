@@ -56,12 +56,19 @@
     .container width:{40%}
         !(100%)[River Wye, Wales](image/davie_fig_5-1.png "River Wye: Average values for 100 days during autumn of 1995")
 
-    .container width:{50%}
+    .container width:{50%} radius:{0.5cm} borderwidth:{0.5pt} background:{.lightblue}
+        - A continuous record of streamflow is called a **hydrograph**.
         - **Peak/storm flow**: Water present in a stream during and immediately after a significant rainfall event.
         - Globally controlled by rainfall intensity and duration; at catchment scale, affected by
         catchment **size**, **slope**, **shape**, soil characteristics, vegetation type and cover,
         degree of urbanisation, and **antecedent soil moisture**.
         - Periods between peaks are referred to as **baseflow** (distinct from low flow), typically understood to be supplied by groundwater.
+
+# Catchments and their geology
+.fullspan
+    !(70%)[Catchment](image/davie_3rd_fig_7-2.png "Comparative hydrographs for two adjacent sub-catchments in the Thames catchment.")
+
+    .fragment content:{ Identical climatic conditions, but different geology. Rocks of the Lambourn are all high permeability, while the Thames catchment is mostly low permeability + bedrock.}
 
 # Storm hydrograph in detail
 
@@ -85,7 +92,7 @@
     .container width:{50%}
         !(100%)[Hillslope runoff processes](image/davie_fig_5-3.png "Hillslope runoff processes")
 
-        Continuous sheets of overland water flow are rarely observed in nature.
+        .fragment content:{Continuous sheets of overland water flow are rarely observed in nature.}
 
     .container width:{50%}
         - **Overland flow**: Water flowing over the land surface after precipitation.
@@ -273,7 +280,8 @@
 
 .row gap:{1cm}
     .container width:{60%}
-        - **Flumes and weirs** are stream gauging structures that extend the **stage–discharge** method by imposing control over stream velocity and cross-sectional area.
+        - In principle the same as stage-discharge relationship, but with a control section.
+        - Flumes and weirs are stream **gauging structures** that extend the **stage–discharge** method by imposing control over stream velocity and cross-sectional area.
         - By doing so, they provide a **continuous record** of stream discharge.
         - The key is to **standardize flow** through a known cross-sectional area so that velocity becomes predictable or known.
         - This is especially useful because stream velocity varies with depth, but gauging structures enforce a **consistent flow regime**.
