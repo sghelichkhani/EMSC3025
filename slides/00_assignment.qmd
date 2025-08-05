@@ -22,7 +22,7 @@ downloaded. Download the monthly data netCDF, file for all available years, from
    -  February 2010
    -  December 2019
 
-2. **(4 marks)** Derive the integrated rainfall that fell each month within the Murray-Darling Basin (the file MDB.latlon contains a polygon defining the spatial extent of the Murray-Darling Basin and is available from [here](https://data.gadopt.org/water-course/MDB.latlon)”).
+2. **(4 marks)** Derive the integrated rainfall that fell each month within the Murray-Darling Basin. The file MDB.latlon contains a polygon defining the spatial extent of the Murray-Darling Basin and is available from [here](https://data.gadopt.org/water-course/MDB.latlon).
 3. **(1 mark)** Plot a time series of the monthly rainfall, integrated over the Murray-Darling Basin.
 4. **(1 mark)** Calculate the rate of change in monthly rainfall over the time span of the data.
 5. **(4 marks)** Compare the drought periods of 2005-2009 and 2016-2019 in terms of precipitation. What was similar and what was different about these two droughts?
