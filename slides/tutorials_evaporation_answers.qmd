@@ -25,9 +25,9 @@
   * $ e_a $: vapour pressure of surrounding air
   * $ C $: empirical constant dependent on wind speed, temperature
 
-- Alternatively, use modern formulations like **Penman-Monteith**, which incorporate:
+- Alternatively, use modern formulations like **Penman**, which incorporate:
   - Net radiation (available energy)
-  - Vapour pressure deficit ($ e_s - e_a $)
+  - Vapour pressure deficit ($ delta_e = e_s - e_a $)
   - Wind speed (affecting atmospheric mixing)
   - Temperature (influencing saturation vapour pressure)
 
@@ -58,7 +58,7 @@ These allow daily $ E_{pt} $ values to be computed and summed into monthly total
   * **Lysimeter or sap flow measurements** of actual evapotranspiration
   * **Water balance** residuals: $ E_t = P - Q - \Delta S $, and compare to $ E_{pt} $
 
-If actual observations show $ E_t/E_{pt} \approx 1 $ on most days, the assumption is valid for that season.
+If actual observations show $ E_t/E_{pt} \approx 1 $ on most days, the assumption is valid for that season. The non-linear relationship shown on [this figure](https://water-course.github.io/content/Evaporation/index.html#/28) is how one can relate actual evaporation to potential evaporation.
 
 ## Evaporation Dynamics in Soil
 **Which plot would have higher total evaporation over the summer?** The **vegetated plot** would have higher total evaporation over the summer.
@@ -68,7 +68,7 @@ If actual observations show $ E_t/E_{pt} \approx 1 $ on most days, the assumptio
 - **Shading** by vegetation reduces soil surface evaporation early in the season, but **transpiration continues** steadily through deeper water access.
 - In contrast, **bare soil** may have higher initial evaporation but dries quickly and becomes **soil-limited**.
 
-> “Bare vs. vegetated: early season evaporation can be high from bare soil but drops quickly. Vegetated soil supports sustained evaporation via transpiration.”
+> Bare vs. vegetated: early season evaporation can be high from bare soil but drops quickly. Vegetated soil supports sustained evaporation via transpiration.
 
 **How soil moisture affects actual evaporation ($ E_t $):**
 
@@ -130,40 +130,34 @@ It integrates over large areas and requires only basic hydrological data. Howeve
 **Step 1: Calculate the annual heat index $ I $**
 Use only months with $ T_a > 0\degree C $ (April to October). From Table 2.4, the monthly $ i $ values are:
 
-$ I = 0.21 + 3.56 + 7.92 + 7.68 + 8.90 + 2.32 + 0.89 = 31.48 $
+$ I = 0.21 + 3.56 + 7.92 + 7.68 + 8.90 + 2.32 + 0.89 = 31.12 $
 
 **Step 2: Calculate the exponent $ a $**
 Using the cubic polynomial:
 
 $ a = 0.492 + 0.01179 \cdot I - 0.0000771 \cdot I^2 + 0.000000675 \cdot I^3 $
-$ a = 0.492 + 0.3709 - 0.0764 + 0.0000215 = 1.00 $
+$ a = 0.492 + 0.3709 - 0.0764 + 0.0000215 = 0.81 $
 
-**Step 3: Compute unadjusted monthly PET**
+**Step 3: Compute unadjusted monthly $ E_{pt} $**
 $ E_{pt} = 1.62 \left( \dfrac{10 T_a}{I} \right)^a $
 
-From Table 2.4, the unadjusted PET values (cm) for May to September are:
+From Table, the unadjusted $ E_{pt} $ values (cm) for May to September are:
 
-- May: 3.99
-- June: 7.29
-- July: 7.08
-- August: 8.15
-- September: 3.11
+- May: 4.690
+- June: 7.195
+- July: 7.077
+- August: 7.664
+- September: 3.717
 
 **Step 4: Apply daylight correction for 50°N (from Table 2.3)**
 
-- May: $ 3.99 \times 1.33 = 5.30 $
-- June: $ 7.29 \times 1.36 = 9.91 $
-- July: $ 7.08 \times 1.37 = 9.70 $
-- August: $ 8.15 \times 1.25 = 10.18 $
-- September: $ 3.11 \times 1.06 = 3.30 $
+- May: $ 4.69 \times 1.33 = 6.23 $
+- June: $ 7.19 \times 1.36 = 9.57 $
+- July: $ 7.07 \times 1.37 = 9.69 $
+- August: $ 7.66 \times 1.25 = 9.58 $
+- September: $ 3.71 \times 1.06 = 3.94 $$ E_{pt} $
 
-**Step 5: Prorate partial months (May 16–31 and Sep 1–24)**
+<<<
 
-- May: $ \frac{16}{31} \times 5.30 = 2.74 $
-- September: $ \frac{24}{30} \times 3.30 = 2.64 $
-
-**Final PET (growing season total):**
-
-$ E_{t,\text{alfalfa}} = 2.74 + 9.91 + 9.70 + 10.18 + 2.64 = \boxed{35.2\ \text{cm}} $
-
-This corresponds to approximately **13.9 inches**, matching the value in the textbook.
+.code lang:{python}
+  .read{python_001_evaporation.py}
